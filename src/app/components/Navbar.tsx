@@ -10,7 +10,7 @@ export default function Navbar() {
   // if (pathname === '/') return null;
 
   return (
-    <nav className="bg-[#1e3a8a] text-white px-6 py-4 shadow-md w-full">
+    <nav className="sticky top-0 bg-[#1e3a8a] text-white px-6 py-4 shadow-md w-full z-50">
       <div className="w-full flex justify-between items-center">
         {/* LEFT: Brand */}
         <Link href="/" className="font-locket-header">
