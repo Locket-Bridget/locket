@@ -6,14 +6,14 @@ import { usePathname } from 'next/navigation';
 export default function Navbar() {
   const pathname = usePathname();
 
-  // Hide navbar on the landing page
-  if (pathname === '/') return null;
+  // // Hide navbar on the landing page
+  // if (pathname === '/') return null;
 
   return (
-    <nav className="bg-blue-800 text-white px-6 py-4 shadow-md w-full">
+    <nav className="bg-[#1e3a8a] text-white px-6 py-4 shadow-md w-full">
       <div className="w-full flex justify-between items-center">
         {/* LEFT: Brand */}
-        <Link href="/" className="text-2xl font-bold tracking-wide">
+        <Link href="/" className="font-locket-header">
           LOCKET
         </Link>
 

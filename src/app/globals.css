@@ -40,6 +40,11 @@ body {
   font-size: 150px;
 }
 
+.font-locket-header {
+  font-family: 'Locket', Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
 .splash-letter {
   position: relative;
   display: inline-block;
