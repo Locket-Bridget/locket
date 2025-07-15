@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function ToolkitPage() {
+export default function Toolkitpage() {
   const [hasAccess, setHasAccess] = useState(false);
 
   // Simulated purchase function

@@ -15,12 +15,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
-
 export const metadata: Metadata = {
   title: "Locket Security",
   description: "",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -40,3 +41,7 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+
+

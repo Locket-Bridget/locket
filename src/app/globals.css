@@ -1,15 +1,14 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Locket';
-  src: url('/fonts/Modak-Regular.ttf') format('truetype');
+  font-family: "Locket";
+  src: url("/fonts/Modak-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-
-
+/* ---------------------------------- base colors */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -33,126 +32,25 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-
-}
-.font-locket {
-  font-family: 'Locket', Arial, Helvetica, sans-serif;
-  font-size: 150px;
 }
 
-.font-locket-header {
-  font-family: 'Locket', Arial, Helvetica, sans-serif;
-  font-size: 40px;
-}
+/* -------------------- Locket wordmark sizes */
+.font-locket        { font-family: "Locket", Arial, Helvetica, sans-serif; font-size: 150px; }
+.font-locket-header { font-family: "Locket", Arial, Helvetica, sans-serif; font-size:  40px; }
 
+/* Letters styled with original deep purple-blue, no animation */
 .splash-letter {
-  position: relative;
   display: inline-block;
-  color: #4c51bf; /* pretty deep purple */
-  /* Removed splash-wave animation here */
+  color: #4c51bf; /* original deep purple-blue */
 }
 
-/* Sparkle animations remain the same */
-@keyframes sparkle-burst {
-  0% {
-    opacity: 0;
-    transform: scale(0.5) rotate(0deg);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.3) rotate(15deg);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0) rotate(30deg);
-  }
+/* Existing swing utility (unchanged) */
+@keyframes swing {
+  0%   { transform: rotate(0deg); transform-origin: top center; }
+  40%  { transform: rotate(15deg); }
+  60%  { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
 }
-
-/* Big and small sparkles on left and right sides */
-
-.splash-letter::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #f9a8d4; /* pastel pink */
-  border-radius: 50%;
-  left: -14px;
-  top: 20%;
-  filter: drop-shadow(0 0 8px #f472b6);
-  opacity: 0;
-  animation: sparkle-burst 2.5s infinite ease-in-out;
-  animation-delay: calc(var(--spark-delay) * 1s);
+.animate-swing {
+  animation: swing 2.2s cubic-bezier(.26,.63,.48,.99) infinite;
 }
-
-.splash-letter .sparkle1 {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: #c084fc; /* pastel purple */
-  border-radius: 50%;
-  left: -8px;
-  top: 45%;
-  filter: drop-shadow(0 0 5px #a78bfa);
-  opacity: 0;
-  animation: sparkle-burst 2.5s infinite ease-in-out;
-  animation-delay: calc(var(--spark-delay) * 1.2s);
-}
-
-.splash-letter::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #60a5fa; /* pastel blue */
-  border-radius: 50%;
-  right: -14px;
-  top: 30%;
-  filter: drop-shadow(0 0 8px #3b82f6);
-  opacity: 0;
-  animation: sparkle-burst 2.5s infinite ease-in-out;
-  animation-delay: calc(var(--spark-delay2) * 1s);
-}
-
-.splash-letter .sparkle2 {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: #a5b4fc; /* soft blue-purple */
-  border-radius: 50%;
-  right: -8px;
-  top: 55%;
-  filter: drop-shadow(0 0 5px #818cf8);
-  opacity: 0;
-  animation: sparkle-burst 2.5s infinite ease-in-out;
-  animation-delay: calc(var(--spark-delay2) * 1.3s);
-}
-
-/* Delays per letter */
-.splash-letter:nth-child(1) {
-  --spark-delay: 0;
-  --spark-delay2: 1;
-}
-.splash-letter:nth-child(2) {
-  --spark-delay: 0.4;
-  --spark-delay2: 1.3;
-}
-.splash-letter:nth-child(3) {
-  --spark-delay: 0.8;
-  --spark-delay2: 0.7;
-}
-.splash-letter:nth-child(4) {
-  --spark-delay: 0.3;
-  --spark-delay2: 1.5;
-}
-.splash-letter:nth-child(5) {
-  --spark-delay: 0.6;
-  --spark-delay2: 0.9;
-}
-.splash-letter:nth-child(6) {
-  --spark-delay: 1;
-  --spark-delay2: 1.2;
-}
-
