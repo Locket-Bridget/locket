@@ -9,7 +9,7 @@ export default function MainLanding() {
       <div className="bg-[#fff8ea] rounded-xl shadow-lg px-12 py-16 w-full max-w-4xl text-center border-4 border-blue-800">
         {/* Wordmark + icon */}
         <h1
-          className="font-locket splash-text flex items-center justify-center gap-2 text-blue-800"
+          className="font-locket splash-text flex items-center justify-center gap-2 text-blue-900" 
           aria-label="LOCKET"
         >
           {word.split("").map((letter, i) => (

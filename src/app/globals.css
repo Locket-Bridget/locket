@@ -8,7 +8,7 @@
   font-display: swap;
 }
 
-/* ---------------------------------- base colors */
+/* ---------------------------------- base colors for every page*/
 :root {
   --background: rgb(219 234 254);
   --foreground: #171717;
@@ -41,7 +41,7 @@ body {
 /* Letters styled with original deep purple-blue, no animation */
 .splash-letter {
   display: inline-block;
-  color: #4c51bf; /* original deep purple-blue */
+  color: #1E3A8A;
 }
 
 /* Existing swing utility (unchanged) */
