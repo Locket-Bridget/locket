@@ -61,7 +61,7 @@ export default function ServiceDetailPage() {
   ------------------------------------------------------------ */
 
   return (
-    <main className="min-h-screen bg-blue-100 flex flex-col items-center justify-center px-8 py-12">
+    <main className="min-h-screen flex flex-col items-center justify-center px-8 py-12">
       <div className="bg-[#fff8ea] text-blue-800 rounded-xl shadow-lg px-12 py-16 max-w-4xl w-full border-4 border-blue-800 text-center">
         <h1 className="text-4xl font-bold mb-6">{service.name}</h1>
         <p className="mb-8 text-lg whitespace-pre-line">{service.description}</p>

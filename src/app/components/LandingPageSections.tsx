@@ -20,7 +20,7 @@ export default function LandingPageSections() {
   ];
 
   return (
-    <section className="bg-blue-100 py-24">
+    <section className="py-24">
       {stats.map((stat, index) => (
         <StatSection
           key={index}

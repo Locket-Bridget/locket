@@ -6,7 +6,7 @@ import { services } from "./servicesData";
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-blue-100">
+    <main className="min-h-screen flex items-center justify-center">
       <div className="bg-[#fff8ea] text-blue-800 rounded-xl shadow-lg px-12 py-16 w-full max-w-6xl text-center border-4 border-blue-800">
         <h1 className="text-4xl font-bold mb-8">Our Services</h1>
 

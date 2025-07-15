@@ -10,7 +10,7 @@
 
 /* ---------------------------------- base colors */
 :root {
-  --background: #ffffff;
+  --background: rgb(219 234 254);
   --foreground: #171717;
 }
 

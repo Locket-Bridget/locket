@@ -5,7 +5,7 @@ const word = "LOCKET";
 
 export default function MainLanding() {
   return (
-    <main className="h-screen w-screen bg-blue-100 flex items-center justify-center">
+    <main className="h-screen w-screen flex items-center justify-center">
       <div className="bg-[#fff8ea] rounded-xl shadow-lg px-12 py-16 w-full max-w-4xl text-center border-4 border-blue-800">
         {/* Wordmark + icon */}
         <h1
