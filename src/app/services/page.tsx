@@ -3,7 +3,7 @@ import { services } from "./servicesData";
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen flex items-center justify-center px-6 py-16 bg-[rgb(219,234,254)]">
+    <main className="h-screen w-screen flex flex-col items-center px-6 py-14 bg-[rgb(219,234,254)]">
       <div className="bg-[#fff8ea] border-4 border-blue-800 rounded-xl shadow-lg p-8 md:p-12 max-w-6xl w-full flex flex-col text-center text-blue-800">
         <h1 className="text-4xl font-locket-header mb-6 text-blue-900">Our Services</h1>
         <p className="text-lg mb-8 max-w-3xl mx-auto">

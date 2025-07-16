@@ -12,7 +12,7 @@ export default function Toolkitpage() {
   };
 
   return (
-    <main className="min-h-screen px-8 py-12 flex flex-col items-center">
+    <main className="h-screen w-screen flex flex-col items-center px-8 py-14 flex flex-col">
       <div className="bg-[#fff8ea] text-blue-800 rounded-xl shadow-lg px-12 py-16 max-w-3xl w-full border-4 border-blue-800 text-center">
         <h1 className="text-4xl font-bold mb-6">Your Cyber Self-Care Toolkit</h1>
         <p className="text-lg mb-8">

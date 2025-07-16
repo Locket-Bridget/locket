@@ -8,7 +8,7 @@ const word = "LOCKET";
 
 export default function MainLanding() {
   return (
-    <main className="h-screen w-screen flex flex-col items-center justify-center bg-[rgb(219,234,254)] px-4 py-8">
+    <main className="h-screen w-screen flex flex-col items-center justify-start bg-[rgb(219,234,254)] px-4 py-14">
       {/* Container with column layout and gap */}
       <div className="bg-[#fff8ea] rounded-xl shadow-lg px-12 py-12 w-full max-w-5xl text-center border-4 border-blue-800 flex flex-col items-center">
         {/* Wordmark + icon */}
@@ -33,7 +33,7 @@ export default function MainLanding() {
         {/* Tagline */}
         <p
           className="mt-2 text-xl font-medium text-blue-800 animate-fadeInUp"
-          style={{ animationDelay: "1.5s" }}
+          style={{ animationDelay: "0s" }}
         >
           For when you don’t want to share.
         </p>

@@ -30,7 +30,7 @@ export default function NewsletterPage() {
   }
 
   return (
-    <main className="min-h-screen flex items-center justify-center px-6 py-16 bg-[rgb(219,234,254)]">
+    <main className="h-screen w-screen flex flex-col items-center justify-start px-6 py-14">
       <div className="bg-[#fff8ea] text-blue-800 rounded-xl shadow-lg px-12 py-16 w-full max-w-4xl border-4 border-blue-800">
         <header className="mb-10 text-center">
           <h1 className="text-blue-800 text-4xl font-bold">Newsletter</h1>
