@@ -1,3 +1,5 @@
+//This component is used for rendering the article cards within the Newsletter page
+
 type ArticleCardProps = {
   image: string;
   summary: string;

@@ -1,4 +1,5 @@
-/* MainLanding.tsx */
+//The first part of the landing page that we see. Our beautiful first div
+
 import Button from "./Button";
 import LocketIcon from "./LocketIcon";
 import MainScrollIndicator from "./MainScrollIndicator";

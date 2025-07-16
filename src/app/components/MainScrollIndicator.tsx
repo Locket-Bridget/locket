@@ -1,3 +1,5 @@
+//This is the arrow underneath the main div and its onClick function
+
 'use client'
 import React from 'react';
 

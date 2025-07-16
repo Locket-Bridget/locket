@@ -1,3 +1,5 @@
+//This is why the scroll down stats and image cards are rendered
+
 import StatSection from "../components/StatSection";
 
 export default function LandingPageSections() {

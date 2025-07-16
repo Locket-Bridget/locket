@@ -1,3 +1,5 @@
+//Our buttons on the main div for the landing page
+
 'use client';
 
 import { useRouter } from 'next/navigation';

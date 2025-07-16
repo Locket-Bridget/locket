@@ -1,3 +1,5 @@
+//This is where the type + information is fed and created for the landing page sections
+
 'use client';
 
 import { motion } from 'framer-motion';
