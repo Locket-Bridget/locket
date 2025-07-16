@@ -1,3 +1,5 @@
+//Not to be obvious but this is where the nav bar is worked on 
+
 'use client';
 
 import Link from 'next/link';
@@ -6,19 +8,23 @@ import { usePathname } from 'next/navigation';
 export default function Navbar() {
   const pathname = usePathname();
 
-  // // Hide navbar on the landing page
-  // if (pathname === '/') return null;
-
   return (
     <nav className="sticky top-0 bg-[#1E3A8A] text-white px-6 py-4 shadow-md w-full z-50">
       <div className="w-full flex justify-between items-center">
+
         {/* LEFT: Brand */}
         <Link href="/" className="font-locket-header text-xl md:text-2xl">
           LOCKET
         </Link>
 
         {/* RIGHT: Nav Links + Instagram Icon */}
+
         <div className="flex items-center gap-6 text-lg">
+
+           <Link href="/" className="hover:underline">
+            Home
+          </Link>
+
           <Link href="/services" className="hover:underline">
             Services
           </Link>
@@ -30,6 +36,7 @@ export default function Navbar() {
           </Link>
 
           {/* Instagram Icon */}
+
           <Link
             href="https://instagram.com/your_instagram_handle"
             target="_blank"

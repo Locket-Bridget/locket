@@ -1,6 +1,7 @@
 /* MainLanding.tsx */
 import Button from "./Button";
 import LocketIcon from "./LocketIcon";
+import MainScrollIndicator from "./MainScrollIndicator";
 
 const word = "LOCKET";
 
@@ -46,17 +47,7 @@ export default function MainLanding() {
       </div>
 
       {/* Scroll Indicator just below box with margin */}
-      <div className="mt-6 animate-bounce">
-        <svg
-          className="w-6 h-6 text-[#1E3A8A]"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </div>
+        <MainScrollIndicator /> 
     </main>
   );
 }

@@ -20,7 +20,7 @@ export default function LandingPageSections() {
   ];
 
   return (
-    <section className="py-24">
+    <section id="landing-page-sections" className="py-24">
       {stats.map((stat, index) => (
         <StatSection
           key={index}
