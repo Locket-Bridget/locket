@@ -6,9 +6,10 @@ type ButtonProps = {
   children: React.ReactNode;
   href?: string;
   onClick?: () => void;
+  className?: string; // add optional className prop
 };
 
-export default function Button({ children, href, onClick }: ButtonProps) {
+export default function Button({ children, href, onClick, className }: ButtonProps) {
   const router = useRouter();
 
   const handleClick = () => {
@@ -22,7 +23,7 @@ export default function Button({ children, href, onClick }: ButtonProps) {
   return (
     <button
       onClick={handleClick}
-      className="bg-white border-2 border-blue-800 text-blue-800 px-6 py-2 rounded-full text-lg font-bold hover:bg-blue-50 transition-all"
+      className={`bg-white border-2 border-blue-800 text-blue-800 px-6 py-2 rounded-full text-lg font-bold hover:bg-blue-50 transition-all ${className ?? ''}`}
     >
       {children}
     </button>

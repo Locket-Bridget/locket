@@ -1,8 +1,10 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { services } from "../servicesData";
+import { PopupModal } from "react-calendly";
 
 /* ---------- ⚠️ Stripe imports/commented ----------
    Skander:  if you want to turn Stripe back on, first create a
@@ -13,7 +15,6 @@ import { services } from "../servicesData";
 
    Then uncomment everything in this block and the handler below.
 ---------------------------------------------------- */
-// import { useState } from "react";
 // import { loadStripe } from "@stripe/stripe-js";
 // import { servicesStripeData } from "../servicesData";
 // const stripePromise = loadStripe(
@@ -27,6 +28,16 @@ export default function ServiceDetailPage() {
 
   const service = services.find((s) => s.slug === slug);
 
+  // Controls whether the Calendly popup/modal is open
+  const [showModal, setShowModal] = useState(false);
+
+  // Track whether component is mounted client-side to safely access document.body
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   if (!service) {
     return (
       <p className="text-center mt-10 text-red-600">
@@ -35,62 +46,56 @@ export default function ServiceDetailPage() {
     );
   }
 
-  /* ---------- ⚠️ Stripe checkout handler commented ----------
-  const [loading, setLoading] = useState(false);
-  const priceId = servicesStripeData[slug]?.priceId;
-
-  const handleCheckout = async () => {
-    if (!priceId) return alert("Price not configured.");
-
-    setLoading(true);
-    try {
-      const res = await fetch("/api/create-checkout-session", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ serviceName: service.name, priceId }),
-      });
-      const { sessionId } = await res.json();
-      const stripe = await stripePromise;
-      await stripe?.redirectToCheckout({ sessionId });
-    } catch {
-      alert("Checkout error.");
-    } finally {
-      setLoading(false);
-    }
-  };
-  ------------------------------------------------------------ */
-
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-8 py-12">
-      <div className="bg-[#fff8ea] text-blue-800 rounded-xl shadow-lg px-12 py-16 max-w-4xl w-full border-4 border-blue-800 text-center">
-        <h1 className="text-4xl font-bold mb-6">{service.name}</h1>
-        <p className="mb-8 text-lg whitespace-pre-line">{service.description}</p>
+    <>
+      <main className="min-h-screen bg-rgb(219 234 254) flex items-center justify-center px-6 py-12">
+        <div className="bg-[#fff8ea] text-blue-800 rounded-xl shadow-lg px-12 py-16 max-w-4xl w-full border-4 border-blue-800 text-center">
+          <h1 className="text-4xl font-bold mb-6">{service.name}</h1>
+          <p className="mb-8 text-lg whitespace-pre-line">{service.description}</p>
 
-        <div className="flex gap-4 justify-center">
-          {/* Stripe button disabled in dev */}
+          <div className="flex justify-center gap-6">
+            <button
+              onClick={() => setShowModal(true)}
+              className="bg-blue-800 px-8 py-3 border border-blue-800 text-white rounded hover:bg-blue-100 transition"
+            >
+              Request Consultation
+            </button>
+
+            {/* Example: If you want to keep the old modal form, you can do that here or remove */}
+            {/* Or replace that with Calendly popup only */}
+          </div>
+
+          {/* ---------- Stripe button placeholder ----------
           <button
-            /* onClick={handleCheckout} */
-            className="px-8 py-3 bg-gray-400 text-white rounded cursor-not-allowed"
-            title="Checkout disabled in dev"
+            onClick={handleCheckout}
+            disabled={loading}
+            className="mt-8 px-8 py-3 bg-blue-800 text-white rounded hover:bg-blue-700 transition disabled:opacity-50"
           >
-            Checkout Coming Soon
+            {loading ? "Redirecting…" : "Buy Now"}
           </button>
+          -------------------------------------------------- */}
 
-          <Link
-            href="mailto:admin@locketsecurity.com?subject=Consultation%20Request"
-            className="px-8 py-3 border border-blue-800 text-blue-800 rounded hover:bg-blue-100 transition"
-          >
-            Request Consultation
-          </Link>
-
-          <Link
-            href="/services"
-            className="px-8 py-3 border border-blue-800 text-blue-800 rounded hover:bg-blue-100 transition"
-          >
-            Return to Services
-          </Link>
+          <div className="mt-8">
+            <Link
+              href="/services"
+              className="bg-blue-800 px-8 py-3 border border-blue-800 text-white rounded hover:bg-blue-100 transition"
+            >
+              Return to Services
+            </Link>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+
+      {/* Calendly PopupModal rendered only on client */}
+      {mounted && (
+        <PopupModal
+          url="https://calendly.com/admin-locketsecurity/30min"
+          onModalClose={() => setShowModal(false)}
+          open={showModal}
+          rootElement={document.body}
+        />
+      )}
+    </>
   );
 }
+

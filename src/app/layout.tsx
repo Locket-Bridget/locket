@@ -1,9 +1,13 @@
+// app/layout.tsx or src/app/layout.tsx
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";          
 import "./globals.css";
+
 import Navbar from "./components/Navbar";
 import ScrollWrapper from "./components/ScrollWrapper";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,19 +33,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-100 text-blue-800 min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-100 text-blue-800 min-h-screen flex flex-col`}
       >
-        <Navbar /> 
-        <ScrollWrapper>{children}</ScrollWrapper>
+        <Navbar />
+        <ScrollWrapper>
+          <main className="flex-grow">{children}</main>
+        </ScrollWrapper>
+        <Footer />
       </body>
     </html>
   );
 }
-
-
-
-
