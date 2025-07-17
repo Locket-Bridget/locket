@@ -74,3 +74,20 @@ body {
 }
 
 
+
+
+
+/* Typing text blinking cursor */
+.typing-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 22px;
+  background-color: #1e40af; /* blue-800 */
+  margin-left: 4px;
+  vertical-align: bottom;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
