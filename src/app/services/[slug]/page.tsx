@@ -25,68 +25,100 @@ import { PopupModal } from "react-calendly";
 export default function ServiceDetailPage() {
   const params = useParams();
   const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
-
   const service = services.find((s) => s.slug === slug);
 
-  // Controls whether the Calendly popup/modal is open
   const [showModal, setShowModal] = useState(false);
-
-  // Track whether component is mounted client-side to safely access document.body
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  useEffect(() => { setMounted(true); }, []);
 
   if (!service) {
     return (
-      <p className="text-center mt-10 text-red-600">
-        Service not found.
-      </p>
+      <main className="min-h-screen bg-[rgb(219,234,254)] flex items-center justify-center px-6">
+        <p className="text-blue-700" style={{ fontFamily: 'var(--font-fredoka)' }}>
+          Service not found.
+        </p>
+      </main>
     );
   }
 
   return (
     <>
-      <main className="min-h-screen bg-rgb(219 234 254) flex items-center justify-center px-6 py-12">
-        <div className="bg-[#fff8ea] text-blue-800 rounded-xl shadow-lg px-12 py-16 max-w-4xl w-full border-4 border-blue-800 text-center">
-          <h1 className="text-4xl font-bold mb-6">{service.name}</h1>
-          <p className="mb-8 text-lg whitespace-pre-line">{service.description}</p>
+      <main className="min-h-screen bg-[rgb(219,234,254)] px-6 py-20">
 
-          <div className="flex justify-center gap-6">
-            <button
-              onClick={() => setShowModal(true)}
-              className="bg-blue-800 px-8 py-3 border border-blue-800 text-white rounded hover:bg-blue-100 transition"
-            >
-              Request Consultation
-            </button>
+        {/* Page header */}
+        <div className="text-center mb-16">
+          <span
+            className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full -rotate-1 shadow-md mb-6"
+            style={{ fontFamily: 'var(--font-fredoka)' }}
+          >
+            ★ &nbsp; our services
+          </span>
+          <h1
+            className="text-5xl md:text-6xl font-bold text-blue-900"
+            style={{ fontFamily: 'var(--font-pacifico)' }}
+          >
+            {service.name}
+          </h1>
+          <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-caveat)' }}>
+            {service.tagline} ✦
+          </p>
+          <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
+            <div className="h-px w-16 bg-blue-200" />
+            <span>★</span>
+            <span className="text-sm">★</span>
+            <span>★</span>
+            <div className="h-px w-16 bg-blue-200" />
+          </div>
+        </div>
 
-            {/* Example: If you want to keep the old modal form, you can do that here or remove */}
-            {/* Or replace that with Calendly popup only */}
+        {/* Detail card */}
+        <div className="max-w-2xl mx-auto bg-[#fff8ea] rounded-3xl shadow-[0_8px_40px_rgba(30,58,138,0.10)] p-10 relative overflow-hidden">
+          <div className="absolute -top-8 -right-8 w-40 h-40 bg-blue-100 rounded-full opacity-30 blur-2xl pointer-events-none" />
+          <span className="absolute top-4 left-5 text-blue-200 text-xl select-none">★</span>
+          <span className="absolute top-4 right-5 text-blue-200 text-xl select-none">★</span>
+
+          {/* Tagline */}
+          <p
+            className="text-2xl text-blue-500 mb-6 text-center"
+            style={{ fontFamily: 'var(--font-caveat)' }}
+          >
+            "{service.tagline}"
+          </p>
+
+          {/* Divider */}
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="w-8 h-[2px] bg-blue-200 rounded-full" />
+            <span className="text-blue-200 text-xs">★</span>
+            <div className="w-8 h-[2px] bg-blue-200 rounded-full" />
           </div>
 
-          {/* ---------- Stripe button placeholder ----------
-          <button
-            onClick={handleCheckout}
-            disabled={loading}
-            className="mt-8 px-8 py-3 bg-blue-800 text-white rounded hover:bg-blue-700 transition disabled:opacity-50"
-          >
-            {loading ? "Redirecting…" : "Buy Now"}
-          </button>
-          -------------------------------------------------- */}
+          {/* Description */}
+          <p className="text-base text-blue-700/70 leading-relaxed text-center mb-10 whitespace-pre-line">
+            {service.description.trim()}
+          </p>
 
-          <div className="mt-8">
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={() => setShowModal(true)}
+              className="px-8 py-3 bg-blue-900 text-[#fff8ea] rounded-full text-sm font-semibold hover:scale-105 transition-all"
+              style={{ fontFamily: 'var(--font-fredoka)' }}
+            >
+              Book a Consultation ★
+            </button>
             <Link
               href="/services"
-              className="bg-blue-800 px-8 py-3 border border-blue-800 text-white rounded hover:bg-blue-100 transition"
+              className="px-8 py-3 bg-white text-blue-900 border border-blue-200 rounded-full text-sm font-semibold hover:bg-blue-50 transition-all text-center"
+              style={{ fontFamily: 'var(--font-fredoka)' }}
             >
-              Return to Services
+              ← All Services
             </Link>
           </div>
         </div>
+
       </main>
 
-      {/* Calendly PopupModal rendered only on client */}
       {mounted && (
         <PopupModal
           url="https://calendly.com/admin-locketsecurity/30min"
@@ -98,4 +130,3 @@ export default function ServiceDetailPage() {
     </>
   );
 }
-

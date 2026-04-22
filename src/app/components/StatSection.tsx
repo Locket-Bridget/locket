@@ -1,57 +1,94 @@
-//This is where the type + information is fed and created for the landing page sections
-
 'use client';
 
 import { motion } from 'framer-motion';
 
 type StatSectionProps = {
+  stat: string;
   title: string;
   text: string;
   image: string;
   reverse?: boolean;
+  index?: number;
 };
 
-export default function StatSection({ title, text, image, reverse = false }: StatSectionProps) {
-  const slideIn = {
-    hidden: { opacity: 0, x: reverse ? 100 : -100 },
-    visible: { opacity: 1, x: 0 },
-  };
+const tilts = [-2.5, 2, -1.5];
+const stickerRotations = ['-rotate-2', 'rotate-1', '-rotate-1'];
+const stickerColors = [
+  'bg-blue-900 text-[#fff8ea]',
+  'bg-[#fff8ea] text-blue-900 border border-blue-200',
+  'bg-blue-100 text-blue-900',
+];
 
-  const imageZoom = {
-    hidden: { opacity: 0, scale: 0.95 },
-    visible: { opacity: 1, scale: 1 },
-  };
+export default function StatSection({ stat, title, text, image, reverse = false, index = 0 }: StatSectionProps) {
+  const tilt = tilts[index % tilts.length];
+  const stickerRotation = stickerRotations[index % stickerRotations.length];
+  const stickerColor = stickerColors[index % stickerColors.length];
 
   return (
     <motion.div
-      className={`flex flex-col md:flex-row ${
-        reverse ? 'md:flex-row-reverse' : ''
-      } items-center justify-center max-w-6xl mx-auto mb-24 gap-10 px-6`}
-      initial="hidden"
-      whileInView="visible"
+      className={`flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} items-center justify-center max-w-5xl mx-auto mb-32 gap-16 px-6`}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
-      variants={slideIn}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
     >
-      {/* Image section with animated zoom */}
-      <motion.img
-        src={image}
-        alt={title}
-        className="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-blue-100"
-        initial="hidden"
-        whileInView="visible"
+      {/* Polaroid-style image */}
+      <motion.div
+        className="md:w-[45%] flex justify-center relative"
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        variants={imageZoom}
-      />
+      >
+        {/* Big decorative star behind polaroid */}
+        <span className="absolute -top-4 -right-4 text-5xl text-blue-200 select-none pointer-events-none z-0">★</span>
+        <div
+          className="bg-white p-3 pb-10 shadow-2xl relative z-10"
+          style={{ transform: `rotate(${tilt}deg)` }}
+        >
+          <img
+            src={image}
+            alt={title}
+            className="w-72 h-64 object-cover block"
+          />
+        </div>
+        <span className="absolute -bottom-4 -left-2 text-2xl text-blue-100 select-none pointer-events-none z-0">✦</span>
+      </motion.div>
 
-      {/* Text content in a soft box */}
-      <div className="md:w-1/2 bg-[#fff8ea] p-8 rounded-lg border-l-4 border-blue-800 shadow-md">
-        <h2 className="text-3xl font-bold mb-3 flex items-center gap-2 text-blue-900">
-          <span className="w-2 h-2 bg-blue-800 rounded-full"></span>
+      {/* Text content */}
+      <div className="md:w-[55%] relative">
+
+        {/* Sticker badge label */}
+        <span
+          className={`inline-block text-xs font-semibold tracking-[0.18em] uppercase px-4 py-1.5 rounded-full shadow-sm mb-4 ${stickerRotation} ${stickerColor}`}
+          style={{ fontFamily: 'var(--font-fredoka)' }}
+        >
+          ✦ &nbsp; did you know
+        </span>
+
+        {/* Big stat number */}
+        <div
+          className="text-7xl md:text-8xl font-bold text-blue-900 leading-none mb-3"
+          style={{ fontFamily: 'var(--font-pacifico)' }}
+        >
+          {stat}
+        </div>
+
+        {/* Title */}
+        <h2 className="text-lg md:text-xl font-semibold text-blue-800 mb-4 leading-snug" style={{ fontFamily: 'var(--font-fredoka)' }}>
           {title}
         </h2>
-        <p className="text-lg text-blue-800 leading-relaxed">{text}</p>
+
+        {/* Divider */}
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-8 h-[2px] bg-blue-300 rounded-full" />
+          <span className="text-blue-200 text-xs">★</span>
+        </div>
+
+        {/* Body */}
+        <p className="text-sm md:text-base text-blue-700/70 leading-relaxed max-w-sm">
+          {text}
+        </p>
       </div>
     </motion.div>
   );

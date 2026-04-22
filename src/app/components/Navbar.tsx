@@ -19,21 +19,26 @@ export default function Navbar() {
 
         {/* RIGHT: Nav Links + Instagram Icon */}
 
-        <div className="flex items-center gap-6 text-lg">
+        <div className="flex items-center gap-6 text-base" style={{ fontFamily: 'var(--font-fredoka)' }}>
 
-           <Link href="/" className="hover:underline">
-            Home
-          </Link>
-
-          <Link href="/services" className="hover:underline">
-            Services
-          </Link>
-          <Link href="/newsletter" className="hover:underline">
-            Newsletter
-          </Link>
-          <Link href="/toolkit" className="hover:underline">
-            Toolkit
-          </Link>
+          {[
+            { href: '/', label: 'Home' },
+            { href: '/services', label: 'Services' },
+            { href: '/newsletter', label: 'Newsletter' },
+            { href: '/toolkit', label: 'Toolkit' },
+          ].map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={`transition-colors ${
+                pathname === href
+                  ? 'text-[#fff8ea] underline underline-offset-4 decoration-blue-400'
+                  : 'text-blue-200 hover:text-[#fff8ea]'
+              }`}
+            >
+              {label}
+            </Link>
+          ))}
 
           {/* Instagram Icon */}
 

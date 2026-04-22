@@ -77,6 +77,24 @@ body {
 
 
 
+/* Scrolling ticker marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+/* Wavy underline for handmade feel */
+.wavy-underline {
+  text-decoration: underline wavy;
+  text-decoration-color: #93c5fd;
+  text-underline-offset: 6px;
+}
+
 /* Typing text blinking cursor */
 .typing-cursor {
   display: inline-block;
@@ -90,4 +108,8 @@ body {
 
 @keyframes blink {
   50% { opacity: 0; }
+}
+
+.blinking-cursor {
+  animation: blink 1s step-start infinite;
 }

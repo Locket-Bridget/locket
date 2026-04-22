@@ -4,14 +4,26 @@ import React from "react";
 import Button from "./Button";
 import LocketIcon from "./LocketIcon";
 import TypingText from "./TypingText";
-import MainScrollIndicator from "./MainScrollIndicator"; // import it
+import MainScrollIndicator from "./MainScrollIndicator";
 
 const word = "LOCKET";
 
 export default function MainLanding() {
   return (
     <main className="h-screen w-screen flex flex-col items-center justify-center bg-[rgb(219,234,254)] px-4 py-14">
-      <div className="bg-[#fff8ea] rounded-xl shadow-lg px-12 py-16 w-full max-w-4xl text-center border-4 border-blue-800">
+      {/* Scattered deco stars */}
+      <span className="absolute top-16 left-10 text-blue-300 text-2xl select-none opacity-60">✦</span>
+      <span className="absolute top-32 right-16 text-blue-200 text-lg select-none opacity-50">★</span>
+      <span className="absolute bottom-24 left-20 text-blue-200 text-sm select-none opacity-40">✦</span>
+      <span className="absolute bottom-16 right-12 text-blue-300 text-xl select-none opacity-50">★</span>
+
+      <div className="bg-[#fff8ea] rounded-3xl shadow-[0_8px_40px_rgba(30,58,138,0.10)] px-12 py-16 w-full max-w-4xl text-center relative overflow-hidden">
+        {/* Corner star decorations inside box */}
+        <span className="absolute top-4 left-5 text-blue-200 text-xl select-none">★</span>
+        <span className="absolute top-4 right-5 text-blue-200 text-xl select-none">★</span>
+        {/* Soft blob in background */}
+        <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-100 rounded-full opacity-30 blur-2xl pointer-events-none" />
+
         {/* Wordmark + icon */}
         <h1
           className="font-locket splash-text flex items-center justify-center gap-1 text-blue-900"
