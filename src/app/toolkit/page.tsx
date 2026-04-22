@@ -1,6 +1,7 @@
 "use client";
 
 import { DoodleDrop, DoodleLipstick, DoodleMirror, DoodleShield, DoodleTeacup } from "../components/Doodles";
+import { useSubscribe } from "../hooks/useSubscribe";
 
 const tips = [
   {
@@ -56,6 +57,8 @@ const tips = [
 ];
 
 export default function ToolkitPage() {
+  const { email, setEmail, status, handleSubmit } = useSubscribe();
+
   return (
     <main className="min-h-screen bg-[rgb(219,234,254)] px-6 py-20">
 
@@ -182,20 +185,33 @@ export default function ToolkitPage() {
         <p className="text-blue-300 text-sm mb-6">
           Drop your email and we'll let you know the moment it drops.
         </p>
-        <form className="flex flex-col sm:flex-row gap-3" onSubmit={e => e.preventDefault()}>
-          <input
-            type="email"
-            placeholder="your@email.com"
-            className="flex-1 px-5 py-3 rounded-full text-blue-900 bg-[#fff8ea] text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-blue-300"
-          />
-          <button
-            type="submit"
-            className="px-6 py-3 bg-[#fff8ea] text-blue-900 rounded-full text-sm font-semibold hover:scale-105 transition-all"
-            style={{ fontFamily: 'var(--font-fredoka)' }}
-          >
-            Notify Me ★
-          </button>
-        </form>
+        {status === "success" ? (
+          <p className="text-[#fff8ea] font-semibold text-lg" style={{ fontFamily: 'var(--font-fredoka)' }}>
+            You're on the list ★ We'll let you know!
+          </p>
+        ) : (
+          <form className="flex flex-col sm:flex-row gap-3" onSubmit={handleSubmit}>
+            <input
+              type="email"
+              required
+              placeholder="your@email.com"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              className="flex-1 px-5 py-3 rounded-full text-blue-900 bg-[#fff8ea] text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-blue-300"
+            />
+            <button
+              type="submit"
+              disabled={status === "loading"}
+              className="px-6 py-3 bg-[#fff8ea] text-blue-900 rounded-full text-sm font-semibold hover:scale-105 transition-all disabled:opacity-60"
+              style={{ fontFamily: 'var(--font-fredoka)' }}
+            >
+              {status === "loading" ? "Sending…" : "Notify Me ★"}
+            </button>
+          </form>
+        )}
+        {status === "error" && (
+          <p className="text-red-300 text-xs mt-3">Something went wrong — try again.</p>
+        )}
       </div>
 
     </main>

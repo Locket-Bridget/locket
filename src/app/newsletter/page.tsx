@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ArticleCard from "../components/ArticleCard";
+import { useSubscribe } from "../hooks/useSubscribe";
 
 const categories = ["All", "Account Takeovers", "Data Breaches", "Influencer Alerts", "Platform Updates", "Dark Web"];
 
@@ -72,20 +73,11 @@ const feed = [
 
 export default function NewsletterPage() {
   const [activeCategory, setActiveCategory] = useState("All");
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
+  const { email, setEmail, status, handleSubmit } = useSubscribe();
 
   const filtered = activeCategory === "All"
     ? feed
     : feed.filter(a => a.category === activeCategory);
-
-  function handleSubscribe(e: React.FormEvent) {
-    e.preventDefault();
-    if (email.trim()) {
-      setSubscribed(true);
-      setEmail("");
-    }
-  }
 
   return (
     <main className="min-h-screen bg-[rgb(219,234,254)] px-6 py-20">
@@ -164,12 +156,12 @@ export default function NewsletterPage() {
           Social media threats, influencer alerts, and dark web updates — straight to your inbox.
         </p>
 
-        {subscribed ? (
+        {status === "success" ? (
           <p className="text-[#fff8ea] font-semibold text-lg" style={{ fontFamily: 'var(--font-fredoka)' }}>
             You're in ★ Talk soon!
           </p>
         ) : (
-          <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
             <input
               type="email"
               required
@@ -180,12 +172,16 @@ export default function NewsletterPage() {
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-[#fff8ea] text-blue-900 rounded-full text-sm font-semibold hover:scale-105 transition-all"
+              disabled={status === "loading"}
+              className="px-6 py-3 bg-[#fff8ea] text-blue-900 rounded-full text-sm font-semibold hover:scale-105 transition-all disabled:opacity-60"
               style={{ fontFamily: 'var(--font-fredoka)' }}
             >
-              Subscribe ★
+              {status === "loading" ? "Sending…" : "Subscribe ★"}
             </button>
           </form>
+        )}
+        {status === "error" && (
+          <p className="text-red-300 text-xs mt-3">Something went wrong — try again or email us directly.</p>
         )}
       </div>
 
