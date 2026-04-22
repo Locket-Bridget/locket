@@ -43,7 +43,7 @@ export default function Navbar() {
           {/* Instagram Icon */}
 
           <Link
-            href="https://instagram.com/your_instagram_handle"
+            href="https://www.instagram.com/locketsecurity/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
