@@ -10,7 +10,7 @@ type ArticleCardProps = {
 };
 
 const severityStyles = {
-  High: 'bg-red-100 text-red-700',
+  High: 'bg-[#fce8e3] text-[#C8553D]',
   Medium: 'bg-amber-100 text-amber-700',
   Low: 'bg-blue-100 text-blue-700',
 };

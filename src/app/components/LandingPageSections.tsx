@@ -30,7 +30,7 @@ export default function LandingPageSections() {
       <span className="text-base md:text-lg font-semibold tracking-[0.12em] uppercase text-[#fff8ea]" style={{ fontFamily: 'var(--font-fredoka)' }}>
         {TICKER_PHRASE}
       </span>
-      <span className="text-[#fff8ea]/50 text-lg">★</span>
+      <span className="text-lg" style={{ color: '#C8553D', opacity: 0.7 }}>★</span>
     </span>
   ));
 

@@ -16,7 +16,7 @@ const stickerRotations = ['-rotate-2', 'rotate-1', '-rotate-1'];
 const stickerColors = [
   'bg-blue-900 text-[#fff8ea]',
   'bg-[#fff8ea] text-blue-900 border border-blue-200',
-  'bg-blue-100 text-blue-900',
+  'bg-[#fce8e3] text-[#C8553D]',
 ];
 
 export default function StatSection({ stat, title, text, image, reverse = false, index = 0 }: StatSectionProps) {

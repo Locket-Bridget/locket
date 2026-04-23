@@ -13,9 +13,9 @@ export default function MainLanding() {
     <main className="h-screen w-screen flex flex-col items-center justify-center bg-[rgb(219,234,254)] px-4 py-14">
       {/* Scattered deco stars */}
       <span className="absolute top-16 left-10 text-blue-300 text-2xl select-none opacity-60">✦</span>
-      <span className="absolute top-32 right-16 text-blue-200 text-lg select-none opacity-50">★</span>
+      <span className="absolute top-32 right-16 text-2xl select-none opacity-50" style={{ color: '#C8553D' }}>★</span>
       <span className="absolute bottom-24 left-20 text-blue-200 text-sm select-none opacity-40">✦</span>
-      <span className="absolute bottom-16 right-12 text-blue-300 text-xl select-none opacity-50">★</span>
+      <span className="absolute bottom-16 right-12 text-2xl select-none opacity-40" style={{ color: '#C8553D' }}>✦</span>
 
       <div className="bg-[#fff8ea] rounded-3xl shadow-[0_8px_40px_rgba(30,58,138,0.10)] px-12 py-16 w-full max-w-4xl text-center relative overflow-hidden">
         {/* Corner star decorations inside box */}
