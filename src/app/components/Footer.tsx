@@ -14,7 +14,7 @@ export default function Footer() {
           Cyber Care Is Self Care.
         </h2>
         <p className="mt-4 text-blue-300 text-xl" style={{ fontFamily: 'var(--font-caveat)' }}>
-          Protecting your digital presence, so you don't have to worry about it ✦
+          Protecting your digital presence, so you don&apos;t have to worry about it ✦
         </p>
       </div>
 

@@ -42,7 +42,7 @@ export default function BlobCallout() {
           className="mt-6 text-xl text-blue-500"
           style={{ fontFamily: 'var(--font-caveat)' }}
         >
-          That's what Locket is for. ✦
+          That&apos;s what Locket is for. ✦
         </p>
       </motion.div>
     </section>

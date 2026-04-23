@@ -68,7 +68,7 @@ export default function LandingPageSections() {
           </h2>
 
           <p className="mt-5 text-blue-700/70 text-xl leading-relaxed" style={{ fontFamily: 'var(--font-caveat)' }}>
-            The threats are real. The stats are alarming.<br />Most people don't even know it's happening. →
+            The threats are real. The stats are alarming.<br />Most people don&apos;t even know it&apos;s happening. →
           </p>
 
           {/* Star divider */}
