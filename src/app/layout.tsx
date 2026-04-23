@@ -2,7 +2,7 @@
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display, Fredoka, Caveat, Pacifico, Titan_One } from "next/font/google";
-import localFont from "next/font/local";          
+
 import "./globals.css";
 
 import Navbar from "./components/Navbar";

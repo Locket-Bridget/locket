@@ -45,7 +45,7 @@ export default function Testimonials() {
           They were protected.
         </h2>
         <p className="mt-4 text-xl text-blue-700/70" style={{ fontFamily: 'var(--font-caveat)' }}>
-          Now it's your turn. ✦
+          Now it&apos;s your turn. ✦
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
           <div className="h-px w-16 bg-blue-200" />
@@ -77,7 +77,7 @@ export default function Testimonials() {
 
             {/* Quote */}
             <p className="text-sm text-blue-700/80 leading-relaxed flex-grow">
-              "{t.quote}"
+              &ldquo;{t.quote}&rdquo;
             </p>
 
             {/* Divider */}

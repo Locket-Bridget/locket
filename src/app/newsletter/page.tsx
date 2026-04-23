@@ -152,7 +152,7 @@ export default function NewsletterPage() {
         <span className="absolute top-4 right-5 text-blue-500 text-lg select-none">★</span>
 
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-400 mb-3" style={{ fontFamily: 'var(--font-fredoka)' }}>
-          ✦ &nbsp; don't miss a drop
+          ✦ &nbsp; don&apos;t miss a drop
         </p>
         <h2 className="text-3xl font-bold text-[#fff8ea] mb-2" style={{ fontFamily: 'var(--font-fredoka)' }}>
           Get the intel, weekly.
@@ -163,7 +163,7 @@ export default function NewsletterPage() {
 
         {status === "success" ? (
           <p className="text-[#fff8ea] font-semibold text-lg" style={{ fontFamily: 'var(--font-fredoka)' }}>
-            You're in ★ Talk soon!
+            You&apos;re in ★ Talk soon!
           </p>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
