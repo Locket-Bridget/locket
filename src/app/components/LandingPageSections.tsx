@@ -58,12 +58,13 @@ export default function LandingPageSections() {
             ★ &nbsp; the reality
           </span>
 
-          <h2 className="text-4xl md:text-5xl leading-tight" style={{ fontFamily: 'var(--font-titan)' }}>
+          <h2 className="text-5xl md:text-7xl leading-none" style={{ fontFamily: 'var(--font-titan)' }}>
             <span className="text-blue-900">Your </span>
-            <span style={{ color: '#C8553D' }}>online </span>
+            <span style={{ color: '#C8553D' }}>online</span>
+            <br />
             <span className="text-blue-900">presence</span>
             <br />
-            <span className="italic" style={{ fontFamily: 'var(--font-playfair)', color: '#1E3A8A' }}>deserves protection.</span>
+            <span className="text-4xl md:text-5xl italic" style={{ fontFamily: 'var(--font-playfair)', color: '#1E3A8A' }}>deserves protection.</span>
           </h2>
 
           <p className="mt-5 text-blue-700/70 text-xl leading-relaxed" style={{ fontFamily: 'var(--font-caveat)' }}>

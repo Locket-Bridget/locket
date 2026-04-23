@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ArticleCard from "../components/ArticleCard";
 import { useSubscribe } from "../hooks/useSubscribe";
+import StripeDivider from "../components/StripeDivider";
 
 const categories = ["All", "Account Takeovers", "Data Breaches", "Influencer Alerts", "Platform Updates", "Dark Web"];
 
@@ -138,6 +139,10 @@ export default function NewsletterPage() {
             link={article.link}
           />
         ))}
+      </div>
+
+      <div className="mt-12 mb-12">
+        <StripeDivider />
       </div>
 
       {/* Subscribe section */}

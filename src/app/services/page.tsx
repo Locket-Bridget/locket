@@ -1,14 +1,37 @@
 import Link from "next/link";
 import { services } from "./servicesData";
+import StripeDivider from "../components/StripeDivider";
 
-const numbers = ["/01", "/02", "/03"];
+const blocks = [
+  {
+    bg: "#fff8ea",
+    textColor: "#1E3A8A",
+    accentColor: "#C8553D",
+    number: "/01",
+    tilt: "-rotate-1",
+  },
+  {
+    bg: "#1E3A8A",
+    textColor: "#fff8ea",
+    accentColor: "#93c5fd",
+    number: "/02",
+    tilt: "rotate-0",
+  },
+  {
+    bg: "#C8553D",
+    textColor: "#fff8ea",
+    accentColor: "#fff8ea",
+    number: "/03",
+    tilt: "rotate-1",
+  },
+];
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[rgb(219,234,254)] px-6 py-20">
+    <main className="min-h-screen bg-[rgb(219,234,254)]">
 
       {/* Page header */}
-      <div className="text-center mb-16">
+      <div className="text-center px-6 py-20 pb-12">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
           style={{ fontFamily: 'var(--font-fredoka)' }}
@@ -16,76 +39,110 @@ export default function ServicesPage() {
           ★ &nbsp; what we offer
         </span>
         <h1
-          className="text-5xl md:text-6xl font-bold text-blue-900"
-          style={{ fontFamily: 'var(--font-pacifico)' }}
+          className="text-5xl md:text-7xl font-bold text-blue-900"
+          style={{ fontFamily: 'var(--font-titan)' }}
         >
           Our Services
         </h1>
         <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-caveat)' }}>
           Everything you need to protect your online presence. ✦
         </p>
-        <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
-          <div className="h-px w-16 bg-blue-200" />
-          <span>★</span>
-          <span className="text-sm">★</span>
-          <span>★</span>
-          <div className="h-px w-16 bg-blue-200" />
-        </div>
       </div>
 
-      {/* Service cards */}
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-8 justify-center">
-        {services.map((svc, i) => (
-          <div
-            key={svc.slug}
-            className="bg-[#fff8ea] rounded-3xl shadow-[0_8px_30px_rgba(30,58,138,0.08)] p-8 flex-1 min-w-[260px] max-w-sm flex flex-col gap-4 relative overflow-hidden group hover:shadow-[0_12px_40px_rgba(30,58,138,0.14)] transition-all duration-300"
-          >
-            {/* Blob decoration */}
-            <div className="absolute -top-8 -right-8 w-32 h-32 bg-blue-100 rounded-full opacity-40 blur-2xl pointer-events-none" />
+      <StripeDivider />
 
-            {/* Number */}
-            <span
-              className="text-5xl font-bold text-blue-200 leading-none"
-              style={{ fontFamily: 'var(--font-playfair)' }}
+      {/* Color block grid — Feel Fits style */}
+      <div className="grid grid-cols-1 md:grid-cols-3">
+        {services.map((svc, i) => {
+          const block = blocks[i];
+          return (
+            <div
+              key={svc.slug}
+              className={`relative flex flex-col justify-between px-10 py-14 min-h-[480px] overflow-hidden group`}
+              style={{ backgroundColor: block.bg }}
             >
-              {numbers[i]}
-            </span>
+              {/* Big background number */}
+              <span
+                className="absolute top-6 right-8 text-8xl font-bold opacity-10 select-none"
+                style={{ fontFamily: 'var(--font-titan)', color: block.textColor }}
+              >
+                {i + 1}
+              </span>
 
-            {/* Name */}
-            <h2
-              className="text-2xl font-bold text-blue-900 leading-tight"
-              style={{ fontFamily: 'var(--font-fredoka)' }}
-            >
-              {svc.name}
-            </h2>
+              <div>
+                {/* /0X number */}
+                <p
+                  className="text-sm font-bold tracking-widest mb-6 opacity-60"
+                  style={{ fontFamily: 'var(--font-playfair)', color: block.textColor }}
+                >
+                  {block.number}
+                </p>
 
-            {/* Divider */}
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-[2px] bg-blue-300 rounded-full" />
-              <span className="text-blue-200 text-xs">★</span>
+                {/* Service name */}
+                <h2
+                  className="text-4xl md:text-5xl leading-tight mb-4"
+                  style={{ fontFamily: 'var(--font-titan)', color: block.textColor }}
+                >
+                  {svc.name}
+                </h2>
+
+                {/* Tagline */}
+                <p
+                  className="text-xl mb-6 opacity-80"
+                  style={{ fontFamily: 'var(--font-caveat)', color: block.accentColor }}
+                >
+                  "{svc.tagline}"
+                </p>
+
+                {/* Description */}
+                <p
+                  className="text-sm leading-relaxed opacity-70"
+                  style={{ color: block.textColor }}
+                >
+                  {svc.description.trim()}
+                </p>
+              </div>
+
+              {/* CTA */}
+              <Link
+                href={`/services/${svc.slug}`}
+                className="inline-flex items-center gap-2 mt-10 text-sm font-bold tracking-wide uppercase hover:gap-4 transition-all duration-200"
+                style={{ fontFamily: 'var(--font-fredoka)', color: block.accentColor }}
+              >
+                Get Started →
+              </Link>
+
+              {/* Hover border overlay */}
+              <div className="absolute inset-0 border-4 border-transparent group-hover:border-current opacity-10 transition-all duration-300 pointer-events-none" style={{ borderColor: block.textColor }} />
             </div>
-
-            {/* Tagline */}
-            <p className="text-sm text-blue-700/70 italic" style={{ fontFamily: 'var(--font-playfair)' }}>
-              "{svc.tagline}"
-            </p>
-
-            {/* Description */}
-            <p className="text-sm text-blue-700/60 leading-relaxed flex-grow">
-              {svc.description.trim()}
-            </p>
-
-            {/* CTA */}
-            <Link
-              href={`/services/${svc.slug}`}
-              className="inline-flex items-center gap-1 self-start bg-blue-900 text-[#fff8ea] px-6 py-2.5 rounded-full text-sm font-semibold hover:scale-105 transition-all mt-2"
-              style={{ fontFamily: 'var(--font-fredoka)' }}
-            >
-              Get Started <span className="text-blue-300">★</span>
-            </Link>
-          </div>
-        ))}
+          );
+        })}
       </div>
+
+      <StripeDivider />
+
+      {/* Bottom CTA */}
+      <div className="text-center px-6 py-20">
+        <p
+          className="text-4xl md:text-5xl text-blue-900 mb-4"
+          style={{ fontFamily: 'var(--font-titan)' }}
+        >
+          Not sure where to start?
+        </p>
+        <p className="text-xl text-blue-700/70 mb-8" style={{ fontFamily: 'var(--font-caveat)' }}>
+          Book a free 15-min call and we'll figure it out together. ✦
+        </p>
+        <a
+          href="https://calendly.com/admin-locketsecurity/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-8 py-4 rounded-full text-sm font-semibold hover:scale-105 transition-all shadow-md"
+          style={{ fontFamily: 'var(--font-fredoka)' }}
+        >
+          Book a Free Call ★
+        </a>
+      </div>
+
     </main>
   );
 }
