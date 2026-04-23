@@ -1,8 +1,27 @@
 import Link from "next/link";
 import { services } from "./servicesData";
-import StripeDivider from "../components/StripeDivider";
+import { DoodleDrop, DoodleShield, DoodleLock } from "../components/Doodles";
 
-const numbers = ["/01", "/02", "/03"];
+const cards = [
+  {
+    label: "The Essential",
+    bg: "bg-[#fff8ea]",
+    borderColor: "border-blue-200",
+    Doodle: DoodleDrop,
+  },
+  {
+    label: "The Upgrade",
+    bg: "bg-blue-50",
+    borderColor: "border-blue-200",
+    Doodle: DoodleShield,
+  },
+  {
+    label: "The Full Package",
+    bg: "bg-[#fce8e3]",
+    borderColor: "border-[#C8553D]/30",
+    Doodle: DoodleLock,
+  },
+];
 
 export default function ServicesPage() {
   return (
@@ -27,62 +46,79 @@ export default function ServicesPage() {
         </p>
       </div>
 
-      <StripeDivider />
+      {/* Script bridge heading */}
+      <div className="text-center py-12 bg-[#fdf9f0]">
+        <p
+          className="text-3xl md:text-4xl text-blue-400/60"
+          style={{ fontFamily: 'var(--font-caveat)' }}
+        >
+          ways to work with us ✦
+        </p>
+      </div>
 
-      {/* Service list — Rove-style editorial */}
-      <div className="max-w-4xl mx-auto px-6 py-16 flex flex-col">
-        {services.map((svc, i) => (
-          <div key={svc.slug}>
-            <div className="flex flex-col md:flex-row md:items-start gap-6 py-14">
-
-              {/* Number */}
-              <span
-                className="text-5xl font-bold text-blue-200 leading-none flex-shrink-0 w-24"
-                style={{ fontFamily: 'var(--font-playfair)' }}
+      {/* Cards */}
+      <div className="max-w-5xl mx-auto px-6 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {services.map((svc, i) => {
+            const card = cards[i];
+            return (
+              <div
+                key={svc.slug}
+                className={`${card.bg} border-2 border-dashed ${card.borderColor} rounded-3xl p-8 flex flex-col gap-4 relative`}
               >
-                {numbers[i]}
-              </span>
+                {/* Doodle illustration */}
+                <div className="flex justify-center mb-2">
+                  <card.Doodle />
+                </div>
 
-              {/* Content */}
-              <div className="flex-1">
+                {/* Label tag */}
+                <span
+                  className="text-xs font-semibold tracking-[0.18em] uppercase text-blue-400"
+                  style={{ fontFamily: 'var(--font-fredoka)' }}
+                >
+                  {card.label}
+                </span>
+
+                {/* Service name */}
                 <h2
-                  className="text-4xl md:text-5xl text-blue-900 leading-tight mb-3"
+                  className="text-3xl text-blue-900 leading-tight"
                   style={{ fontFamily: 'var(--font-titan)' }}
                 >
                   {svc.name}
                 </h2>
+
+                {/* Tagline */}
                 <p
-                  className="text-xl mb-4"
+                  className="text-lg"
                   style={{ fontFamily: 'var(--font-caveat)', color: '#C8553D' }}
                 >
                   "{svc.tagline}"
                 </p>
-                <p className="text-base text-blue-700/60 leading-relaxed max-w-lg mb-6">
+
+                {/* Divider */}
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-[2px] bg-blue-200 rounded-full" />
+                  <span className="text-blue-200 text-xs">★</span>
+                </div>
+
+                {/* Description */}
+                <p className="text-sm text-blue-700/60 leading-relaxed flex-grow">
                   {svc.description.trim()}
                 </p>
+
+                {/* CTA */}
                 <Link
                   href={`/services/${svc.slug}`}
-                  className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-7 py-3 rounded-full text-sm font-semibold hover:scale-105 transition-all"
+                  className="inline-flex items-center gap-2 self-start bg-blue-900 text-[#fff8ea] px-6 py-2.5 rounded-full text-sm font-semibold hover:scale-105 transition-all mt-2"
                   style={{ fontFamily: 'var(--font-fredoka)' }}
                 >
                   Get Started ★
                 </Link>
               </div>
-            </div>
-
-            {/* Divider between items (not after last) */}
-            {i < services.length - 1 && (
-              <div className="flex items-center gap-3">
-                <div className="flex-1 h-px bg-blue-100" />
-                <span className="text-blue-200 text-xs">★</span>
-                <div className="flex-1 h-px bg-blue-100" />
-              </div>
-            )}
-          </div>
-        ))}
+            );
+          })}
+        </div>
       </div>
-
-      <StripeDivider />
 
       {/* Bottom CTA */}
       <div className="text-center px-6 py-20 bg-[rgb(219,234,254)]">
