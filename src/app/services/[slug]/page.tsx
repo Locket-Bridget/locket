@@ -83,7 +83,7 @@ export default function ServiceDetailPage() {
             className="text-2xl text-blue-500 mb-6 text-center"
             style={{ fontFamily: 'var(--font-caveat)' }}
           >
-            "{service.tagline}"
+            &ldquo;{service.tagline}&rdquo;
           </p>
 
           {/* Divider */}

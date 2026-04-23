@@ -92,7 +92,7 @@ export default function ServicesPage() {
                   className="text-lg"
                   style={{ fontFamily: 'var(--font-caveat)', color: '#C8553D' }}
                 >
-                  "{svc.tagline}"
+                  &ldquo;{svc.tagline}&rdquo;
                 </p>
 
                 {/* Divider */}
@@ -129,7 +129,7 @@ export default function ServicesPage() {
           Not sure where to start?
         </p>
         <p className="text-xl text-blue-700/70 mb-8" style={{ fontFamily: 'var(--font-caveat)' }}>
-          Book a free 15-min call and we'll figure it out together. ✦
+          Book a free 15-min call and we&apos;ll figure it out together. ✦
         </p>
         <a
           href="https://calendly.com/admin-locketsecurity/30min"

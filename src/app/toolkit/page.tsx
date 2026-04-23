@@ -145,7 +145,7 @@ export default function ToolkitPage() {
                   className="text-lg text-blue-500 mb-3"
                   style={{ fontFamily: 'var(--font-caveat)' }}
                 >
-                  "{tip.metaphor}"
+                  &ldquo;{tip.metaphor}&rdquo;
                 </p>
 
                 {/* Divider */}
@@ -183,11 +183,11 @@ export default function ToolkitPage() {
           Be the first to get it.
         </h2>
         <p className="text-blue-300 text-sm mb-6">
-          Drop your email and we'll let you know the moment it drops.
+          Drop your email and we&apos;ll let you know the moment it drops.
         </p>
         {status === "success" ? (
           <p className="text-[#fff8ea] font-semibold text-lg" style={{ fontFamily: 'var(--font-fredoka)' }}>
-            You're on the list ★ We'll let you know!
+            You&apos;re on the list ★ We&apos;ll let you know!
           </p>
         ) : (
           <form className="flex flex-col sm:flex-row gap-3" onSubmit={handleSubmit}>
