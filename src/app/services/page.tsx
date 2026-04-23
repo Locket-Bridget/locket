@@ -2,36 +2,14 @@ import Link from "next/link";
 import { services } from "./servicesData";
 import StripeDivider from "../components/StripeDivider";
 
-const blocks = [
-  {
-    bg: "#fff8ea",
-    textColor: "#1E3A8A",
-    accentColor: "#C8553D",
-    number: "/01",
-    tilt: "-rotate-1",
-  },
-  {
-    bg: "#1E3A8A",
-    textColor: "#fff8ea",
-    accentColor: "#93c5fd",
-    number: "/02",
-    tilt: "rotate-0",
-  },
-  {
-    bg: "#C8553D",
-    textColor: "#fff8ea",
-    accentColor: "#fff8ea",
-    number: "/03",
-    tilt: "rotate-1",
-  },
-];
+const numbers = ["/01", "/02", "/03"];
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[rgb(219,234,254)]">
+    <main className="min-h-screen bg-[#fdf9f0]">
 
       {/* Page header */}
-      <div className="text-center px-6 py-20 pb-12">
+      <div className="text-center px-6 py-20 pb-16 bg-[rgb(219,234,254)]">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
           style={{ fontFamily: 'var(--font-fredoka)' }}
@@ -44,85 +22,70 @@ export default function ServicesPage() {
         >
           Our Services
         </h1>
-        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-caveat)' }}>
+        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl" style={{ fontFamily: 'var(--font-caveat)' }}>
           Everything you need to protect your online presence. ✦
         </p>
       </div>
 
       <StripeDivider />
 
-      {/* Color block grid — Feel Fits style */}
-      <div className="grid grid-cols-1 md:grid-cols-3">
-        {services.map((svc, i) => {
-          const block = blocks[i];
-          return (
-            <div
-              key={svc.slug}
-              className={`relative flex flex-col justify-between px-10 py-14 min-h-[480px] overflow-hidden group`}
-              style={{ backgroundColor: block.bg }}
-            >
-              {/* Big background number */}
+      {/* Service list — Rove-style editorial */}
+      <div className="max-w-4xl mx-auto px-6 py-16 flex flex-col">
+        {services.map((svc, i) => (
+          <div key={svc.slug}>
+            <div className="flex flex-col md:flex-row md:items-start gap-6 py-14">
+
+              {/* Number */}
               <span
-                className="absolute top-6 right-8 text-8xl font-bold opacity-10 select-none"
-                style={{ fontFamily: 'var(--font-titan)', color: block.textColor }}
+                className="text-5xl font-bold text-blue-200 leading-none flex-shrink-0 w-24"
+                style={{ fontFamily: 'var(--font-playfair)' }}
               >
-                {i + 1}
+                {numbers[i]}
               </span>
 
-              <div>
-                {/* /0X number */}
-                <p
-                  className="text-sm font-bold tracking-widest mb-6 opacity-60"
-                  style={{ fontFamily: 'var(--font-playfair)', color: block.textColor }}
-                >
-                  {block.number}
-                </p>
-
-                {/* Service name */}
+              {/* Content */}
+              <div className="flex-1">
                 <h2
-                  className="text-4xl md:text-5xl leading-tight mb-4"
-                  style={{ fontFamily: 'var(--font-titan)', color: block.textColor }}
+                  className="text-4xl md:text-5xl text-blue-900 leading-tight mb-3"
+                  style={{ fontFamily: 'var(--font-titan)' }}
                 >
                   {svc.name}
                 </h2>
-
-                {/* Tagline */}
                 <p
-                  className="text-xl mb-6 opacity-80"
-                  style={{ fontFamily: 'var(--font-caveat)', color: block.accentColor }}
+                  className="text-xl mb-4"
+                  style={{ fontFamily: 'var(--font-caveat)', color: '#C8553D' }}
                 >
                   "{svc.tagline}"
                 </p>
-
-                {/* Description */}
-                <p
-                  className="text-sm leading-relaxed opacity-70"
-                  style={{ color: block.textColor }}
-                >
+                <p className="text-base text-blue-700/60 leading-relaxed max-w-lg mb-6">
                   {svc.description.trim()}
                 </p>
+                <Link
+                  href={`/services/${svc.slug}`}
+                  className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-7 py-3 rounded-full text-sm font-semibold hover:scale-105 transition-all"
+                  style={{ fontFamily: 'var(--font-fredoka)' }}
+                >
+                  Get Started ★
+                </Link>
               </div>
-
-              {/* CTA */}
-              <Link
-                href={`/services/${svc.slug}`}
-                className="inline-flex items-center gap-2 mt-10 text-sm font-bold tracking-wide uppercase hover:gap-4 transition-all duration-200"
-                style={{ fontFamily: 'var(--font-fredoka)', color: block.accentColor }}
-              >
-                Get Started →
-              </Link>
-
-              {/* Hover border overlay */}
-              <div className="absolute inset-0 border-4 border-transparent group-hover:border-current opacity-10 transition-all duration-300 pointer-events-none" style={{ borderColor: block.textColor }} />
             </div>
-          );
-        })}
+
+            {/* Divider between items (not after last) */}
+            {i < services.length - 1 && (
+              <div className="flex items-center gap-3">
+                <div className="flex-1 h-px bg-blue-100" />
+                <span className="text-blue-200 text-xs">★</span>
+                <div className="flex-1 h-px bg-blue-100" />
+              </div>
+            )}
+          </div>
+        ))}
       </div>
 
       <StripeDivider />
 
       {/* Bottom CTA */}
-      <div className="text-center px-6 py-20">
+      <div className="text-center px-6 py-20 bg-[rgb(219,234,254)]">
         <p
           className="text-4xl md:text-5xl text-blue-900 mb-4"
           style={{ fontFamily: 'var(--font-titan)' }}

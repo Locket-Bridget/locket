@@ -20,29 +20,29 @@ export default function BlobCallout() {
         <span className="absolute bottom-8 right-10 text-blue-200 text-lg select-none">✦</span>
 
         <p
-          className="text-3xl md:text-4xl text-blue-900 leading-snug"
+          className="text-4xl md:text-5xl text-blue-900 leading-snug"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
-          Your followers trust you.
+          Protect your presence
         </p>
         <p
-          className="text-3xl md:text-4xl leading-snug mt-2"
+          className="text-4xl md:text-5xl leading-snug mt-1"
           style={{ fontFamily: 'var(--font-titan)', color: '#C8553D' }}
         >
-          Make sure your accounts
+          like you protect
         </p>
         <p
-          className="text-3xl md:text-4xl text-blue-900 leading-snug mt-2"
+          className="text-4xl md:text-5xl text-blue-900 leading-snug mt-1"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
-          are worth that trust.
+          your peace.
         </p>
 
         <p
           className="mt-6 text-xl text-blue-500"
           style={{ fontFamily: 'var(--font-caveat)' }}
         >
-          Locket keeps you protected. ✦
+          That's what Locket is for. ✦
         </p>
       </motion.div>
     </section>
