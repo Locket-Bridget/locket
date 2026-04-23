@@ -1,7 +1,7 @@
 // app/layout.tsx or src/app/layout.tsx
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display, Fredoka, Caveat, Pacifico } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display, Fredoka, Caveat, Pacifico, Titan_One } from "next/font/google";
 import localFont from "next/font/local";          
 import "./globals.css";
 
@@ -43,6 +43,12 @@ const pacifico = Pacifico({
   weight: ["400"],
 });
 
+const titanOne = Titan_One({
+  variable: "--font-titan",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Locket Security",
   description: "",
@@ -60,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${fredoka.variable} ${caveat.variable} ${pacifico.variable} antialiased bg-blue-100 text-blue-800 min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${fredoka.variable} ${caveat.variable} ${pacifico.variable} ${titanOne.variable} antialiased bg-blue-100 text-blue-800 min-h-screen flex flex-col`}
       >
         <Navbar />
         <ScrollWrapper>

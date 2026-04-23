@@ -69,7 +69,7 @@ export default function StatSection({ stat, title, text, image, reverse = false,
         {/* Big stat number */}
         <div
           className="text-7xl md:text-8xl font-bold text-blue-900 leading-none mb-3"
-          style={{ fontFamily: 'var(--font-pacifico)' }}
+          style={{ fontFamily: 'var(--font-titan)' }}
         >
           {stat}
         </div>

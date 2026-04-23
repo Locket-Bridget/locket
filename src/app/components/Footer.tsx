@@ -9,7 +9,7 @@ export default function Footer() {
         </p>
         <h2
           className="text-4xl md:text-6xl font-bold text-[#fff8ea] leading-tight"
-          style={{ fontFamily: 'var(--font-pacifico)' }}
+          style={{ fontFamily: 'var(--font-titan)' }}
         >
           Cyber Care Is Self Care.
         </h2>
