@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[rgb(219,234,254)] px-6 py-20">
@@ -35,10 +37,12 @@ export default function AboutPage() {
         <div className="md:w-1/2 flex justify-center relative">
           <span className="absolute -top-4 -right-4 text-5xl text-blue-200 select-none">★</span>
           <div className="bg-white p-3 pb-12 shadow-2xl -rotate-2">
-            <img
+            <Image
               src="/images/founders.jpg"
               alt="Bridget and Skander"
-              className="w-72 h-80 object-cover block"
+              width={288}
+              height={320}
+              className="object-cover block"
             />
           </div>
           <span className="absolute -bottom-3 -left-2 text-2xl text-blue-200 select-none">✦</span>
@@ -59,10 +63,10 @@ export default function AboutPage() {
             </span>
           </h2>
           <p className="text-base leading-relaxed mb-4 text-blue-700/80">
-            Created by <strong>Bridget and Skander</strong>, Locket is personal brand protection built for the girls. We're a cybersecurity company that actually gets it — your online presence is your livelihood, and it deserves to be protected.
+            Created by <strong>Bridget and Skander</strong>, Locket is personal brand protection built for the girls. We&apos;re a cybersecurity company that actually gets it — your online presence is your livelihood, and it deserves to be protected.
           </p>
           <p className="text-base leading-relaxed mb-8 text-blue-700/80">
-            We believe cyber care is self care. So we made it girly, fun, and approachable — because security shouldn't feel boring or scary.
+            We believe cyber care is self care. So we made it girly, fun, and approachable — because security shouldn&apos;t feel boring or scary.
           </p>
 
           <div className="flex items-center gap-2 mb-6">

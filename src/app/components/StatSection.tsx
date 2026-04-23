@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 type StatSectionProps = {
@@ -46,10 +47,12 @@ export default function StatSection({ stat, title, text, image, reverse = false,
           className="bg-white p-3 pb-10 shadow-2xl relative z-10"
           style={{ transform: `rotate(${tilt}deg)` }}
         >
-          <img
+          <Image
             src={image}
             alt={title}
-            className="w-72 h-64 object-cover block"
+            width={288}
+            height={256}
+            className="object-cover block"
           />
         </div>
         <span className="absolute -bottom-4 -left-2 text-2xl text-blue-100 select-none pointer-events-none z-0">✦</span>
