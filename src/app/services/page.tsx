@@ -87,6 +87,16 @@ export default function ServicesPage() {
                   {svc.name}
                 </h2>
 
+                {/* Price */}
+                <div className="flex items-baseline gap-1.5">
+                  <span className="text-2xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-titan)' }}>
+                    {svc.price}
+                  </span>
+                  <span className="text-xs text-blue-400" style={{ fontFamily: 'var(--font-fredoka)' }}>
+                    {svc.priceNote}
+                  </span>
+                </div>
+
                 {/* Tagline */}
                 <p
                   className="text-lg"

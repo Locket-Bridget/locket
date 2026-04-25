@@ -78,13 +78,15 @@ export default function ServiceDetailPage() {
           <span className="absolute top-4 left-5 text-blue-200 text-xl select-none">★</span>
           <span className="absolute top-4 right-5 text-blue-200 text-xl select-none">★</span>
 
-          {/* Tagline */}
-          <p
-            className="text-2xl text-blue-500 mb-6 text-center"
-            style={{ fontFamily: 'var(--font-caveat)' }}
-          >
-            &ldquo;{service.tagline}&rdquo;
-          </p>
+          {/* Price */}
+          <div className="text-center mb-6">
+            <span className="text-5xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-titan)' }}>
+              {service.price}
+            </span>
+            <span className="text-blue-400 text-sm ml-2" style={{ fontFamily: 'var(--font-fredoka)' }}>
+              {service.priceNote}
+            </span>
+          </div>
 
           {/* Divider */}
           <div className="flex items-center justify-center gap-2 mb-6">
@@ -94,9 +96,19 @@ export default function ServiceDetailPage() {
           </div>
 
           {/* Description */}
-          <p className="text-base text-blue-700/70 leading-relaxed text-center mb-10 whitespace-pre-line">
+          <p className="text-base text-blue-700/70 leading-relaxed text-center mb-8">
             {service.description.trim()}
           </p>
+
+          {/* Includes */}
+          <ul className="flex flex-col gap-3 mb-10">
+            {service.includes.map((item, i) => (
+              <li key={i} className="flex items-start gap-3 text-sm text-blue-700/80">
+                <span className="text-[#C8553D] mt-0.5">★</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
