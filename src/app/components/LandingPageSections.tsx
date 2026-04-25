@@ -1,4 +1,5 @@
 import StatSection from "../components/StatSection";
+import LocketIcon from "../components/LocketIcon";
 
 const TICKER_PHRASE = "CYBER CARE IS SELF CARE";
 const TICKER_REPEATS = 10;
@@ -30,7 +31,7 @@ export default function LandingPageSections() {
       <span className="text-base md:text-lg font-semibold tracking-[0.12em] uppercase text-[#fff8ea]" style={{ fontFamily: 'var(--font-fredoka)' }}>
         {TICKER_PHRASE}
       </span>
-      <span className="text-lg" style={{ color: '#C8553D', opacity: 0.7 }}>★</span>
+      <LocketIcon className="h-5 w-5 text-[#fff8ea]" heartColor="#1E3A8A" />
     </span>
   ));
 

@@ -1,8 +1,8 @@
 import React from "react";
 
-type IconProps = React.SVGProps<SVGSVGElement>;
+type IconProps = React.SVGProps<SVGSVGElement> & { heartColor?: string };
 
-export default function LocketIcon({ className = "", ...rest }: IconProps) {
+export default function LocketIcon({ className = "", heartColor = "#ffffff", ...rest }: IconProps) {
   return (
     <svg
       className={`inline-block fill-current ${className}`}
@@ -18,7 +18,7 @@ export default function LocketIcon({ className = "", ...rest }: IconProps) {
       <g transform="translate(-2.5 0) scale(1.2)">
         <path
           d="M12 13.3l-1.45-1.32a1.5 1.5 0 1 0-2.1 2.14l3.55 3.41 3.55-3.41a1.5 1.5 0 1 0-2.1-2.14L12 13.3z"
-          fill="#ffffff"
+          fill={heartColor}
         />
       </g>
     </svg>
