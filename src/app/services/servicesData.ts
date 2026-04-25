@@ -14,7 +14,7 @@ export const services: Service[] = [
     name: "Cyber Cleanse",
     tagline: "The essential glow-up for your digital life.",
     description: "A one-time deep dive into your entire digital presence. We audit every account, flag every vulnerability, and hand you a personalized action plan — so you know exactly where you stand and what to fix.",
-    price: "$97",
+    price: "$99",
     priceNote: "one-time",
     includes: [
       "Full audit of all social accounts (IG, TikTok, YouTube, X)",
@@ -30,7 +30,7 @@ export const services: Service[] = [
     name: "Digital Detox",
     tagline: "Stay protected while you stay posting.",
     description: "Ongoing monthly monitoring so threats get caught before they become crises. You get the Cyber Cleanse audit to start, then we watch your accounts, track the dark web, and send you a monthly intel report — all handled for you.",
-    price: "$197",
+    price: "$199",
     priceNote: "per month",
     includes: [
       "Everything in Cyber Cleanse (included in first month)",
@@ -46,7 +46,7 @@ export const services: Service[] = [
     name: "Protected Princess",
     tagline: "The full glam treatment — always on, always protected.",
     description: "Our white-glove tier for influencers whose brand is their business. Everything in Digital Detox, plus active monitoring for fake accounts and impersonators, and direct access to Bridget if something goes wrong.",
-    price: "$497",
+    price: "$499",
     priceNote: "per month",
     includes: [
       "Everything in Digital Detox",
