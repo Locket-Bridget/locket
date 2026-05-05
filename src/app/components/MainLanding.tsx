@@ -67,7 +67,7 @@ const decoStars: DecoStar[] = [
 
 export default function MainLanding() {
   return (
-    <main className="relative h-screen w-screen flex flex-col items-center justify-center bg-[rgb(219,234,254)] px-4 py-14 overflow-hidden">
+    <main className="relative min-h-[calc(100vh-4rem)] w-screen flex flex-col items-center justify-center bg-[rgb(219,234,254)] px-4 py-6 overflow-hidden">
       {decoStars.map((s, i) => {
         const baseStyle: React.CSSProperties = {
           top: s.top,
@@ -133,10 +133,7 @@ export default function MainLanding() {
         </div>
       </div>
 
-      {/* Scroll down arrow below the box, spaced nicely */}
-      <div className="mt-8">
-        <MainScrollIndicator />
-      </div>
+      <MainScrollIndicator />
     </main>
   );
 }
