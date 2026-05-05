@@ -2,7 +2,7 @@
 
 export function DoodleLock({ className = "" }: { className?: string }) {
   return (
-    <svg className={className} width="90" height="118" viewBox="0 -13 90 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} width="62" height="80" viewBox="0 -13 90 118" fill="none" xmlns="http://www.w3.org/2000/svg">
       {/* Shackle — arches over and around the crown */}
       <path d="M15 48 C14 48 12 28 14 20 C17 2 40 -8 45 -8 C50 -8 73 2 76 20 C78 28 76 48 75 48"
         stroke="#1E3A8A" strokeWidth="4.5" strokeLinecap="round" fill="none"/>

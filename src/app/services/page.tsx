@@ -67,7 +67,7 @@ export default function ServicesPage() {
                 className={`${card.bg} border-2 border-dashed ${card.borderColor} rounded-3xl p-8 flex flex-col gap-4 relative`}
               >
                 {/* Doodle illustration */}
-                <div className="flex justify-center mb-2">
+                <div className="flex items-end justify-center mb-2 h-20">
                   <card.Doodle />
                 </div>
 
