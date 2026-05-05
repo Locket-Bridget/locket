@@ -64,7 +64,7 @@ export default function StatSection({ stat, title, text, image, reverse = false,
         {/* Sticker badge label */}
         <span
           className={`inline-block text-xs font-semibold tracking-[0.18em] uppercase px-4 py-1.5 rounded-full shadow-sm mb-4 ${stickerRotation} ${stickerColor}`}
-          style={{ fontFamily: 'var(--font-fredoka)' }}
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           ✦ &nbsp; did you know
         </span>
@@ -78,7 +78,7 @@ export default function StatSection({ stat, title, text, image, reverse = false,
         </div>
 
         {/* Title */}
-        <h2 className="text-lg md:text-xl font-semibold text-blue-800 mb-4 leading-snug" style={{ fontFamily: 'var(--font-fredoka)' }}>
+        <h2 className="text-lg md:text-xl font-semibold text-blue-800 mb-4 leading-snug" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
           {title}
         </h2>
 

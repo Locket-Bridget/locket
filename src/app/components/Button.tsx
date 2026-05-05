@@ -22,7 +22,7 @@ export default function Button({ children, href, onClick, className }: ButtonPro
     <button
       onClick={handleClick}
       className={`inline-flex items-center gap-1 bg-blue-900 text-[#fff8ea] px-7 py-3 rounded-full text-base font-semibold tracking-wide hover:scale-105 hover:shadow-lg transition-all duration-200 ${className ?? ''}`}
-      style={{ fontFamily: 'var(--font-fredoka)' }}
+      style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
     >
       {children}
       <LocketIcon className="h-4 w-4 ml-1 translate-y-[1px]" heartColor="#1e3a8a" />

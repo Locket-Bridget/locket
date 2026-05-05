@@ -28,7 +28,7 @@ export default function LandingPageSections() {
 
   const tickerText = Array.from({ length: TICKER_REPEATS }, (_, i) => (
     <span key={i} className="flex items-center gap-8 whitespace-nowrap">
-      <span className="text-base md:text-lg font-semibold tracking-[0.12em] uppercase text-[#fff8ea]" style={{ fontFamily: 'var(--font-fredoka)' }}>
+      <span className="text-base md:text-lg font-semibold tracking-[0.12em] uppercase text-[#fff8ea]" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
         {TICKER_PHRASE}
       </span>
       <LocketIcon className="h-5 w-5 text-[#fff8ea]" heartColor="#1E3A8A" />
@@ -54,7 +54,7 @@ export default function LandingPageSections() {
           {/* Sticker pill label */}
           <span
             className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full mb-6 -rotate-1 shadow-md"
-            style={{ fontFamily: 'var(--font-fredoka)' }}
+            style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
           >
             ★ &nbsp; the reality
           </span>
@@ -68,7 +68,7 @@ export default function LandingPageSections() {
             <span className="text-4xl md:text-5xl italic" style={{ fontFamily: 'var(--font-playfair)', color: '#1E3A8A' }}>deserves protection.</span>
           </h2>
 
-          <p className="mt-5 text-blue-700/70 text-xl leading-relaxed" style={{ fontFamily: 'var(--font-caveat)' }}>
+          <p className="mt-5 text-blue-700/70 text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
             The threats are real. The stats are alarming.<br />Most people don&apos;t even know it&apos;s happening. →
           </p>
 

@@ -40,7 +40,7 @@ export default function BlobCallout() {
 
         <p
           className="mt-6 text-xl text-blue-500"
-          style={{ fontFamily: 'var(--font-caveat)' }}
+          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           That&apos;s what Locket is for. ✦
         </p>

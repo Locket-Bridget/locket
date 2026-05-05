@@ -35,7 +35,7 @@ export default function ServiceDetailPage() {
   if (!service) {
     return (
       <main className="min-h-screen bg-[rgb(219,234,254)] flex items-center justify-center px-6">
-        <p className="text-blue-700" style={{ fontFamily: 'var(--font-fredoka)' }}>
+        <p className="text-blue-700" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
           Service not found.
         </p>
       </main>
@@ -50,17 +50,17 @@ export default function ServiceDetailPage() {
         <div className="text-center mb-16">
           <span
             className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full -rotate-1 shadow-md mb-6"
-            style={{ fontFamily: 'var(--font-fredoka)' }}
+            style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
           >
             ★ &nbsp; our services
           </span>
           <h1
             className="text-5xl md:text-6xl font-bold text-blue-900"
-            style={{ fontFamily: 'var(--font-pacifico)' }}
+            style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
           >
             {service.name}
           </h1>
-          <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-caveat)' }}>
+          <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
             {service.tagline} ✦
           </p>
           <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
@@ -83,7 +83,7 @@ export default function ServiceDetailPage() {
             <span className="text-5xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-titan)' }}>
               {service.price}
             </span>
-            <span className="text-blue-400 text-sm ml-2" style={{ fontFamily: 'var(--font-fredoka)' }}>
+            <span className="text-blue-400 text-sm ml-2" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
               {service.priceNote}
             </span>
           </div>
@@ -115,14 +115,14 @@ export default function ServiceDetailPage() {
             <button
               onClick={() => setShowModal(true)}
               className="px-8 py-3 bg-blue-900 text-[#fff8ea] rounded-full text-sm font-semibold hover:scale-105 transition-all"
-              style={{ fontFamily: 'var(--font-fredoka)' }}
+              style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
             >
               Book a Consultation ★
             </button>
             <Link
               href="/services"
               className="px-8 py-3 bg-white text-blue-900 border border-blue-200 rounded-full text-sm font-semibold hover:bg-blue-50 transition-all text-center"
-              style={{ fontFamily: 'var(--font-fredoka)' }}
+              style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
             >
               ← All Services
             </Link>

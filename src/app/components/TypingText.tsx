@@ -33,7 +33,7 @@ export default function TypingText({
   return (
     <p
       className={`text-2xl text-blue-700 opacity-80 ${className}`}
-      style={{ fontFamily: 'var(--font-caveat)' }}
+      style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
     >
       {displayed}
       <span className="blinking-cursor">|</span>

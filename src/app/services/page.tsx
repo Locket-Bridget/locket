@@ -31,7 +31,7 @@ export default function ServicesPage() {
       <div className="text-center px-6 py-20 pb-16 bg-[rgb(219,234,254)]">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
-          style={{ fontFamily: 'var(--font-fredoka)' }}
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           ★ &nbsp; what we offer
         </span>
@@ -41,7 +41,7 @@ export default function ServicesPage() {
         >
           Our Services
         </h1>
-        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl" style={{ fontFamily: 'var(--font-caveat)' }}>
+        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           Everything you need to protect your online presence. ✦
         </p>
       </div>
@@ -50,7 +50,7 @@ export default function ServicesPage() {
       <div className="text-center py-12 bg-[#fdf9f0]">
         <p
           className="text-3xl md:text-4xl text-blue-400/60"
-          style={{ fontFamily: 'var(--font-caveat)' }}
+          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           ways to work with us ✦
         </p>
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                 {/* Label tag */}
                 <span
                   className="text-xs font-semibold tracking-[0.18em] uppercase text-blue-400"
-                  style={{ fontFamily: 'var(--font-fredoka)' }}
+                  style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
                 >
                   {card.label}
                 </span>
@@ -92,7 +92,7 @@ export default function ServicesPage() {
                   <span className="text-2xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-titan)' }}>
                     {svc.price}
                   </span>
-                  <span className="text-xs text-blue-400" style={{ fontFamily: 'var(--font-fredoka)' }}>
+                  <span className="text-xs text-blue-400" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
                     {svc.priceNote}
                   </span>
                 </div>
@@ -100,7 +100,7 @@ export default function ServicesPage() {
                 {/* Tagline */}
                 <p
                   className="text-lg"
-                  style={{ fontFamily: 'var(--font-caveat)', color: '#C8553D' }}
+                  style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic', color: '#C8553D' }}
                 >
                   &ldquo;{svc.tagline}&rdquo;
                 </p>
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                 <Link
                   href={`/services/${svc.slug}`}
                   className="inline-flex items-center gap-2 self-start bg-blue-900 text-[#fff8ea] px-6 py-2.5 rounded-full text-sm font-semibold hover:scale-105 transition-all mt-2"
-                  style={{ fontFamily: 'var(--font-fredoka)' }}
+                  style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
                 >
                   Get Started ★
                 </Link>
@@ -138,7 +138,7 @@ export default function ServicesPage() {
         >
           Not sure where to start?
         </p>
-        <p className="text-xl text-blue-700/70 mb-8" style={{ fontFamily: 'var(--font-caveat)' }}>
+        <p className="text-xl text-blue-700/70 mb-8" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           Book a free 15-min call and we&apos;ll figure it out together. ✦
         </p>
         <a
@@ -146,7 +146,7 @@ export default function ServicesPage() {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-8 py-4 rounded-full text-sm font-semibold hover:scale-105 transition-all shadow-md"
-          style={{ fontFamily: 'var(--font-fredoka)' }}
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           Book a Free Call ★
         </a>

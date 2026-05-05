@@ -34,17 +34,17 @@ export default function Testimonials() {
       <div className="text-center max-w-2xl mx-auto mb-16">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
-          style={{ fontFamily: 'var(--font-fredoka)' }}
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           ★ &nbsp; real girls, real results
         </span>
         <h2
           className="text-4xl md:text-5xl font-bold text-blue-900 leading-tight"
-          style={{ fontFamily: 'var(--font-pacifico)' }}
+          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           They were protected.
         </h2>
-        <p className="mt-4 text-xl text-blue-700/70" style={{ fontFamily: 'var(--font-caveat)' }}>
+        <p className="mt-4 text-xl text-blue-700/70" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           Now it&apos;s your turn. ✦
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
@@ -88,7 +88,7 @@ export default function Testimonials() {
 
             {/* Attribution */}
             <div>
-              <p className="text-sm font-bold text-blue-900" style={{ fontFamily: 'var(--font-fredoka)' }}>
+              <p className="text-sm font-bold text-blue-900" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
                 {t.name}
               </p>
               <p className="text-xs text-blue-400">{t.handle} · {t.followers}</p>

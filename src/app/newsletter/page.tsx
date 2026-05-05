@@ -87,14 +87,14 @@ export default function NewsletterPage() {
       <div className="text-center mb-12">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full -rotate-1 shadow-md mb-6"
-          style={{ fontFamily: 'var(--font-fredoka)' }}
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           ★ &nbsp; weekly threat intel
         </span>
-        <h1 className="text-5xl md:text-6xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-pacifico)' }}>
+        <h1 className="text-5xl md:text-6xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           Locket Intel
         </h1>
-        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-caveat)' }}>
+        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           The cyber tea you actually need.
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
@@ -117,7 +117,7 @@ export default function NewsletterPage() {
                 ? 'bg-blue-900 text-[#fff8ea] shadow-md scale-105'
                 : 'bg-white text-blue-800 hover:bg-blue-50 border border-blue-100'
             }`}
-            style={{ fontFamily: 'var(--font-fredoka)' }}
+            style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
           >
             {cat}
           </button>
@@ -151,10 +151,10 @@ export default function NewsletterPage() {
         <span className="absolute top-4 left-5 text-blue-500 text-lg select-none">★</span>
         <span className="absolute top-4 right-5 text-blue-500 text-lg select-none">★</span>
 
-        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-400 mb-3" style={{ fontFamily: 'var(--font-fredoka)' }}>
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-400 mb-3" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
           ✦ &nbsp; don&apos;t miss a drop
         </p>
-        <h2 className="text-3xl font-bold text-[#fff8ea] mb-2" style={{ fontFamily: 'var(--font-fredoka)' }}>
+        <h2 className="text-3xl font-bold text-[#fff8ea] mb-2" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
           Get the intel, weekly.
         </h2>
         <p className="text-blue-300 text-sm mb-6">
@@ -162,7 +162,7 @@ export default function NewsletterPage() {
         </p>
 
         {status === "success" ? (
-          <p className="text-[#fff8ea] font-semibold text-lg" style={{ fontFamily: 'var(--font-fredoka)' }}>
+          <p className="text-[#fff8ea] font-semibold text-lg" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
             You&apos;re in ★ Talk soon!
           </p>
         ) : (
@@ -179,7 +179,7 @@ export default function NewsletterPage() {
               type="submit"
               disabled={status === "loading"}
               className="px-6 py-3 bg-[#fff8ea] text-blue-900 rounded-full text-sm font-semibold hover:scale-105 transition-all disabled:opacity-60"
-              style={{ fontFamily: 'var(--font-fredoka)' }}
+              style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
             >
               {status === "loading" ? "Sending…" : "Subscribe ★"}
             </button>

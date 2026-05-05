@@ -8,17 +8,17 @@ export default function AboutPage() {
       <div className="text-center mb-16">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full -rotate-1 shadow-md mb-6"
-          style={{ fontFamily: 'var(--font-fredoka)' }}
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           ★ &nbsp; the founders
         </span>
         <h1
           className="text-5xl md:text-6xl font-bold text-blue-900"
-          style={{ fontFamily: 'var(--font-pacifico)' }}
+          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           About Us
         </h1>
-        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-caveat)' }}>
+        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           We built this for you, babe. ✦
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
@@ -50,12 +50,12 @@ export default function AboutPage() {
 
         {/* Text */}
         <div className="md:w-1/2 text-blue-800">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-400 mb-3" style={{ fontFamily: 'var(--font-fredoka)' }}>
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-400 mb-3" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
             ✦ &nbsp; our story
           </p>
           <h2
             className="text-3xl font-bold text-blue-900 mb-6 leading-snug"
-            style={{ fontFamily: 'var(--font-fredoka)' }}
+            style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
           >
             Welcome to{' '}
             <span className="italic wavy-underline" style={{ fontFamily: 'var(--font-playfair)' }}>
@@ -79,7 +79,7 @@ export default function AboutPage() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-6 py-3 rounded-full text-sm font-semibold hover:scale-105 transition-all"
-            style={{ fontFamily: 'var(--font-fredoka)' }}
+            style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
           >
             Follow us @locketsecurity <span className="text-blue-300">★</span>
           </a>

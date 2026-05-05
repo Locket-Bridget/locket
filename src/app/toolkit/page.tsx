@@ -66,14 +66,14 @@ export default function ToolkitPage() {
       <div className="text-center mb-16 max-w-2xl mx-auto">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
-          style={{ fontFamily: 'var(--font-fredoka)' }}
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           ★ &nbsp; digital self care
         </span>
 
         <h1
           className="text-5xl md:text-6xl font-bold text-blue-900 leading-tight"
-          style={{ fontFamily: 'var(--font-pacifico)' }}
+          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           Your Cyber Self-Care
           <br />
@@ -82,7 +82,7 @@ export default function ToolkitPage() {
 
         <p
           className="mt-4 text-2xl text-blue-700/70"
-          style={{ fontFamily: 'var(--font-caveat)' }}
+          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           Pssst… this secret is safe to share. ✦
         </p>
@@ -115,7 +115,7 @@ export default function ToolkitPage() {
               <div className="flex flex-col items-center gap-1 flex-shrink-0">
                 <span
                   className="text-5xl font-bold text-blue-200 leading-none"
-                  style={{ fontFamily: 'var(--font-caveat)' }}
+                  style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
                 >
                   {tip.number}
                 </span>
@@ -127,7 +127,7 @@ export default function ToolkitPage() {
                 {/* Tag */}
                 <span
                   className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-wide uppercase px-3 py-1 rounded-full mb-3"
-                  style={{ fontFamily: 'var(--font-fredoka)' }}
+                  style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
                 >
                   {tip.tag}
                 </span>
@@ -135,7 +135,7 @@ export default function ToolkitPage() {
                 {/* Headline */}
                 <h2
                   className="text-2xl font-bold text-blue-900 mb-1 leading-snug"
-                  style={{ fontFamily: 'var(--font-fredoka)' }}
+                  style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
                 >
                   {tip.headline}
                 </h2>
@@ -143,7 +143,7 @@ export default function ToolkitPage() {
                 {/* Metaphor */}
                 <p
                   className="text-lg text-blue-500 mb-3"
-                  style={{ fontFamily: 'var(--font-caveat)' }}
+                  style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
                 >
                   &ldquo;{tip.metaphor}&rdquo;
                 </p>
@@ -172,13 +172,13 @@ export default function ToolkitPage() {
 
         <p
           className="text-3xl text-[#fff8ea] mb-2"
-          style={{ fontFamily: 'var(--font-caveat)' }}
+          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           The full guide is coming soon.
         </p>
         <h2
           className="text-2xl font-bold text-[#fff8ea] mb-3"
-          style={{ fontFamily: 'var(--font-fredoka)' }}
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           Be the first to get it.
         </h2>
@@ -186,7 +186,7 @@ export default function ToolkitPage() {
           Drop your email and we&apos;ll let you know the moment it drops.
         </p>
         {status === "success" ? (
-          <p className="text-[#fff8ea] font-semibold text-lg" style={{ fontFamily: 'var(--font-fredoka)' }}>
+          <p className="text-[#fff8ea] font-semibold text-lg" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
             You&apos;re on the list ★ We&apos;ll let you know!
           </p>
         ) : (
@@ -203,7 +203,7 @@ export default function ToolkitPage() {
               type="submit"
               disabled={status === "loading"}
               className="px-6 py-3 bg-[#fff8ea] text-blue-900 rounded-full text-sm font-semibold hover:scale-105 transition-all disabled:opacity-60"
-              style={{ fontFamily: 'var(--font-fredoka)' }}
+              style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
             >
               {status === "loading" ? "Sending…" : "Notify Me ★"}
             </button>

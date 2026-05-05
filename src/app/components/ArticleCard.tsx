@@ -23,7 +23,7 @@ export default function ArticleCard({ category, categoryColor, headline, excerpt
 
       {/* Top row: category + severity + date */}
       <div className="flex items-center justify-between flex-wrap gap-2">
-        <span className={`text-xs font-semibold tracking-wide uppercase px-3 py-1 rounded-full ${categoryColor}`} style={{ fontFamily: 'var(--font-fredoka)' }}>
+        <span className={`text-xs font-semibold tracking-wide uppercase px-3 py-1 rounded-full ${categoryColor}`} style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
           {category}
         </span>
         <div className="flex items-center gap-2">
@@ -35,7 +35,7 @@ export default function ArticleCard({ category, categoryColor, headline, excerpt
       </div>
 
       {/* Headline */}
-      <h3 className="text-lg font-bold text-blue-900 leading-snug group-hover:text-blue-700 transition-colors" style={{ fontFamily: 'var(--font-fredoka)' }}>
+      <h3 className="text-lg font-bold text-blue-900 leading-snug group-hover:text-blue-700 transition-colors" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
         {headline}
       </h3>
 
@@ -52,7 +52,7 @@ export default function ArticleCard({ category, categoryColor, headline, excerpt
           target="_blank"
           rel="noopener noreferrer"
           className="text-xs font-semibold text-blue-800 hover:text-blue-600 transition-colors flex items-center gap-1"
-          style={{ fontFamily: 'var(--font-fredoka)' }}
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           Read More →
         </a>

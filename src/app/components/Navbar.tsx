@@ -19,7 +19,7 @@ export default function Navbar() {
 
         {/* RIGHT: Nav Links + Instagram Icon */}
 
-        <div className="flex items-center gap-6 text-base" style={{ fontFamily: 'var(--font-fredoka)' }}>
+        <div className="flex items-center gap-6 text-base" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
 
           {[
             { href: '/', label: 'Home' },
@@ -30,7 +30,7 @@ export default function Navbar() {
             <Link
               key={href}
               href={href}
-              className={`transition-colors ${
+              className={`font-semibold tracking-wide transition-colors ${
                 pathname === href
                   ? 'text-[#fff8ea] underline underline-offset-4 decoration-blue-400'
                   : 'text-blue-200 hover:text-[#fff8ea]'

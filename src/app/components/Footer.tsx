@@ -4,7 +4,7 @@ export default function Footer() {
 
       {/* Big tagline strip */}
       <div className="border-b border-blue-700 py-12 text-center px-6">
-        <p className="text-xs tracking-[0.25em] uppercase text-blue-400 mb-3" style={{ fontFamily: 'var(--font-fredoka)' }}>
+        <p className="text-xs tracking-[0.25em] uppercase text-blue-400 mb-3" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
           ★ &nbsp; personal brand protection &nbsp; ★
         </p>
         <h2
@@ -13,7 +13,7 @@ export default function Footer() {
         >
           Cyber Care Is Self Care.
         </h2>
-        <p className="mt-4 text-blue-300 text-xl" style={{ fontFamily: 'var(--font-caveat)' }}>
+        <p className="mt-4 text-blue-300 text-xl" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           Protecting your digital presence, so you don&apos;t have to worry about it ✦
         </p>
       </div>
@@ -23,7 +23,7 @@ export default function Footer() {
 
         {/* Brand */}
         <div className="flex items-center gap-2">
-          <span className="text-[#fff8ea] font-semibold" style={{ fontFamily: 'var(--font-fredoka)' }}>LOCKET</span>
+          <span className="text-[#fff8ea] font-semibold" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>LOCKET</span>
           <span>·</span>
           <span>© {new Date().getFullYear()} All rights reserved.</span>
         </div>
