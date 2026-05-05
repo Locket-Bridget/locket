@@ -26,6 +26,7 @@ export default function Navbar() {
             { href: '/services', label: 'Services' },
             { href: '/newsletter', label: 'Newsletter' },
             { href: '/toolkit', label: 'Toolkit' },
+            { href: '/about', label: 'About' },
           ].map(({ href, label }) => (
             <Link
               key={href}
