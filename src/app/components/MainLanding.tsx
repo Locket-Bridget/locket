@@ -3,7 +3,7 @@
 import React from "react";
 import Button from "./Button";
 import LocketIcon from "./LocketIcon";
-import TypingText from "./TypingText";
+import SparkleText from "./SparkleText";
 import MainScrollIndicator from "./MainScrollIndicator";
 
 const word = "LOCKET";
@@ -121,8 +121,7 @@ export default function MainLanding() {
           <LocketIcon className="h-10 w-10 translate-y-[15px] -ml-[2px]" />
         </h1>
 
-        {/* Typing animation tagline */}
-        <TypingText text="Your vibe. Protected." speed={100} />
+        <SparkleText text="For when you don’t want to share." className="mt-6" />
 
         {/* Navigation buttons */}
         <div className="mt-15 flex gap-6 justify-center flex-wrap">

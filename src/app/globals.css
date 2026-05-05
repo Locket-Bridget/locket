@@ -86,3 +86,117 @@ body {
   animation: twinkle var(--twinkle-duration, 3s) ease-in-out infinite;
   animation-delay: var(--twinkle-delay, 0s);
 }
+
+/* Tagline sparkle beads — ported from the original LOCKET wordmark sparkle.
+   Four glowing dots burst around each character: two on the left
+   (::before big, .sparkle1 small) and two on the right (::after big,
+   .sparkle2 small), each with a drop-shadow halo for the sheen. */
+.sparkle-text {
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+.sparkle-char {
+  position: relative;
+  display: inline-block;
+}
+
+/* 20s total cycle. Active burst sits in the first ~2.5% (~500ms);
+   the remaining 97.5% holds at scale 0, opacity 0 — fully silent. */
+@keyframes sparkle-burst {
+  0%         { opacity: 0; transform: scale(0.5) rotate(0deg); }
+  1%         { opacity: 1; transform: scale(1.3) rotate(15deg); }
+  2.5%, 100% { opacity: 0; transform: scale(0)   rotate(30deg); }
+}
+
+/* Each of the four sparkle slots reads its color, glow, size, and
+   position from per-letter CSS vars set inline by SparkleText. */
+.sparkle-char::before {
+  content: "";
+  position: absolute;
+  width: var(--sp1-size);
+  height: var(--sp1-size);
+  background: var(--sp1-bg);
+  left: var(--sp1-left);
+  right: var(--sp1-right);
+  top: var(--sp1-top);
+  filter: drop-shadow(0 0 calc(var(--sp1-size) * 0.65) var(--sp1-glow));
+  opacity: 0;
+  pointer-events: none;
+  animation: sparkle-burst 20s infinite ease-in-out;
+  animation-delay: calc(var(--spark-delay, 0) * 1s);
+}
+
+.sparkle-char .sparkle1 {
+  position: absolute;
+  width: var(--sp2-size);
+  height: var(--sp2-size);
+  background: var(--sp2-bg);
+  left: var(--sp2-left);
+  right: var(--sp2-right);
+  top: var(--sp2-top);
+  filter: drop-shadow(0 0 calc(var(--sp2-size) * 0.65) var(--sp2-glow));
+  opacity: 0;
+  pointer-events: none;
+  animation: sparkle-burst 20s infinite ease-in-out;
+  animation-delay: calc(var(--spark-delay, 0) * 1s + 0.06s);
+}
+
+.sparkle-char::after {
+  content: "";
+  position: absolute;
+  width: var(--sp3-size);
+  height: var(--sp3-size);
+  background: var(--sp3-bg);
+  left: var(--sp3-left);
+  right: var(--sp3-right);
+  top: var(--sp3-top);
+  filter: drop-shadow(0 0 calc(var(--sp3-size) * 0.65) var(--sp3-glow));
+  opacity: 0;
+  pointer-events: none;
+  animation: sparkle-burst 20s infinite ease-in-out;
+  animation-delay: calc(var(--spark-delay, 0) * 1s + 0.12s);
+}
+
+.sparkle-char .sparkle2 {
+  position: absolute;
+  width: var(--sp4-size);
+  height: var(--sp4-size);
+  background: var(--sp4-bg);
+  left: var(--sp4-left);
+  right: var(--sp4-right);
+  top: var(--sp4-top);
+  filter: drop-shadow(0 0 calc(var(--sp4-size) * 0.65) var(--sp4-glow));
+  opacity: 0;
+  pointer-events: none;
+  animation: sparkle-burst 20s infinite ease-in-out;
+  animation-delay: calc(var(--spark-delay, 0) * 1s + 0.18s);
+}
+
+/* All four sparkles share a 5-point star silhouette */
+.sparkle-char::before,
+.sparkle-char::after,
+.sparkle-char .sparkle1,
+.sparkle-char .sparkle2 {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sparkle-char::before,
+  .sparkle-char::after,
+  .sparkle-char .sparkle1,
+  .sparkle-char .sparkle2 {
+    display: none;
+  }
+}
