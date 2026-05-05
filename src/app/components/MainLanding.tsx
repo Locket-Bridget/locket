@@ -122,7 +122,7 @@ export default function MainLanding() {
         </h1>
 
         {/* Typing animation tagline */}
-        <TypingText text="For when you don’t want to share." speed={100} />
+        <TypingText text="Your vibe. Protected." speed={100} />
 
         {/* Navigation buttons */}
         <div className="mt-15 flex gap-6 justify-center flex-wrap">

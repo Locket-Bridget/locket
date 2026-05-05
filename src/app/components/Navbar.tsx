@@ -8,6 +8,8 @@ import { usePathname } from 'next/navigation';
 export default function Navbar() {
   const pathname = usePathname();
 
+  if (pathname === "/preview") return null;
+
   return (
     <nav className="sticky top-0 bg-[#1E3A8A] text-white px-6 py-4 shadow-md w-full z-50">
       <div className="w-full flex justify-between items-center">

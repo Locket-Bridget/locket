@@ -1,4 +1,10 @@
+'use client';
+import { usePathname } from 'next/navigation';
+
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname === "/preview") return null;
+
   return (
     <footer className="bg-[#1E3A8A] text-[#fff8ea]">
 
