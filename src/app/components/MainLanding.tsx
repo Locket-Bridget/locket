@@ -63,11 +63,22 @@ const decoStars: DecoStar[] = [
   { top: "67%", left: "20%", size: "1.7rem",  color: "#D4A23C", opacity: 0.55, char: "★", twinkle: { delay: "0.8s", duration: "4.3s" } },
   { top: "78%", left: "13%", size: "1.05rem", color: "#93C5FD", opacity: 0.5,  char: "✦" },
   { top: "94%", left: "12%", size: "1.4rem",  color: "#BFDBFE", opacity: 0.55, char: "✧", twinkle: { delay: "1.3s", duration: "3.8s" } },
+  // Dark blue accents — sprinkled across all bands to add depth
+  { top: "1%",  left: "41%", size: "1.3rem",  color: "#1E3A8A", opacity: 0.55, char: "✦", twinkle: { delay: "0.5s", duration: "3.6s" } },
+  { top: "3%",  left: "51%", size: "1.05rem", color: "#1E40AF", opacity: 0.5,  char: "★" },
+  { top: "2%",  left: "65%", size: "1.45rem", color: "#1E3A8A", opacity: 0.55, char: "✶", twinkle: { delay: "1.2s", duration: "4.0s" } },
+  { top: "19%", left: "63%", size: "1.6rem",  color: "#1E40AF", opacity: 0.6,  char: "★" },
+  { top: "29%", left: "8%",  size: "1.15rem", color: "#1E3A8A", opacity: 0.5,  char: "✶", twinkle: { delay: "0.6s", duration: "3.5s" } },
+  { top: "44%", left: "91%", size: "1.45rem", color: "#1E40AF", opacity: 0.55, char: "✦" },
+  { top: "57%", left: "22%", size: "1.25rem", color: "#1D4ED8", opacity: 0.5,  char: "✧", twinkle: { delay: "1.9s", duration: "4.2s" } },
+  { top: "71%", left: "87%", size: "1.7rem",  color: "#1E3A8A", opacity: 0.6,  char: "★", twinkle: { delay: "0.4s", duration: "3.7s" } },
+  { top: "86%", left: "36%", size: "1.3rem",  color: "#1E40AF", opacity: 0.55, char: "✦" },
+  { top: "77%", left: "61%", size: "1.5rem",  color: "#1E3A8A", opacity: 0.55, char: "✶", twinkle: { delay: "2.0s", duration: "3.9s" } },
 ];
 
 export default function MainLanding() {
   return (
-    <main className="relative min-h-[calc(100vh-4rem)] w-screen flex flex-col items-center justify-center bg-[rgb(219,234,254)] px-4 py-6 overflow-hidden">
+    <main className="relative min-h-[calc(100vh-4rem)] w-full flex flex-col items-center justify-center bg-[rgb(219,234,254)] px-4 py-10 sm:py-6 overflow-hidden">
       {decoStars.map((s, i) => {
         const baseStyle: React.CSSProperties = {
           top: s.top,
@@ -96,7 +107,7 @@ export default function MainLanding() {
         );
       })}
 
-      <div className="bg-[#fff8ea] rounded-3xl shadow-[0_8px_40px_rgba(30,58,138,0.10)] px-12 py-16 w-full max-w-4xl text-center relative overflow-hidden">
+      <div className="bg-[#fff8ea] rounded-3xl shadow-[0_8px_40px_rgba(30,58,138,0.10)] px-5 py-10 sm:px-8 sm:py-12 md:px-12 md:py-16 w-full max-w-4xl text-center relative overflow-hidden">
         {/* Soft blob in background */}
         <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-100 rounded-full opacity-30 blur-2xl pointer-events-none" />
 
@@ -118,13 +129,16 @@ export default function MainLanding() {
             </span>
           ))}
 
-          <LocketIcon className="h-10 w-10 translate-y-[15px] -ml-[2px]" />
+          <LocketIcon className="splash-icon" />
         </h1>
 
-        <SparkleText text="For when you don’t want to share." className="mt-6" />
+        <SparkleText
+          text="For when you don’t want to share."
+          className="mt-4 sm:mt-6"
+        />
 
         {/* Navigation buttons */}
-        <div className="mt-15 flex gap-6 justify-center flex-wrap">
+        <div className="mt-8 sm:mt-12 md:mt-15 flex gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
           <Button href="/services">Services</Button>
           <Button href="/newsletter">Newsletter</Button>
           <Button href="/toolkit">Toolkit</Button>
