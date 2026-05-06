@@ -73,11 +73,11 @@ export default function ToolkitPage() {
 
         <h1
           className="text-5xl md:text-6xl font-bold text-blue-900 leading-tight"
-          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
+          style={{ fontFamily: 'var(--font-titan)' }}
         >
           Your Cyber Self-Care
           <br />
-          <span className="italic" style={{ fontFamily: 'var(--font-playfair)' }}>Toolkit.</span>
+          <span style={{ fontFamily: 'var(--font-titan)' }}>Toolkit.</span>
         </h1>
 
         <p

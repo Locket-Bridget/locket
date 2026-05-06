@@ -14,7 +14,7 @@ export default function AboutPage() {
         </span>
         <h1
           className="text-5xl md:text-6xl font-bold text-blue-900"
-          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
+          style={{ fontFamily: 'var(--font-titan)' }}
         >
           About Us
         </h1>

@@ -91,7 +91,7 @@ export default function NewsletterPage() {
         >
           ★ &nbsp; weekly threat intel
         </span>
-        <h1 className="text-5xl md:text-6xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
+        <h1 className="text-5xl md:text-6xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-titan)' }}>
           Locket Intel
         </h1>
         <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
