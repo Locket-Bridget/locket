@@ -1,10 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import Button from "./Button";
 import LocketIcon from "./LocketIcon";
 import SparkleText from "./SparkleText";
 import MainScrollIndicator from "./MainScrollIndicator";
+
+// Padding around the card that stars must keep clear of.
+const STAR_BUFFER_PX = 12;
 
 const word = "LOCKET";
 
@@ -77,8 +80,40 @@ const decoStars: DecoStar[] = [
 ];
 
 export default function MainLanding() {
+  const cardRef = useRef<HTMLDivElement>(null);
+  const starRefs = useRef<(HTMLSpanElement | null)[]>([]);
+
+  // Hide any decorative star whose bounding box overlaps the card so
+  // they never visually touch it. Re-runs on viewport / card resize.
+  useLayoutEffect(() => {
+    const update = () => {
+      const card = cardRef.current;
+      if (!card) return;
+      const cardRect = card.getBoundingClientRect();
+      starRefs.current.forEach((el) => {
+        if (!el) return;
+        const r = el.getBoundingClientRect();
+        const overlaps =
+          r.right + STAR_BUFFER_PX > cardRect.left &&
+          r.left - STAR_BUFFER_PX < cardRect.right &&
+          r.bottom + STAR_BUFFER_PX > cardRect.top &&
+          r.top - STAR_BUFFER_PX < cardRect.bottom;
+        el.style.visibility = overlaps ? "hidden" : "visible";
+      });
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    if (cardRef.current) ro.observe(cardRef.current);
+    ro.observe(document.body);
+    window.addEventListener("resize", update);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", update);
+    };
+  }, []);
+
   return (
-    <main className="relative min-h-[calc(100vh-4rem)] w-full flex flex-col items-center justify-center bg-[rgb(219,234,254)] px-4 py-10 sm:py-6 overflow-hidden">
+    <main className="relative lg:min-h-[calc(100vh-4rem)] w-full flex flex-col items-center justify-start lg:justify-center bg-[rgb(219,234,254)] px-4 pt-6 pb-8 lg:py-6 overflow-hidden">
       {decoStars.map((s, i) => {
         const baseStyle: React.CSSProperties = {
           top: s.top,
@@ -98,6 +133,9 @@ export default function MainLanding() {
         return (
           <span
             key={i}
+            ref={(el) => {
+              starRefs.current[i] = el;
+            }}
             aria-hidden="true"
             className={`absolute select-none pointer-events-none${s.twinkle ? " twinkle" : ""}`}
             style={{ ...baseStyle, ...twinkleStyle }}
@@ -107,7 +145,7 @@ export default function MainLanding() {
         );
       })}
 
-      <div className="bg-[#fff8ea] rounded-3xl shadow-[0_8px_40px_rgba(30,58,138,0.10)] px-5 py-10 sm:px-8 sm:py-12 md:px-12 md:py-16 w-full max-w-4xl text-center relative overflow-hidden">
+      <div ref={cardRef} className="bg-[#fff8ea] rounded-3xl shadow-[0_8px_40px_rgba(30,58,138,0.10)] px-5 py-10 sm:px-8 sm:py-12 md:px-12 md:py-16 w-full max-w-4xl text-center relative overflow-hidden">
         {/* Soft blob in background */}
         <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-blue-100 rounded-full opacity-30 blur-2xl pointer-events-none" />
 

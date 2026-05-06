@@ -44,10 +44,10 @@ export default function ServiceDetailPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-[rgb(219,234,254)] px-6 py-20">
+      <main className="min-h-screen bg-[rgb(219,234,254)] px-4 sm:px-6 py-14 sm:py-20">
 
         {/* Page header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <span
             className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full -rotate-1 shadow-md mb-6"
             style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
@@ -55,12 +55,12 @@ export default function ServiceDetailPage() {
             ★ &nbsp; our services
           </span>
           <h1
-            className="text-5xl md:text-6xl font-bold text-blue-900"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-900"
             style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
           >
             {service.name}
           </h1>
-          <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
+          <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-lg sm:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
             {service.tagline} ✦
           </p>
           <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
@@ -73,14 +73,14 @@ export default function ServiceDetailPage() {
         </div>
 
         {/* Detail card */}
-        <div className="max-w-2xl mx-auto bg-[#fff8ea] rounded-3xl shadow-[0_8px_40px_rgba(30,58,138,0.10)] p-10 relative overflow-hidden">
+        <div className="max-w-2xl mx-auto bg-[#fff8ea] rounded-3xl shadow-[0_8px_40px_rgba(30,58,138,0.10)] p-6 sm:p-10 relative overflow-hidden">
           <div className="absolute -top-8 -right-8 w-40 h-40 bg-blue-100 rounded-full opacity-30 blur-2xl pointer-events-none" />
           <span className="absolute top-4 left-5 text-blue-200 text-xl select-none">★</span>
           <span className="absolute top-4 right-5 text-blue-200 text-xl select-none">★</span>
 
           {/* Price */}
           <div className="text-center mb-6">
-            <span className="text-5xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-titan)' }}>
+            <span className="text-4xl sm:text-5xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-titan)' }}>
               {service.price}
             </span>
             <span className="text-blue-400 text-sm ml-2" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>

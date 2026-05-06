@@ -46,10 +46,10 @@ export default function LandingPageSections() {
       </div>
 
       {/* Stats section */}
-      <section id="landing-page-sections" className="bg-[#fdf9f0] py-24">
+      <section id="landing-page-sections" className="bg-[#fdf9f0] py-16 sm:py-20 md:py-24">
 
         {/* Editorial section intro */}
-        <div className="text-center max-w-2xl mx-auto px-6 mb-20">
+        <div className="text-center max-w-2xl mx-auto px-6 mb-14 sm:mb-20">
 
           {/* Sticker pill label */}
           <span
@@ -59,16 +59,16 @@ export default function LandingPageSections() {
             ★ &nbsp; the reality
           </span>
 
-          <h2 className="text-5xl md:text-7xl leading-none" style={{ fontFamily: 'var(--font-titan)' }}>
+          <h2 className="text-4xl sm:text-5xl md:text-7xl leading-none" style={{ fontFamily: 'var(--font-titan)' }}>
             <span className="text-blue-900">Your </span>
             <span style={{ color: '#C8553D' }}>online</span>
             <br />
             <span className="text-blue-900">presence</span>
             <br />
-            <span className="text-4xl md:text-5xl italic" style={{ fontFamily: 'var(--font-playfair)', color: '#1E3A8A' }}>deserves protection.</span>
+            <span className="text-3xl sm:text-4xl md:text-5xl italic" style={{ fontFamily: 'var(--font-playfair)', color: '#1E3A8A' }}>deserves protection.</span>
           </h2>
 
-          <p className="mt-5 text-blue-700/70 text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
+          <p className="mt-5 text-blue-700/70 text-lg sm:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
             The threats are real. The stats are alarming.<br />Most people don&apos;t even know it&apos;s happening. →
           </p>
 

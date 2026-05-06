@@ -21,7 +21,7 @@ export default function Button({ children, href, onClick, className }: ButtonPro
   return (
     <button
       onClick={handleClick}
-      className={`inline-flex items-center gap-1 bg-blue-900 text-[#fff8ea] px-7 py-3 rounded-full text-base font-semibold tracking-wide hover:scale-105 hover:shadow-lg transition-all duration-200 ${className ?? ''}`}
+      className={`inline-flex items-center gap-1 bg-blue-900 text-[#fff8ea] px-5 py-2.5 sm:px-7 sm:py-3 rounded-full text-sm sm:text-base font-semibold tracking-wide hover:scale-105 hover:shadow-lg transition-all duration-200 ${className ?? ''}`}
       style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
     >
       {children}

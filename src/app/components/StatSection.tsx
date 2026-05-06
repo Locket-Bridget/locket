@@ -27,7 +27,7 @@ export default function StatSection({ stat, title, text, image, reverse = false,
 
   return (
     <motion.div
-      className={`flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} items-center justify-center max-w-5xl mx-auto mb-32 gap-16 px-6`}
+      className={`flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} items-center justify-center max-w-5xl mx-auto mb-20 sm:mb-28 md:mb-32 gap-10 sm:gap-12 md:gap-16 px-6`}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -35,7 +35,7 @@ export default function StatSection({ stat, title, text, image, reverse = false,
     >
       {/* Polaroid-style image */}
       <motion.div
-        className="md:w-[45%] flex justify-center relative"
+        className="w-full md:w-[45%] flex justify-center relative"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -52,14 +52,14 @@ export default function StatSection({ stat, title, text, image, reverse = false,
             alt={title}
             width={288}
             height={256}
-            className="object-cover block"
+            className="object-cover block w-full max-w-[260px] sm:max-w-[288px] h-auto"
           />
         </div>
         <span className="absolute -bottom-4 -left-2 text-2xl text-blue-100 select-none pointer-events-none z-0">✦</span>
       </motion.div>
 
       {/* Text content */}
-      <div className="md:w-[55%] relative">
+      <div className="w-full md:w-[55%] relative">
 
         {/* Sticker badge label */}
         <span
@@ -71,7 +71,7 @@ export default function StatSection({ stat, title, text, image, reverse = false,
 
         {/* Big stat number */}
         <div
-          className="text-7xl md:text-8xl font-bold text-blue-900 leading-none mb-3"
+          className="text-6xl sm:text-7xl md:text-8xl font-bold text-blue-900 leading-none mb-3"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
           {stat}

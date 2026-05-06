@@ -50,7 +50,7 @@ export default function SparkleText({ text, className = "" }: SparkleTextProps) 
   const chars = Array.from(text);
   return (
     <p
-      className={`sparkle-text text-2xl text-blue-700/70 ${className}`}
+      className={`sparkle-text text-lg sm:text-xl md:text-2xl text-blue-700/70 ${className}`}
       style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
       aria-label={text}
     >

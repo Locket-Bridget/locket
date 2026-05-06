@@ -81,20 +81,20 @@ export default function NewsletterPage() {
     : feed.filter(a => a.category === activeCategory);
 
   return (
-    <main className="min-h-screen bg-[rgb(219,234,254)] px-6 py-20">
+    <main className="min-h-screen bg-[rgb(219,234,254)] px-4 sm:px-6 py-14 sm:py-20">
 
       {/* Page header */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-10 sm:mb-12">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full -rotate-1 shadow-md mb-6"
           style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           ★ &nbsp; weekly threat intel
         </span>
-        <h1 className="text-5xl md:text-6xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-titan)' }}>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-900" style={{ fontFamily: 'var(--font-titan)' }}>
           Locket Intel
         </h1>
-        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
+        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-lg sm:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           The cyber tea you actually need.
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
@@ -146,7 +146,7 @@ export default function NewsletterPage() {
       </div>
 
       {/* Subscribe section */}
-      <div className="max-w-xl mx-auto bg-[#1E3A8A] rounded-3xl p-10 text-center relative overflow-hidden">
+      <div className="max-w-xl mx-auto bg-[#1E3A8A] rounded-3xl p-6 sm:p-10 text-center relative overflow-hidden">
         <div className="absolute -top-8 -right-8 w-32 h-32 bg-blue-700 rounded-full opacity-30 blur-2xl pointer-events-none" />
         <span className="absolute top-4 left-5 text-blue-500 text-lg select-none">★</span>
         <span className="absolute top-4 right-5 text-blue-500 text-lg select-none">★</span>
@@ -154,7 +154,7 @@ export default function NewsletterPage() {
         <p className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-400 mb-3" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
           ✦ &nbsp; don&apos;t miss a drop
         </p>
-        <h2 className="text-3xl font-bold text-[#fff8ea] mb-2" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#fff8ea] mb-2" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
           Get the intel, weekly.
         </h2>
         <p className="text-blue-300 text-sm mb-6">

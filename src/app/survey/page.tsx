@@ -7,7 +7,7 @@ export default function SurveyPage() {
     <main className="min-h-screen bg-[#fdf9f0]">
 
       {/* Header */}
-      <div className="text-center px-6 py-20 pb-10 bg-[rgb(219,234,254)]">
+      <div className="text-center px-4 sm:px-6 py-14 sm:py-20 pb-10 bg-[rgb(219,234,254)]">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
           style={{ fontFamily: "var(--font-fredoka)" }}
@@ -15,13 +15,13 @@ export default function SurveyPage() {
           ★ &nbsp; for creators
         </span>
         <h1
-          className="text-5xl md:text-7xl font-bold text-blue-900 mb-4"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold text-blue-900 mb-4"
           style={{ fontFamily: "var(--font-titan)" }}
         >
           We&apos;re building this for you.
         </h1>
         <p
-          className="text-blue-700/80 max-w-xl mx-auto text-xl leading-relaxed"
+          className="text-blue-700/80 max-w-xl mx-auto text-lg sm:text-xl leading-relaxed"
           style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
         >
           Take 2 minutes to tell us about your digital safety concerns — and help us build the protection you actually need. ✦

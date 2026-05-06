@@ -28,7 +28,7 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-[#fdf9f0]">
 
       {/* Page header */}
-      <div className="text-center px-6 py-20 pb-16 bg-[rgb(219,234,254)]">
+      <div className="text-center px-4 sm:px-6 py-14 sm:py-20 pb-12 sm:pb-16 bg-[rgb(219,234,254)]">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
           style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
@@ -36,20 +36,20 @@ export default function ServicesPage() {
           ★ &nbsp; what we offer
         </span>
         <h1
-          className="text-5xl md:text-7xl font-bold text-blue-900"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold text-blue-900"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
           Our Services
         </h1>
-        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
+        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-lg sm:text-xl" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           Everything you need to protect your online presence. ✦
         </p>
       </div>
 
       {/* Script bridge heading */}
-      <div className="text-center py-12 bg-[#fdf9f0]">
+      <div className="text-center py-10 sm:py-12 bg-[#fdf9f0]">
         <p
-          className="text-3xl md:text-4xl text-blue-400/60"
+          className="text-2xl sm:text-3xl md:text-4xl text-blue-400/60"
           style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           ways to work with us ✦
@@ -57,14 +57,14 @@ export default function ServicesPage() {
       </div>
 
       {/* Cards */}
-      <div className="max-w-5xl mx-auto px-6 pb-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16 sm:pb-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((svc, i) => {
             const card = cards[i];
             return (
               <div
                 key={svc.slug}
-                className={`${card.bg} border-2 border-dashed ${card.borderColor} rounded-3xl p-8 flex flex-col gap-4 relative`}
+                className={`${card.bg} border-2 border-dashed ${card.borderColor} rounded-3xl p-6 sm:p-8 flex flex-col gap-4 relative`}
               >
                 {/* Doodle illustration */}
                 <div className="flex items-end justify-center mb-2 h-20">
@@ -131,14 +131,14 @@ export default function ServicesPage() {
       </div>
 
       {/* Bottom CTA */}
-      <div className="text-center px-6 py-20 bg-[rgb(219,234,254)]">
+      <div className="text-center px-4 sm:px-6 py-14 sm:py-20 bg-[rgb(219,234,254)]">
         <p
-          className="text-4xl md:text-5xl text-blue-900 mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl text-blue-900 mb-4"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
           Not sure where to start?
         </p>
-        <p className="text-xl text-blue-700/70 mb-8" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
+        <p className="text-lg sm:text-xl text-blue-700/70 mb-8" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           Book a free 15-min call and we&apos;ll figure it out together. ✦
         </p>
         <a

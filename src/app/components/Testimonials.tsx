@@ -28,10 +28,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-[rgb(219,234,254)] py-24 px-6">
+    <section className="bg-[rgb(219,234,254)] py-16 sm:py-20 md:py-24 px-4 sm:px-6">
 
       {/* Header */}
-      <div className="text-center max-w-2xl mx-auto mb-16">
+      <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
           style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
@@ -39,12 +39,12 @@ export default function Testimonials() {
           ★ &nbsp; real girls, real results
         </span>
         <h2
-          className="text-4xl md:text-5xl font-bold text-blue-900 leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 leading-tight"
           style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           They were protected.
         </h2>
-        <p className="mt-4 text-xl text-blue-700/70" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
+        <p className="mt-4 text-lg sm:text-xl text-blue-700/70" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           Now it&apos;s your turn. ✦
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
@@ -57,11 +57,11 @@ export default function Testimonials() {
       </div>
 
       {/* Cards */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
         {testimonials.map((t, i) => (
           <motion.div
             key={i}
-            className={`bg-[#fff8ea] rounded-2xl shadow-[0_6px_24px_rgba(30,58,138,0.08)] p-8 flex flex-col gap-4 relative overflow-hidden ${t.tilt}`}
+            className={`bg-[#fff8ea] rounded-2xl shadow-[0_6px_24px_rgba(30,58,138,0.08)] p-6 sm:p-8 flex flex-col gap-4 relative overflow-hidden ${t.tilt}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

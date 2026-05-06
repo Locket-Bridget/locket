@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[rgb(219,234,254)] px-6 py-20">
+    <main className="min-h-screen bg-[rgb(219,234,254)] px-4 sm:px-6 py-14 sm:py-20">
 
       {/* Page header */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-12 sm:mb-16">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full -rotate-1 shadow-md mb-6"
           style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
@@ -13,12 +13,12 @@ export default function AboutPage() {
           ★ &nbsp; the founders
         </span>
         <h1
-          className="text-5xl md:text-6xl font-bold text-blue-900"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-900"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
           About Us
         </h1>
-        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
+        <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-lg sm:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           We built this for you, babe. ✦
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
@@ -31,10 +31,10 @@ export default function AboutPage() {
       </div>
 
       {/* Main content */}
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
 
         {/* Polaroid image */}
-        <div className="md:w-1/2 flex justify-center relative">
+        <div className="w-full md:w-1/2 flex justify-center relative">
           <span className="absolute -top-4 -right-4 text-5xl text-blue-200 select-none">★</span>
           <div className="bg-white p-3 pb-12 shadow-2xl -rotate-2">
             <Image
@@ -42,19 +42,19 @@ export default function AboutPage() {
               alt="Bridget and Skander"
               width={288}
               height={320}
-              className="object-cover block"
+              className="object-cover block w-full max-w-[260px] sm:max-w-[288px] h-auto"
             />
           </div>
           <span className="absolute -bottom-3 -left-2 text-2xl text-blue-200 select-none">✦</span>
         </div>
 
         {/* Text */}
-        <div className="md:w-1/2 text-blue-800">
+        <div className="w-full md:w-1/2 text-blue-800">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-400 mb-3" style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}>
             ✦ &nbsp; our story
           </p>
           <h2
-            className="text-3xl font-bold text-blue-900 mb-6 leading-snug"
+            className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 leading-snug"
             style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
           >
             Welcome to{' '}

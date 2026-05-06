@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 
 export default function BlobCallout() {
   return (
-    <section className="bg-[#1E3A8A] py-24 px-6 flex items-center justify-center overflow-hidden">
+    <section className="bg-[#1E3A8A] py-16 sm:py-20 md:py-24 px-4 sm:px-6 flex items-center justify-center overflow-hidden">
       <motion.div
-        className="relative bg-[#fff8ea] px-14 py-16 max-w-2xl w-full text-center"
+        className="relative bg-[#fff8ea] px-6 py-10 sm:px-10 sm:py-14 md:px-14 md:py-16 max-w-2xl w-full text-center"
         style={{
           borderRadius: '62% 38% 46% 54% / 55% 48% 52% 45%',
         }}
@@ -20,26 +20,26 @@ export default function BlobCallout() {
         <span className="absolute bottom-8 right-10 text-blue-200 text-lg select-none">✦</span>
 
         <p
-          className="text-4xl md:text-5xl text-blue-900 leading-snug"
+          className="text-3xl sm:text-4xl md:text-5xl text-blue-900 leading-snug"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
           Protect your presence
         </p>
         <p
-          className="text-4xl md:text-5xl leading-snug mt-1"
+          className="text-3xl sm:text-4xl md:text-5xl leading-snug mt-1"
           style={{ fontFamily: 'var(--font-titan)', color: '#C8553D' }}
         >
           like you protect
         </p>
         <p
-          className="text-4xl md:text-5xl text-blue-900 leading-snug mt-1"
+          className="text-3xl sm:text-4xl md:text-5xl text-blue-900 leading-snug mt-1"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
           your peace.
         </p>
 
         <p
-          className="mt-6 text-xl text-blue-500"
+          className="mt-6 text-lg sm:text-xl text-blue-500"
           style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           That&apos;s what Locket is for. ✦

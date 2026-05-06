@@ -60,10 +60,10 @@ export default function ToolkitPage() {
   const { email, setEmail, status, handleSubmit } = useSubscribe();
 
   return (
-    <main className="min-h-screen bg-[rgb(219,234,254)] px-6 py-20">
+    <main className="min-h-screen bg-[rgb(219,234,254)] px-4 sm:px-6 py-14 sm:py-20">
 
       {/* Header */}
-      <div className="text-center mb-16 max-w-2xl mx-auto">
+      <div className="text-center mb-12 sm:mb-16 max-w-2xl mx-auto">
         <span
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
           style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
@@ -72,7 +72,7 @@ export default function ToolkitPage() {
         </span>
 
         <h1
-          className="text-5xl md:text-6xl font-bold text-blue-900 leading-tight"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-900 leading-tight"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
           Your Cyber Self-Care
@@ -81,7 +81,7 @@ export default function ToolkitPage() {
         </h1>
 
         <p
-          className="mt-4 text-2xl text-blue-700/70"
+          className="mt-4 text-lg sm:text-xl md:text-2xl text-blue-700/70"
           style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           Pssst… this secret is safe to share. ✦
@@ -105,12 +105,12 @@ export default function ToolkitPage() {
         {tips.map((tip) => (
           <div
             key={tip.number}
-            className={`${tip.bg} ${tip.tilt} rounded-2xl shadow-[0_6px_24px_rgba(30,58,138,0.08)] p-8 relative overflow-hidden`}
+            className={`${tip.bg} ${tip.tilt} rounded-2xl shadow-[0_6px_24px_rgba(30,58,138,0.08)] p-5 sm:p-8 relative overflow-hidden`}
           >
             {/* Blob */}
             <div className="absolute -bottom-6 -right-6 w-28 h-28 bg-blue-100 rounded-full opacity-30 blur-xl pointer-events-none" />
 
-            <div className="flex items-start gap-6">
+            <div className="flex items-start gap-4 sm:gap-6">
               {/* Number + doodle */}
               <div className="flex flex-col items-center gap-1 flex-shrink-0">
                 <span
@@ -134,7 +134,7 @@ export default function ToolkitPage() {
 
                 {/* Headline */}
                 <h2
-                  className="text-2xl font-bold text-blue-900 mb-1 leading-snug"
+                  className="text-xl sm:text-2xl font-bold text-blue-900 mb-1 leading-snug"
                   style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
                 >
                   {tip.headline}
@@ -165,13 +165,13 @@ export default function ToolkitPage() {
       </div>
 
       {/* Download CTA */}
-      <div className="max-w-xl mx-auto bg-[#1E3A8A] rounded-3xl p-10 text-center relative overflow-hidden">
+      <div className="max-w-xl mx-auto bg-[#1E3A8A] rounded-3xl p-6 sm:p-10 text-center relative overflow-hidden">
         <div className="absolute -top-8 -right-8 w-32 h-32 bg-blue-700 rounded-full opacity-30 blur-2xl pointer-events-none" />
         <span className="absolute top-4 left-5 text-blue-500 text-lg select-none">★</span>
         <span className="absolute top-4 right-5 text-blue-500 text-lg select-none">★</span>
 
         <p
-          className="text-3xl text-[#fff8ea] mb-2"
+          className="text-2xl sm:text-3xl text-[#fff8ea] mb-2"
           style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
           The full guide is coming soon.
