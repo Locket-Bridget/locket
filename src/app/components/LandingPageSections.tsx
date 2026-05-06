@@ -13,15 +13,15 @@ export default function LandingPageSections() {
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
     },
     {
-      stat: "$3.2B",
-      title: "lost to social media scams every year.",
-      text: "Phishing, impersonation, and ransomware cost individuals and businesses billions annually. Most victims never see their money again.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    },
-    {
       stat: "61%",
       title: "of victims never recover their accounts.",
       text: "Most people don't know where to start after a breach. Recovery is slow, stressful, and often impossible without expert help.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      stat: "49M",
+      title: "influencer records leaked in a single breach.",
+      text: "Emails, phone numbers, home addresses — all exposed. Data brokers are selling your personal information right now, and most creators have no idea it's out there.",
       image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
     }
   ];

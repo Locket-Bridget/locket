@@ -142,7 +142,7 @@ export default function ServicesPage() {
           Book a free 15-min call and we&apos;ll figure it out together. ✦
         </p>
         <a
-          href="https://calendly.com/admin-locketsecurity/30min"
+          href="https://calendly.com/bridget-locketsecurity/30min"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-8 py-4 rounded-full text-sm font-semibold hover:scale-105 transition-all shadow-md"

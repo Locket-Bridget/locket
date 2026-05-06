@@ -133,7 +133,7 @@ export default function ServiceDetailPage() {
 
       {mounted && (
         <PopupModal
-          url="https://calendly.com/admin-locketsecurity/30min"
+          url="https://calendly.com/bridget-locketsecurity/30min"
           onModalClose={() => setShowModal(false)}
           open={showModal}
           rootElement={document.body}

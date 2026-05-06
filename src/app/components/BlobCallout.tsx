@@ -23,26 +23,26 @@ export default function BlobCallout() {
           className="text-3xl sm:text-4xl md:text-5xl text-blue-900 leading-snug"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
-          Protect your presence
+          You built your brand.
         </p>
         <p
           className="text-3xl sm:text-4xl md:text-5xl leading-snug mt-1"
           style={{ fontFamily: 'var(--font-titan)', color: '#C8553D' }}
         >
-          like you protect
+          Don&apos;t let someone
         </p>
         <p
           className="text-3xl sm:text-4xl md:text-5xl text-blue-900 leading-snug mt-1"
           style={{ fontFamily: 'var(--font-titan)' }}
         >
-          your peace.
+          take it.
         </p>
 
         <p
           className="mt-6 text-lg sm:text-xl text-blue-500"
           style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
-          That&apos;s what Locket is for. ✦
+          That&apos;s exactly what Locket is for. ✦
         </p>
       </motion.div>
     </section>
