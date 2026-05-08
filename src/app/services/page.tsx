@@ -1,4 +1,8 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { PopupModal } from "react-calendly";
 import { services } from "./servicesData";
 import { DoodleDrop, DoodleShield, DoodleLock } from "../components/Doodles";
 
@@ -24,7 +28,22 @@ const cards = [
 ];
 
 export default function ServicesPage() {
+  const [showModal, setShowModal] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => { setMounted(true); }, []);
+
+  useEffect(() => {
+    if (!showModal) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setShowModal(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [showModal]);
+
   return (
+    <>
     <main className="min-h-screen bg-[#fdf9f0]">
 
       {/* Page header */}
@@ -141,17 +160,25 @@ export default function ServicesPage() {
         <p className="text-lg sm:text-xl text-blue-700/70 mb-8" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
           Book a free 15-min call and we&apos;ll figure it out together. ✦
         </p>
-        <a
-          href="https://calendly.com/bridget-locketsecurity/30min"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={() => setShowModal(true)}
           className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-8 py-4 rounded-full text-sm font-semibold hover:scale-105 transition-all shadow-md"
           style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
         >
           Book a Free Call ★
-        </a>
+        </button>
       </div>
 
     </main>
+
+    {mounted && (
+      <PopupModal
+        url="https://calendly.com/bridget-locketsecurity/30min"
+        onModalClose={() => setShowModal(false)}
+        open={showModal}
+        rootElement={document.body}
+      />
+    )}
+    </>
   );
 }

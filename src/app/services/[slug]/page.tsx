@@ -32,6 +32,15 @@ export default function ServiceDetailPage() {
 
   useEffect(() => { setMounted(true); }, []);
 
+  useEffect(() => {
+    if (!showModal) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setShowModal(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [showModal]);
+
   if (!service) {
     return (
       <main className="min-h-screen bg-[rgb(219,234,254)] flex items-center justify-center px-6">
