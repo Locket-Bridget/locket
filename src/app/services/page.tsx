@@ -76,14 +76,14 @@ export default function ServicesPage() {
       </div>
 
       {/* Cards */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16 sm:pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {services.map((svc, i) => {
             const card = cards[i];
             return (
               <div
                 key={svc.slug}
-                className={`${card.bg} border-2 border-dashed ${card.borderColor} rounded-3xl p-6 sm:p-8 flex flex-col gap-4 relative`}
+                className={`${card.bg} border-2 border-dashed ${card.borderColor} rounded-3xl p-5 flex flex-col gap-4 relative w-full max-w-md mx-auto md:max-w-none`}
               >
                 {/* Doodle illustration */}
                 <div className="flex items-end justify-center mb-2 h-20">
@@ -100,7 +100,7 @@ export default function ServicesPage() {
 
                 {/* Service name */}
                 <h2
-                  className="text-3xl text-blue-900 leading-tight"
+                  className="text-3xl text-blue-900 leading-tight whitespace-nowrap"
                   style={{ fontFamily: 'var(--font-titan)' }}
                 >
                   {svc.name}
