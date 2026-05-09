@@ -119,6 +119,26 @@ export default function ServiceDetailPage() {
             ))}
           </ul>
 
+          {/* Scope (what's not included) */}
+          {service.scope && (
+            <div className="mb-10 rounded-2xl border border-blue-200 bg-white/60 p-5 sm:p-6">
+              <h3
+                className="text-sm font-semibold text-blue-900 tracking-[0.12em] uppercase mb-3"
+                style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
+              >
+                Good to know
+              </h3>
+              <ul className="flex flex-col gap-2.5">
+                {service.scope.notIncluded.map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm text-blue-700/70 leading-relaxed">
+                    <span className="text-blue-300 mt-0.5">·</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

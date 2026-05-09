@@ -11,9 +11,9 @@ const locket = [
   "Built from scratch for influencers and creators",
   "Done for you — we handle it",
   "Plain English, real conversations",
-  "We respond, we recover, we fix it with you",
+  "We respond fast and walk you through every step",
   "Creator-specific threats: deepfakes, fake ads, impersonation",
-  "Direct access to Bridget — text, Slack, real time",
+  "Direct line to Bridget via Slack during support hours",
 ];
 
 export default function WhyLocket() {
