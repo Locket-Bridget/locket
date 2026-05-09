@@ -1,7 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { DoodleDrop, DoodleLipstick, DoodleMirror, DoodleShield, DoodleTeacup } from "../components/Doodles";
 import { useSubscribe } from "../hooks/useSubscribe";
+import { lookbook } from "../products/lookbookData";
 
 const tips = [
   {
@@ -164,7 +166,43 @@ export default function ToolkitPage() {
         ))}
       </div>
 
-      {/* Download CTA */}
+      {/* Paid lookbook CTA */}
+      <div className="max-w-xl mx-auto mb-8 bg-[#fff8ea] rounded-3xl p-6 sm:p-10 text-center relative overflow-hidden border-2 border-dashed border-blue-200 -rotate-1">
+        <span className="absolute top-4 left-5 text-blue-200 text-lg select-none">★</span>
+        <span className="absolute top-4 right-5 text-blue-200 text-lg select-none">★</span>
+
+        <span
+          className="inline-block bg-[#C8553D] text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-4 py-1.5 rounded-full shadow-md mb-4"
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
+        >
+          ★ &nbsp; want the full routine?
+        </span>
+
+        <p
+          className="text-2xl sm:text-3xl text-blue-900"
+          style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
+        >
+          {lookbook.name}
+        </p>
+        <h2
+          className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2"
+          style={{ fontFamily: 'var(--font-titan)' }}
+        >
+          {lookbook.subtitle}
+        </h2>
+        <p className="text-blue-700/70 text-sm leading-relaxed mb-5 max-w-md mx-auto">
+          12 chapters, the curated tool stack, and the playbooks Bridget runs with her clients. {lookbook.pageCountLabel}, instant download.
+        </p>
+        <Link
+          href="/lookbook"
+          className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-6 py-3 rounded-full text-sm font-semibold hover:scale-105 transition-all"
+          style={{ fontFamily: 'var(--font-fredoka)', fontWeight: 600 }}
+        >
+          Get the Lookbook — {lookbook.price} ★
+        </Link>
+      </div>
+
+      {/* Free guide email capture */}
       <div className="max-w-xl mx-auto bg-[#1E3A8A] rounded-3xl p-6 sm:p-10 text-center relative overflow-hidden">
         <div className="absolute -top-8 -right-8 w-32 h-32 bg-blue-700 rounded-full opacity-30 blur-2xl pointer-events-none" />
         <span className="absolute top-4 left-5 text-blue-500 text-lg select-none">★</span>
