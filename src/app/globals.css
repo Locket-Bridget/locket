@@ -37,19 +37,20 @@ body {
 /* -------------------- Locket wordmark sizes
    Use clamp() so the giant splash wordmark shrinks fluidly on narrow
    viewports — the old fixed 170px overflowed the card on phones. */
-.font-locket        { font-family: "Locket", Arial, Helvetica, sans-serif; font-size: clamp(64px, 22vw, 220px); font-weight: normal; line-height: 1; }
+.font-locket        { font-family: "Locket", Arial, Helvetica, sans-serif; font-size: clamp(64px, 22vw, 190px); font-weight: normal; line-height: 1; }
 .font-locket-header { font-family: "Locket", Arial, Helvetica, sans-serif; font-size: clamp(28px, 6vw, 40px); font-weight: normal; }
 
 /* The splash wordmark icon scales with the wordmark itself so the heart
    stays visually proportional even when the text shrinks on phones. */
 .splash-text {
   /* Tracks .font-locket so other elements can size from --splash-size. */
-  --splash-size: clamp(64px, 22vw, 220px);
+  --splash-size: clamp(64px, 22vw, 190px);
 }
 .splash-text .splash-icon {
   width: calc(var(--splash-size) * 0.34);
   height: calc(var(--splash-size) * 0.34);
-  transform: translateY(calc(var(--splash-size) * 0.09));
+  flex-shrink: 0;
+  transform: translateY(calc(var(--splash-size) * 0.03));
   margin-left: calc(var(--splash-size) * -0.012);
 }
 
