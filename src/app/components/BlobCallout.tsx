@@ -6,7 +6,7 @@ export default function BlobCallout() {
   return (
     <section className="bg-[#1E3A8A] py-16 sm:py-20 md:py-24 px-4 sm:px-6 flex items-center justify-center overflow-hidden">
       <motion.div
-        className="relative bg-[#fff8ea] px-6 py-10 sm:px-10 sm:py-14 md:px-14 md:py-16 max-w-2xl w-full text-center"
+        className="relative bg-[#fff8ea] px-6 pt-16 pb-10 sm:px-10 sm:pt-20 sm:pb-14 md:px-14 md:pt-24 md:pb-16 max-w-2xl w-full text-center"
         style={{
           borderRadius: '62% 38% 46% 54% / 55% 48% 52% 45%',
         }}
