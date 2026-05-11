@@ -19,7 +19,7 @@ export default function AboutPage() {
           About Us
         </h1>
         <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-lg sm:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
-          We built this for you, babe. ✦
+          We built this for you, babe ✦
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
           <div className="h-px w-16 bg-blue-200" />

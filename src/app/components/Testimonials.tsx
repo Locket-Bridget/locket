@@ -45,7 +45,7 @@ export default function Testimonials() {
           They were protected.
         </h2>
         <p className="mt-4 text-lg sm:text-xl text-blue-700/70" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
-          Now it&apos;s your turn. ✦
+          Now it&apos;s your turn ✦
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
           <div className="h-px w-16 bg-blue-200" />

@@ -58,7 +58,7 @@ export default function PreviewPage() {
           className="text-gray-500 text-base leading-relaxed mb-10 max-w-sm mx-auto"
           style={{ fontFamily: "var(--font-fredoka)" }}
         >
-          Your accounts. Your brand. Your identity. Protected. ✦
+          Your accounts. Your brand. Your identity. Protected ✦
         </p>
 
         {/* Email capture */}

@@ -86,7 +86,7 @@ export default function ToolkitPage() {
           className="mt-4 text-lg sm:text-xl md:text-2xl text-blue-700/70"
           style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}
         >
-          Pssst… this secret is safe to share. ✦
+          Pssst… this secret is safe to share ✦
         </p>
 
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">

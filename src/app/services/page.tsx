@@ -61,7 +61,7 @@ export default function ServicesPage() {
           Our Services
         </h1>
         <p className="mt-4 text-blue-700/70 max-w-lg mx-auto text-lg sm:text-xl" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
-          Everything you need to protect your online presence. ✦
+          Everything you need to protect your online presence ✦
         </p>
       </div>
 
@@ -158,7 +158,7 @@ export default function ServicesPage() {
           Not sure where to start?
         </p>
         <p className="text-lg sm:text-xl text-blue-700/70 mb-8" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
-          Book a free 15-min call and we&apos;ll figure it out together. ✦
+          Book a free 15-min call and we&apos;ll figure it out together ✦
         </p>
         <button
           onClick={() => setShowModal(true)}

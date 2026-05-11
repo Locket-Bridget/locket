@@ -24,7 +24,7 @@ export default function SurveyPage() {
           className="text-blue-700/80 max-w-xl mx-auto text-lg sm:text-xl leading-relaxed"
           style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
         >
-          Take 2 minutes to tell us about your digital safety concerns — and help us build the protection you actually need. ✦
+          Take 2 minutes to tell us about your digital safety concerns — and help us build the protection you actually need ✦
         </p>
       </div>
 
