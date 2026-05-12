@@ -14,7 +14,7 @@ export default function LocketIcon({ className = "", heartColor = "#ffffff", ...
       {...rest}
     >
       {/* Outer locket shape */}
-      <path d="M12 2a6 6 0 0 0-6 6v2.4a7.9 7.9 0 0 0-2.4 5.6c0 4.4 3.6 8 8 8s8-3.6 8-8a7.9 7.9 0 0 0-2.4-5.6V8a6 6 0 0 0-6-6zm0 2a4 4 0 0 1 4 4v1.5a7.9 7.9 0 0 0-8 0V8a4 4 0 0 1 4-4z" />
+      <path d="M12 2a6 6 0 0 0-6 6v2.4a7.9 7.9 0 0 0-2.4 5.6c0 4.4 3.6 8 8.4 8s8.4-3.6 8.4-8a7.9 7.9 0 0 0-2.4-5.6V8a6 6 0 0 0-6-6zm0 2a4 4 0 0 1 4 4v1.5a7.9 7.9 0 0 0-8 0V8a4 4 0 0 1 4-4z" />
 
       {/* Heart: nudged slightly left & down, modest scale */}
       <g transform="translate(-2.5 0) scale(1.2)">
