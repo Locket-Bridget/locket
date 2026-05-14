@@ -36,10 +36,17 @@ export default function Footer() {
 
         {/* Nav links with star separators */}
         <nav className="flex items-center justify-center flex-wrap gap-x-3 gap-y-2">
-          {['About', 'Services', 'Newsletter', 'Toolkit'].map((item, i, arr) => (
-            <span key={item} className="flex items-center gap-3">
-              <a href={`/${item.toLowerCase()}`} className="hover:text-[#fff8ea] transition-colors">
-                {item}
+          {[
+            { label: 'About', href: '/about' },
+            { label: 'Services', href: '/services' },
+            { label: 'Newsletter', href: '/newsletter' },
+            { label: 'Toolkit', href: '/toolkit' },
+            { label: 'Terms', href: '/terms' },
+            { label: 'Privacy', href: '/privacy' },
+          ].map((item, i, arr) => (
+            <span key={item.label} className="flex items-center gap-3">
+              <a href={item.href} className="hover:text-[#fff8ea] transition-colors">
+                {item.label}
               </a>
               {i < arr.length - 1 && <span className="text-blue-600">★</span>}
             </span>
