@@ -68,7 +68,7 @@ export default function LandingPageSections() {
             <span className="text-3xl sm:text-4xl md:text-5xl italic" style={{ fontFamily: 'var(--font-playfair)', color: '#1E3A8A' }}>deserves protection.</span>
           </h2>
 
-          <p className="mt-5 text-blue-700/70 text-lg sm:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic' }}>
+          <p className="mt-5 text-blue-700/70 text-lg sm:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-playfair)', fontStyle: 'italic', fontWeight: 500 }}>
             The threats are real. The stats are alarming.<br />Most people don&apos;t even know it&apos;s happening. →
           </p>
 
