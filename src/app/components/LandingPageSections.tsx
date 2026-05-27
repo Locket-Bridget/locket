@@ -1,5 +1,8 @@
 import StatSection from "../components/StatSection";
 import LocketIcon from "../components/LocketIcon";
+import { StatDoodleHacked, StatDoodleLockedOut, StatDoodleLeaked } from "../components/StatDoodles";
+
+const doodleClass = "w-full h-auto block";
 
 const TICKER_PHRASE = "CYBER CARE IS SELF CARE";
 const TICKER_REPEATS = 10;
@@ -10,19 +13,19 @@ export default function LandingPageSections() {
       stat: "1 in 4",
       title: "accounts are hacked.",
       text: "Social media breaches are skyrocketing. More than 25% of users experience an account takeover — often without even knowing it happened.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+      doodle: <StatDoodleHacked className={doodleClass} />,
     },
     {
       stat: "61%",
       title: "of victims never recover their accounts.",
       text: "Most people don't know where to start after a breach. Recovery is slow, stressful, and often impossible without expert help.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+      doodle: <StatDoodleLockedOut className={doodleClass} />,
     },
     {
       stat: "49M",
       title: "influencer records leaked in a single breach.",
       text: "Emails, phone numbers, home addresses — all exposed. Data brokers are selling your personal information right now, and most creators have no idea it's out there.",
-      image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
+      doodle: <StatDoodleLeaked className={doodleClass} />,
     }
   ];
 
@@ -88,7 +91,7 @@ export default function LandingPageSections() {
             stat={stat.stat}
             title={stat.title}
             text={stat.text}
-            image={stat.image}
+            doodle={stat.doodle}
             reverse={index % 2 === 1}
             index={index}
           />

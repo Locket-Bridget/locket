@@ -1,13 +1,12 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 type StatSectionProps = {
   stat: string;
   title: string;
   text: string;
-  image: string;
+  doodle: React.ReactNode;
   reverse?: boolean;
   index?: number;
 };
@@ -20,7 +19,7 @@ const stickerColors = [
   'bg-[#fce8e3] text-[#C8553D]',
 ];
 
-export default function StatSection({ stat, title, text, image, reverse = false, index = 0 }: StatSectionProps) {
+export default function StatSection({ stat, title, text, doodle, reverse = false, index = 0 }: StatSectionProps) {
   const tilt = tilts[index % tilts.length];
   const stickerRotation = stickerRotations[index % stickerRotations.length];
   const stickerColor = stickerColors[index % stickerColors.length];
@@ -46,14 +45,12 @@ export default function StatSection({ stat, title, text, image, reverse = false,
         <div
           className="bg-white p-3 pb-10 shadow-2xl relative z-10"
           style={{ transform: `rotate(${tilt}deg)` }}
+          role="img"
+          aria-label={title}
         >
-          <Image
-            src={image}
-            alt={title}
-            width={288}
-            height={256}
-            className="object-cover block w-full max-w-[260px] sm:max-w-[288px] h-auto"
-          />
+          <div className="block w-[260px] sm:w-[288px] max-w-full">
+            {doodle}
+          </div>
         </div>
         <span className="absolute -bottom-4 -left-2 text-2xl text-blue-100 select-none pointer-events-none z-0">✦</span>
       </motion.div>
