@@ -1,6 +1,12 @@
+import type { Guide } from "../toolkit/guidesData";
+import type { GlossaryTerm } from "../toolkit/guidesTaxonomy";
+
 const SITE_URL = "https://www.locketsecurity.com";
 const ORG_ID = `${SITE_URL}/#organization`;
 const SITE_ID = `${SITE_URL}/#website`;
+
+const guideUrl = (slug: string) => `${SITE_URL}/toolkit/${slug}`;
+const abs = (path: string) => (path.startsWith("http") ? path : `${SITE_URL}${path}`);
 
 export function organizationSchema() {
   return {
@@ -134,6 +140,102 @@ export function faqSchema(items: FaqItem[]) {
         "@type": "Answer",
         text: item.a,
       },
+    })),
+  };
+}
+
+// --- Guide library schema (Article / HowTo / Breadcrumb / ItemList / Glossary) ---
+
+export function articleSchema(guide: Guide) {
+  const url = guideUrl(guide.slug);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${url}#article`,
+    headline: guide.title,
+    description: guide.excerpt,
+    mainEntityOfPage: url,
+    image: `${SITE_URL}/og-image.png`,
+    datePublished: guide.datePublished,
+    dateModified: guide.dateModified,
+    author: {
+      "@type": "Person",
+      name: guide.author.name,
+      ...(guide.author.url ? { url: abs(guide.author.url) } : {}),
+    },
+    ...(guide.reviewer
+      ? { reviewedBy: { "@type": "Person", name: guide.reviewer.name } }
+      : {}),
+    publisher: { "@id": ORG_ID },
+    isPartOf: { "@id": SITE_ID },
+    about: { "@id": ORG_ID },
+    inLanguage: "en-US",
+    ...(guide.sources?.length
+      ? { citation: guide.sources.map((s) => s.url) }
+      : {}),
+  };
+}
+
+export function howToSchema(guide: Guide) {
+  if (!guide.howTo) return null;
+  const url = guideUrl(guide.slug);
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: guide.howTo.name,
+    description: guide.howTo.description,
+    ...(guide.howTo.totalTime ? { totalTime: guide.howTo.totalTime } : {}),
+    step: guide.howTo.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+      ...(s.anchor ? { url: `${url}#${s.anchor}` } : {}),
+    })),
+    publisher: { "@id": ORG_ID },
+  };
+}
+
+export function breadcrumbSchema(crumbs: { name: string; url: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      item: abs(c.url),
+    })),
+  };
+}
+
+export function guideListSchema(items: { title: string; slug: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: items.map((g, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: g.title,
+      url: guideUrl(g.slug),
+    })),
+  };
+}
+
+export function glossarySchema(terms: GlossaryTerm[]) {
+  const setId = `${SITE_URL}/glossary#termset`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "@id": setId,
+    name: "Creator Security Glossary",
+    url: `${SITE_URL}/glossary`,
+    hasDefinedTerm: terms.map((t) => ({
+      "@type": "DefinedTerm",
+      "@id": `${SITE_URL}/glossary#${t.slug}`,
+      name: t.term,
+      description: t.definition,
+      inDefinedTermSet: setId,
     })),
   };
 }

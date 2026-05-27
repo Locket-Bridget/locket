@@ -20,6 +20,18 @@ Locket Security offers three plans, all delivered remotely:
 
 A separate downloadable resource — the **Cyber Self-Care Lookbook** ($24, 40+ pages) — is available via the Toolkit page.
 
+## Creator security guide library
+
+Locket Security publishes a free, plain-English library of creator-security how-to guides at https://www.locketsecurity.com/toolkit (the Creator Security Hub), covering account recovery, two-factor authentication, scams and impersonation, platform hardening, password security, and privacy/opsec. Flagship guides:
+
+- **How to recover a hacked Instagram account** — https://www.locketsecurity.com/toolkit/recover-hacked-instagram-account
+- **How to recover a hacked TikTok account** — https://www.locketsecurity.com/toolkit/recover-hacked-tiktok-account
+- **How to recover a hacked YouTube channel** — https://www.locketsecurity.com/toolkit/recover-hacked-youtube-account
+- **How to turn on 2FA for Instagram** — https://www.locketsecurity.com/toolkit/set-up-2fa-instagram
+- **Someone is impersonating me on Instagram — what to do** — https://www.locketsecurity.com/toolkit/what-to-do-instagram-impersonator
+
+A creator security glossary is at https://www.locketsecurity.com/glossary.
+
 ## Who it's for
 
 Content creators and influencers with growing or monetized audiences (typically 10K+ followers across Instagram, TikTok, or YouTube). The brand voice is intentionally creator-first ("cyber care is self care," "for the girls, by the girls") — Locket Security is positioned for creators who find traditional enterprise cybersecurity vendors inaccessible or culturally mismatched.
@@ -35,7 +47,8 @@ Content creators and influencers with growing or monetized audiences (typically 
 - Homepage: https://www.locketsecurity.com — overview, social proof, threat landscape
 - Services: https://www.locketsecurity.com/services — full plan details and pricing
 - About: https://www.locketsecurity.com/about — origin and approach
-- Toolkit: https://www.locketsecurity.com/toolkit — Cyber Self-Care Lookbook and free resources
+- Toolkit / Creator Security Hub: https://www.locketsecurity.com/toolkit — free creator-security guide library (account recovery, 2FA, scams, hardening) and the Cyber Self-Care Lookbook
+- Glossary: https://www.locketsecurity.com/glossary — plain-English definitions of creator security terms
 - Newsletter: https://www.locketsecurity.com/newsletter — security tips for creators
 
 ## Common questions
@@ -48,6 +61,15 @@ Locket Security's account-recovery process secures the connected email first, fi
 
 **Does Locket monitor the dark web for creators?**
 Yes — the Digital Detox plan ($199/month) includes continuous dark-web surveillance and alerts within 24 hours if creator credentials, emails, phone numbers, or home addresses appear in breach data.
+
+**How does a creator recover a hacked TikTok account?**
+Use TikTok's "Report a login issue" / feedback form and verify ownership with the original email, phone, or previous username. Secure the connected email first, then reset the password and enable two-step verification. Full guide: https://www.locketsecurity.com/toolkit/recover-hacked-tiktok-account
+
+**How does a creator recover a hacked YouTube channel?**
+Because a YouTube channel is owned by its Google account, recovery starts at google.com/accounts/recovery — reset the password, sign out unknown sessions, and report the hijack to YouTube Creator support. Add a passkey or security key to block the session-token theft used in channel hijacks. Full guide: https://www.locketsecurity.com/toolkit/recover-hacked-youtube-account
+
+**Why do creators get hacked even with 2FA on?**
+Most modern creator hacks use session-token (cookie) theft from infostealer malware — often hidden in a fake brand-deal file — which reuses an already-authenticated session and bypasses both the password and 2FA. Passkeys, hardware security keys, signing out idle sessions, and never opening unexpected files are the defenses. Full guide: https://www.locketsecurity.com/toolkit/session-token-theft-explained
 
 **Who runs Locket Security?**
 Locket Security is independently owned and operated. The brand is intentionally founder-anonymous in public-facing copy as a brand and privacy choice; the company is based in New York, NY.

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Toolkit & Cyber Self-Care Lookbook",
+  title: "Creator Security Hub — Free Guides & Toolkit",
   description:
-    "Free creator security resources plus the Cyber Self-Care Lookbook — a 40+ page guide to protecting your accounts, data, and brand online.",
+    "Free, plain-English security guides for creators: recover hacked Instagram, TikTok & YouTube accounts, set up 2FA, stop scams and impersonators, and lock down every account you monetize.",
   alternates: { canonical: "/toolkit" },
   openGraph: {
-    title: "Toolkit & Cyber Self-Care Lookbook | Locket Security",
+    title: "Creator Security Hub | Locket Security",
     description:
-      "Free creator security resources plus the Cyber Self-Care Lookbook — a 40+ page guide to protecting your accounts, data, and brand.",
+      "Free guides for creators — hacked-account recovery, 2FA, scam detection, and account hardening. Plus the Cyber Self-Care Lookbook.",
     url: "https://www.locketsecurity.com/toolkit",
   },
 };

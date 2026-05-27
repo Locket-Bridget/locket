@@ -39,8 +39,9 @@ export default function Footer() {
           {[
             { label: 'About', href: '/about' },
             { label: 'Services', href: '/services' },
+            { label: 'Guides', href: '/toolkit' },
+            { label: 'Glossary', href: '/glossary' },
             { label: 'Newsletter', href: '/newsletter' },
-            { label: 'Toolkit', href: '/toolkit' },
             { label: 'Terms', href: '/terms' },
             { label: 'Privacy', href: '/privacy' },
           ].map((item, i, arr) => (
