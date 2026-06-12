@@ -75,9 +75,9 @@ export async function POST(req: Request) {
       text:
 `Hi gorgeous,
 
-Thank you for grabbing Bridget's Picks: The Cyber Self-Care Lookbook ✦
+Thank you for grabbing Our Picks: The Cyber Self-Care Lookbook ✦
 
-Your download is ready here (link is good for 7 days — save the PDF somewhere safe):
+Your download is ready here (link is good for 7 days, so save the PDF somewhere safe):
 ${downloadUrl}
 
 If anything ever feels off, reply to this email and we'll sort it out.
@@ -87,8 +87,8 @@ The Locket Team`,
       html:
 `<div style="font-family:Georgia,serif;color:#1E3A8A;max-width:540px;margin:0 auto;padding:24px;">
   <p style="font-size:18px;font-style:italic;">Hi gorgeous,</p>
-  <p>Thank you for grabbing <strong>Bridget's Picks: The Cyber Self-Care Lookbook</strong> ✦</p>
-  <p>Your download is ready (link is good for 7 days — save the PDF somewhere safe):</p>
+  <p>Thank you for grabbing <strong>Our Picks: The Cyber Self-Care Lookbook</strong> ✦</p>
+  <p>Your download is ready (link is good for 7 days, so save the PDF somewhere safe):</p>
   <p style="text-align:center;margin:32px 0;">
     <a href="${downloadUrl}"
        style="background:#1E3A8A;color:#fff8ea;padding:14px 28px;border-radius:9999px;text-decoration:none;font-weight:600;">

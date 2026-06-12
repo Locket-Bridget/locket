@@ -14,11 +14,11 @@ export type LookbookProduct = {
 
 export const lookbook: LookbookProduct = {
   slug: "lookbook",
-  name: "Bridget's Picks",
+  name: "Our Picks",
   subtitle: "The Cyber Self-Care Lookbook",
-  tagline: "Your full digital glow-up — between two covers.",
+  tagline: "Your full digital glow-up, between two covers.",
   description:
-    "The free toolkit was a teaser. This is the whole routine. 12 chapters, the exact tools Bridget trusts, and the playbooks she runs with her clients — all in one beauty-mag-worthy PDF you can keep on your phone.",
+    "The free toolkit was a teaser. This is the whole routine. 12 chapters, the exact tools we trust, and the playbooks we run with our clients, all in one beauty-mag-worthy PDF you can keep on your phone.",
   price: "$24",
   priceLabel: "one-time",
   pageCountLabel: "40+ pages",
@@ -36,12 +36,12 @@ export const lookbook: LookbookProduct = {
     {
       number: "03",
       title: "For Your Eyes Only",
-      blurb: "Geotag scrubbing, metadata, story hygiene — OPSEC for posting daily.",
+      blurb: "Geotag scrubbing, metadata, story hygiene: OPSEC for posting daily.",
     },
     {
       number: "04",
       title: "Encryption Is the New Sunscreen",
-      blurb: "Disk, cloud, iMessage, Signal — what to encrypt and how.",
+      blurb: "Disk, cloud, iMessage, Signal: what to encrypt and how.",
     },
     {
       number: "05",
@@ -56,7 +56,7 @@ export const lookbook: LookbookProduct = {
     {
       number: "07",
       title: "Account Recovery Playbook",
-      blurb: "Meta, TikTok, IG, X — what to do in the first hour if you're locked out.",
+      blurb: "Meta, TikTok, IG, X: what to do in the first hour if you're locked out.",
     },
     {
       number: "08",
@@ -80,13 +80,13 @@ export const lookbook: LookbookProduct = {
     },
     {
       number: "12",
-      title: "Bridget's Picks: The Tool Stack",
-      blurb: "The full curated list — tool by tool, why each, and how to set it up.",
+      title: "Our Picks: The Tool Stack",
+      blurb: "The full curated list: tool by tool, why each, and how to set it up.",
     },
   ],
   highlights: [
-    "12 chapters — the full self-care routine, not just the highlights",
-    "Bridget's Picks: every tool she actually trusts, by category",
+    "12 chapters: the full self-care routine, not just the highlights",
+    "Our Picks: every tool we actually trust, by category",
     "Plain-English playbooks for when something goes wrong",
     "Printable Incident Response quick card",
     "Designed to feel like the magazine, not the manual",
@@ -94,15 +94,15 @@ export const lookbook: LookbookProduct = {
   faq: [
     {
       q: "Is this different from the free toolkit?",
-      a: "Yes. The free toolkit gives you 5 tips. The lookbook is the full 12-chapter routine, the curated tool stack, the recovery playbook, and the incident-response card. Same brand voice — much deeper.",
+      a: "Yes. The free toolkit gives you 5 tips. The lookbook is the full 12-chapter routine, the curated tool stack, the recovery playbook, and the incident-response card. Same brand voice, much deeper.",
     },
     {
       q: "Do I need to be technical?",
-      a: "No. It's written like a beauty magazine — clear, calm, and designed for people who post for a living, not pen-test for a living.",
+      a: "No. It's written like a beauty magazine: clear, calm, and designed for people who post for a living, not pen-test for a living.",
     },
     {
       q: "How do I get it?",
-      a: "After checkout, you'll get an email within a few minutes with a download link. The link is good for 7 days — save the PDF somewhere safe.",
+      a: "After checkout, you'll get an email within a few minutes with a download link. The link is good for 7 days, so save the PDF somewhere safe.",
     },
     {
       q: "Refunds?",

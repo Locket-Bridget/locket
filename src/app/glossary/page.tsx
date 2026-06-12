@@ -7,7 +7,7 @@ import { glossary } from "../toolkit/guidesTaxonomy";
 export const metadata: Metadata = {
   title: "Creator Security Glossary",
   description:
-    "Plain-English definitions of creator security terms — 2FA, phishing, session tokens, SIM swaps, data brokers, doxxing, passkeys, and more.",
+    "Plain-English definitions of creator security terms: 2FA, phishing, session tokens, SIM swaps, data brokers, doxxing, passkeys, and more.",
   alternates: { canonical: "/glossary" },
   openGraph: {
     title: "Creator Security Glossary | Locket Security",
@@ -47,7 +47,7 @@ export default function GlossaryPage() {
           Creator Security Glossary
         </h1>
         <p className="mt-4 text-blue-700/70 text-base leading-relaxed">
-          The security terms every creator should know — no jargon, just clear definitions.
+          The security terms every creator should know. No jargon, just clear definitions.
         </p>
       </div>
 
@@ -88,7 +88,7 @@ export default function GlossaryPage() {
           className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-6 py-3 rounded-full text-sm font-semibold hover:scale-105 transition-all"
           style={{ fontFamily: "var(--font-fredoka)", fontWeight: 600 }}
         >
-          ← Back to the Creator Security Hub
+          ← Back to the Creator Security Toolkit
         </Link>
       </div>
     </main>
