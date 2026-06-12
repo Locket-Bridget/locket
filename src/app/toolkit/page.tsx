@@ -9,6 +9,7 @@ import { ToolkitTipsBand } from "./components/ToolkitTipsBand";
 import { ToolkitEmailCapture } from "./components/ToolkitEmailCapture";
 import { GuideFaqAccordion } from "./components/GuideFaqAccordion";
 import { GuideCard } from "./components/GuideCard";
+import { ToolkitToc } from "./components/ToolkitToc";
 
 export default function ToolkitPage() {
   const schemaBlocks = [
@@ -30,13 +31,15 @@ export default function ToolkitPage() {
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full rotate-1 shadow-md mb-6"
           style={{ fontFamily: "var(--font-fredoka)", fontWeight: 600 }}
         >
-          ★ &nbsp; creator security hub
+          ★ &nbsp; creator security toolkit
         </span>
         <h1
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-900 leading-tight"
           style={{ fontFamily: "var(--font-titan)" }}
         >
-          Your Cyber Self-Care
+          Your Cyber
+          <br />
+          <span className="whitespace-nowrap">Self-Care</span>
           <br />
           <span style={{ fontFamily: "var(--font-titan)" }}>Toolkit.</span>
         </h1>
@@ -44,7 +47,7 @@ export default function ToolkitPage() {
           className="mt-4 text-lg sm:text-xl md:text-2xl text-blue-700/70"
           style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
         >
-          Free, plain-English guides to stop scams, recover hacked accounts, and lock down everything you create on ✦
+          Free, plain-English guides to outsmart scammers, rescue hacked accounts, and protect everything you&apos;ve built ✦
         </p>
         <div className="flex items-center justify-center gap-4 mt-6 text-blue-300">
           <div className="h-px w-16 bg-blue-200" />
@@ -55,14 +58,20 @@ export default function ToolkitPage() {
         </div>
       </div>
 
+      {/* Quick self-care tips (brand band) */}
+      <ToolkitTipsBand />
+
+      {/* Jump links to each cluster section */}
+      <ToolkitToc />
+
       {/* Flagship "start here" rail */}
       {flagshipGuides.length > 0 && (
         <div className="max-w-5xl mx-auto mb-16">
           <h2
-            className="text-center text-sm font-semibold tracking-[0.16em] uppercase text-[#C8553D] mb-6"
-            style={{ fontFamily: "var(--font-fredoka)", fontWeight: 600 }}
+            className="text-center text-2xl sm:text-3xl font-bold text-blue-900 mb-6"
+            style={{ fontFamily: "var(--font-titan)" }}
           >
-            ★ &nbsp; start here
+            The Essentials
           </h2>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {flagshipGuides.map((g) => (
@@ -85,9 +94,6 @@ export default function ToolkitPage() {
           </Link>
         </p>
       </div>
-
-      {/* Quick self-care tips (brand band) */}
-      <ToolkitTipsBand />
 
       {/* Paid lookbook CTA */}
       <div className="max-w-xl mx-auto mt-20 mb-8 bg-[#fff8ea] rounded-3xl p-6 sm:p-10 text-center relative overflow-hidden border-2 border-dashed border-blue-200 -rotate-1">
@@ -112,7 +118,7 @@ export default function ToolkitPage() {
           {lookbook.subtitle}
         </h2>
         <p className="text-blue-700/70 text-sm leading-relaxed mb-5 max-w-md mx-auto">
-          12 chapters, the curated tool stack, and the playbooks Bridget runs with her clients.{" "}
+          12 chapters, the curated tool stack, and the playbooks we run with our clients.{" "}
           {lookbook.pageCountLabel}, instant download.
         </p>
         <Link
@@ -120,7 +126,7 @@ export default function ToolkitPage() {
           className="inline-flex items-center gap-2 bg-blue-900 text-[#fff8ea] px-6 py-3 rounded-full text-sm font-semibold hover:scale-105 transition-all"
           style={{ fontFamily: "var(--font-fredoka)", fontWeight: 600 }}
         >
-          Get the Lookbook — {lookbook.price} ★
+          Get the Lookbook: {lookbook.price} ★
         </Link>
       </div>
 

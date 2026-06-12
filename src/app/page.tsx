@@ -4,6 +4,7 @@ import Testimonials from "./components/Testimonials";
 import BlobCallout from "./components/BlobCallout";
 import StripeDivider from "./components/StripeDivider";
 import { HomepageFaq } from "./components/HomepageFaq";
+import { HomepageGuidesTeaser } from "./components/HomepageGuidesTeaser";
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
       <StripeDivider />
       <BlobCallout />
       <StripeDivider />
+      <HomepageGuidesTeaser />
       <HomepageFaq />
       <Testimonials />
     </>
