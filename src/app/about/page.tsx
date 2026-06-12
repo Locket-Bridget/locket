@@ -4,12 +4,12 @@ import LocketIcon from '../components/LocketIcon';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'The story behind Locket Security — personal cybersecurity and brand protection built for content creators, by people who understand how creators actually live online.',
+    'The story behind Locket Security: personal cybersecurity and brand protection built for content creators, by people who understand how creators actually live online.',
   alternates: { canonical: '/about' },
   openGraph: {
     title: 'About | Locket Security',
     description:
-      'The story behind Locket Security — personal cybersecurity and brand protection built for content creators.',
+      'The story behind Locket Security: personal cybersecurity and brand protection built for content creators.',
     url: 'https://www.locketsecurity.com/about',
   },
 };

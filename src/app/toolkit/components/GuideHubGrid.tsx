@@ -18,7 +18,7 @@ export function GuideHubGrid() {
             aria-labelledby={`${cluster.id}-heading`}
             className="scroll-mt-24"
           >
-            <div className="mb-6">
+            <div className="mb-6 text-center">
               <h2
                 id={`${cluster.id}-heading`}
                 className="text-2xl sm:text-3xl font-bold text-blue-900"

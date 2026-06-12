@@ -11,7 +11,7 @@ export type ClusterId =
 
 export type Severity = "High" | "Medium" | "Low";
 
-// The doodle used for the guide's illustration — maps to components in Doodles.tsx
+// The doodle used for the guide's illustration. Maps to components in Doodles.tsx
 export type Illustration =
   | "lock"
   | "shield"
@@ -59,7 +59,7 @@ export type Guide = {
   // identity & taxonomy
   slug: string;
   cluster: ClusterId;
-  category: string; // human label, e.g. "Account Recovery"
+  category: string; // human label, e.g. "Get Your Accounts Back"
   flagship?: boolean;
 
   // titles & SEO

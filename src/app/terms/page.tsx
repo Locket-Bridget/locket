@@ -78,7 +78,7 @@ const sections: Section[] = [
           <li className="flex items-start gap-3">
             <span className="text-[#C8553D] mt-1">★</span>
             <span>
-              <strong>Cyber Cleanse</strong> — a one-time security audit of your
+              <strong>Cyber Cleanse</strong>: a one-time security audit of your
               social accounts, dark web exposure, third-party app access, and
               privacy settings, delivered with a personalized PDF report.
             </span>
@@ -86,7 +86,7 @@ const sections: Section[] = [
           <li className="flex items-start gap-3">
             <span className="text-[#C8553D] mt-1">★</span>
             <span>
-              <strong>Digital Detox</strong> — an ongoing monthly subscription
+              <strong>Digital Detox</strong>: an ongoing monthly subscription
               that includes the Cyber Cleanse audit in your first month, plus
               24/7 dark web monitoring, breach alerts, impersonation detection,
               monthly threat reports, platform policy alerts, and business-hours
@@ -96,7 +96,7 @@ const sections: Section[] = [
           <li className="flex items-start gap-3">
             <span className="text-[#C8553D] mt-1">★</span>
             <span>
-              <strong>Protected Princess</strong> — our highest tier, including
+              <strong>Protected Princess</strong>: our highest tier, including
               everything in Digital Detox plus active impersonation, brand, and
               link monitoring, priority incident support during business hours,
               direct Slack access during support hours, and a quarterly
@@ -306,8 +306,8 @@ const sections: Section[] = [
     body: (
       <>
         <p>
-          We treat the non-public information you share with us — including
-          account details, audit findings, and any personal communications —
+          We treat the non-public information you share with us (including
+          account details, audit findings, and any personal communications)
           as confidential. We will not disclose it to third parties except (a)
           to service providers we use to operate Locket (such as payment,
           monitoring, and infrastructure providers) under appropriate
@@ -442,9 +442,9 @@ const sections: Section[] = [
         <p>
           To the fullest extent permitted by law, Locket and its members,
           managers, employees, and agents will not be liable for any indirect,
-          incidental, special, consequential, exemplary, or punitive damages —
-          including lost profits, lost revenue, lost data, loss of goodwill, or
-          reputational harm — arising out of or relating to the Site, the
+          incidental, special, consequential, exemplary, or punitive damages
+          (including lost profits, lost revenue, lost data, loss of goodwill, or
+          reputational harm) arising out of or relating to the Site, the
           Services, or these Terms, even if we have been advised of the
           possibility of such damages.
         </p>
@@ -494,8 +494,8 @@ const sections: Section[] = [
         <p>
           You may stop using the Site at any time. To cancel a paid Service,
           follow the steps in Section 7. The sections of these Terms that by
-          their nature should survive termination — including Sections 9 (in
-          part), 10, 14, 15, 17, and 18 — will survive.
+          their nature should survive termination, including Sections 9 (in
+          part), 10, 14, 15, 17, and 18, will survive.
         </p>
       </>
     ),

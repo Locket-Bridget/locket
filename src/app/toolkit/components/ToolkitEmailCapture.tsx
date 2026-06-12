@@ -56,7 +56,7 @@ export function ToolkitEmailCapture() {
         </form>
       )}
       {status === "error" && (
-        <p className="text-red-300 text-xs mt-3">Something went wrong — try again.</p>
+        <p className="text-red-300 text-xs mt-3">Something went wrong. Try again.</p>
       )}
     </div>
   );

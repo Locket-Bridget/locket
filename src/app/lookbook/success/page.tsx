@@ -25,7 +25,7 @@ export default function LookbookSuccessPage() {
           style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
         >
           We just sent your lookbook download link to the email you used at
-          checkout. The link is good for 7 days — save the PDF somewhere safe.
+          checkout. The link is good for 7 days, so save the PDF somewhere safe.
         </p>
 
         <div className="flex items-center justify-center gap-2 my-8">

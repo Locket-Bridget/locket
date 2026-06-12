@@ -33,7 +33,7 @@ const titanOne = Titan_One({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.locketsecurity.com"),
   title: {
-    default: "Locket Security — Cybersecurity & Brand Protection for Content Creators",
+    default: "Locket Security: Cybersecurity & Brand Protection for Content Creators",
     template: "%s | Locket Security",
   },
   description:
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   applicationName: "Locket Security",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Locket Security — Cybersecurity & Brand Protection for Content Creators",
+    title: "Locket Security: Cybersecurity & Brand Protection for Content Creators",
     description:
       "Personal cybersecurity built for creators. Account recovery, dark web monitoring, and brand protection for influencers serious about their online presence.",
     url: "https://www.locketsecurity.com",
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Locket Security — Cyber care is self care.",
+        alt: "Locket Security: Cyber care is self care.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Locket Security — Cybersecurity & Brand Protection for Content Creators",
+    title: "Locket Security: Cybersecurity & Brand Protection for Content Creators",
     description:
       "Personal cybersecurity built for creators. Account recovery, dark web monitoring, and brand protection.",
     images: ["/og-image.png"],

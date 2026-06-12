@@ -11,7 +11,7 @@ const testimonials = [
     tilt: "-rotate-1",
   },
   {
-    quote: "The way they explain everything — no jargon, no judgment — it actually felt like talking to a friend who happened to know everything about cybersecurity. My accounts have never felt safer.",
+    quote: "The way they explain everything (no jargon, no judgment), it actually felt like talking to a friend who happened to know everything about cybersecurity. My accounts have never felt safer.",
     name: "Jade R.",
     handle: "@jadestyle",
     followers: "89K followers",

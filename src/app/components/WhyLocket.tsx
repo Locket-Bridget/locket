@@ -2,14 +2,14 @@ const others = [
   "Built for enterprises, not creators",
   "A dashboard you manage yourself",
   "Tech speak and ticket systems",
-  "Detects threats — then leaves you alone",
+  "Detects threats, then leaves you alone",
   "Generic password tools rebranded for influencers",
   "No one picks up the phone",
 ];
 
 const locket = [
   "Built from scratch for influencers and creators",
-  "Done for you — we handle it",
+  "Done for you: we handle it",
   "Plain English, real conversations",
   "We respond fast and walk you through every step",
   "Creator-specific threats: deepfakes, fake ads, impersonation",

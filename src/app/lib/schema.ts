@@ -19,7 +19,7 @@ export function organizationSchema() {
     logo: `${SITE_URL}/logo.png`,
     image: `${SITE_URL}/og-image.png`,
     description:
-      "Personal cybersecurity and brand protection built for content creators — account recovery, dark web monitoring, threat detection, and security education designed for the way creators actually live online.",
+      "Personal cybersecurity and brand protection built for content creators: account recovery, dark web monitoring, threat detection, and security education designed for the way creators actually live online.",
     email: "hello@locketsecurity.com",
     address: {
       "@type": "PostalAddress",
@@ -106,7 +106,7 @@ export function allServiceSchemas() {
     serviceSchema({
       name: "Cyber Cleanse",
       description:
-        "One-time audit of a creator's entire digital footprint — every monetized account, email, password, and data-broker exposure — with a prioritized fix list. Delivered in 5 business days.",
+        "One-time audit of a creator's entire digital footprint (every monetized account, email, password, and data-broker exposure) with a prioritized fix list. Delivered in 5 business days.",
       price: "99",
       recurring: false,
     }),
@@ -255,10 +255,10 @@ export const homepageFaqs: FaqItem[] = [
   },
   {
     q: "Who is Locket Security for?",
-    a: "Locket Security is built for content creators and influencers with growing audiences and monetized accounts — typically 10K+ followers across Instagram, TikTok, or YouTube. Plans scale from emerging creators (Cyber Cleanse, $99 one-time) to monetized full-time creators (Digital Detox, $199/month) to top-tier creators with significant brand revenue (Protected Princess, $499/month).",
+    a: "Locket Security is built for content creators and influencers with growing audiences and monetized accounts, typically 10K+ followers across Instagram, TikTok, or YouTube. Plans scale from emerging creators (Cyber Cleanse, $99 one-time) to monetized full-time creators (Digital Detox, $199/month) to top-tier creators with significant brand revenue (Protected Princess, $499/month).",
   },
   {
     q: "Is dark web monitoring worth it for creators?",
-    a: "Yes, especially for monetized creators. A single 2024 breach exposed 49 million influencer records — emails, phone numbers, and home addresses are actively traded on data broker sites. Locket Security's Digital Detox plan ($199/month) monitors the dark web continuously and alerts within 24 hours if your credentials appear, giving you time to rotate passwords before an account takeover happens.",
+    a: "Yes, especially for monetized creators. A single 2024 breach exposed 49 million influencer records. Emails, phone numbers, and home addresses are actively traded on data broker sites. Locket Security's Digital Detox plan ($199/month) monitors the dark web continuously and alerts within 24 hours if your credentials appear, giving you time to rotate passwords before an account takeover happens.",
   },
 ];

@@ -12,7 +12,7 @@ export default function LandingPageSections() {
     {
       stat: "1 in 4",
       title: "accounts are hacked.",
-      text: "Social media breaches are skyrocketing. More than 25% of users experience an account takeover — often without even knowing it happened.",
+      text: "Social media breaches are skyrocketing. More than 25% of users experience an account takeover, often without even knowing it happened.",
       doodle: <StatDoodleHacked className={doodleClass} />,
     },
     {
@@ -24,7 +24,7 @@ export default function LandingPageSections() {
     {
       stat: "49M",
       title: "influencer records leaked in a single breach.",
-      text: "Emails, phone numbers, home addresses — all exposed. Data brokers are selling your personal information right now, and most creators have no idea it's out there.",
+      text: "Emails, phone numbers, home addresses. All exposed. Data brokers are selling your personal information right now, and most creators have no idea it's out there.",
       doodle: <StatDoodleLeaked className={doodleClass} />,
     }
   ];

@@ -28,7 +28,7 @@ const feed = [
   {
     category: "Platform Updates",
     headline: "Meta to Shut Down Instagram End-to-End Encrypted Chat Support Starting May 2026",
-    excerpt: "Meta is discontinuing end-to-end encryption for Instagram DMs after May 8, 2026, citing low adoption. Users who want encrypted messaging will be directed to WhatsApp instead — leaving Instagram conversations more exposed.",
+    excerpt: "Meta is discontinuing end-to-end encryption for Instagram DMs after May 8, 2026, citing low adoption. Users who want encrypted messaging will be directed to WhatsApp instead, leaving Instagram conversations more exposed.",
     date: "Mar 13, 2026",
     severity: "Medium" as const,
     source: "The Hacker News",
@@ -46,7 +46,7 @@ const feed = [
   {
     category: "Account Takeovers",
     headline: "15,000 Fake TikTok Shop Domains Deliver Malware and Steal Crypto",
-    excerpt: "Researchers uncovered FraudOnTok — a campaign using 15,000+ lookalike domains to trick TikTok Shop users into downloading malware. The operation uses AI-generated videos and Meta ads to advertise fake discounts, targeting crypto theft and credential harvesting.",
+    excerpt: "Researchers uncovered FraudOnTok, a campaign using 15,000+ lookalike domains to trick TikTok Shop users into downloading malware. The operation uses AI-generated videos and Meta ads to advertise fake discounts, targeting crypto theft and credential harvesting.",
     date: "Aug 5, 2025",
     severity: "High" as const,
     source: "The Hacker News",
@@ -55,7 +55,7 @@ const feed = [
   {
     category: "Dark Web",
     headline: "Malicious PyPI Packages Exploit Instagram and TikTok APIs to Validate Stolen Accounts",
-    excerpt: "Three malicious Python packages on PyPI were found sending forged requests to TikTok and Instagram APIs to verify whether stolen email addresses have active accounts — building validated lists for credential stuffing attacks.",
+    excerpt: "Three malicious Python packages on PyPI were found sending forged requests to TikTok and Instagram APIs to verify whether stolen email addresses have active accounts, building validated lists for credential stuffing attacks.",
     date: "May 20, 2025",
     severity: "High" as const,
     source: "The Hacker News",
@@ -64,7 +64,7 @@ const feed = [
   {
     category: "Platform Updates",
     headline: "TikTok Quietly Updated Its Privacy Policy to Collect Users' Biometric Data",
-    excerpt: "TikTok revised its U.S. privacy policy to permit automatic collection of biometric identifiers including faceprints and voiceprints from user content — without explicit consent in most U.S. states, following a previous $92 million settlement.",
+    excerpt: "TikTok revised its U.S. privacy policy to permit automatic collection of biometric identifiers including faceprints and voiceprints from user content, without explicit consent in most U.S. states, following a previous $92 million settlement.",
     date: "Jun 5, 2021",
     severity: "Medium" as const,
     source: "The Hacker News",
@@ -158,7 +158,7 @@ export default function NewsletterPage() {
           Get the intel, weekly.
         </h2>
         <p className="text-blue-300 text-sm mb-6">
-          Social media threats, influencer alerts, and dark web updates — straight to your inbox.
+          Social media threats, influencer alerts, and dark web updates. Straight to your inbox.
         </p>
 
         {status === "success" ? (
@@ -186,7 +186,7 @@ export default function NewsletterPage() {
           </form>
         )}
         {status === "error" && (
-          <p className="text-red-300 text-xs mt-3">Something went wrong — try again or email us directly.</p>
+          <p className="text-red-300 text-xs mt-3">Something went wrong. Try again or email us directly.</p>
         )}
       </div>
 

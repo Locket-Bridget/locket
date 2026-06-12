@@ -10,7 +10,7 @@ const PER_CHAR_DELAY_S = 0.06;
 type Archetype = { bg: string; glow: string; size: string; off: string };
 type Slot = { top: string; side: "left" | "right" };
 
-// Four sparkle archetypes — each is a (color, glow, size, offset-from-letter)
+// Four sparkle archetypes: each is a (color, glow, size, offset-from-letter)
 // bundle that travels together when it rotates between slots.
 const archetypes: Archetype[] = [
   { bg: "#f9a8d4", glow: "#f472b6", size: "0.5em", off: "0.55em" }, // big pink
@@ -19,7 +19,7 @@ const archetypes: Archetype[] = [
   { bg: "#a5b4fc", glow: "#818cf8", size: "0.3em", off: "0.32em" }, // small soft-blue
 ];
 
-// Four fixed slots around each letter — top-left, lower-mid-left,
+// Four fixed slots around each letter: top-left, lower-mid-left,
 // bottom-right, upper-mid-right. Each letter cycles which archetype
 // occupies each slot, so colors don't form horizontal tracks.
 const slots: Slot[] = [

@@ -102,7 +102,7 @@ const sections: Section[] = [
           </li>
           <li>
             <strong>Service delivery information:</strong> the details you
-            choose to share so we can perform your audit or monitoring — such
+            choose to share so we can perform your audit or monitoring, such
             as social handles, account emails, recovery emails, phone numbers,
             past breach history, screenshots, and (where you grant supervised
             access) temporary credentials, two-factor codes, or business-manager
@@ -169,7 +169,7 @@ const sections: Section[] = [
         <p>We use the information we collect to:</p>
         <ul className="list-disc list-inside space-y-1.5 mt-2 text-blue-700/80">
           <li>
-            Provide, operate, and improve the Site and Services — including
+            Provide, operate, and improve the Site and Services, including
             performing audits, dark-web and breach monitoring, impersonation
             detection, and reporting;
           </li>
@@ -183,7 +183,7 @@ const sections: Section[] = [
           </li>
           <li>
             Send marketing communications, newsletters, and product updates if
-            you have opted in (you can opt out at any time — see{" "}
+            you have opted in (you can opt out at any time; see{" "}
             <a className="underline decoration-blue-300" href="#your-rights">
               Section 10
             </a>
@@ -204,7 +204,7 @@ const sections: Section[] = [
           <li>
             Review aggregated server logs to understand how the Site is used
             and improve our offerings (we do not currently run analytics or
-            behavioral tracking — see{" "}
+            behavioral tracking; see{" "}
             <a className="underline decoration-blue-300" href="#cookies">
               Section 8
             </a>
@@ -231,7 +231,7 @@ const sections: Section[] = [
           <li>
             <strong>Legitimate interests:</strong> to operate and improve our
             business, to maintain Site security, and to communicate with you
-            about Services you have purchased — provided those interests are
+            about Services you have purchased, provided those interests are
             not overridden by your rights.
           </li>
           <li>
@@ -265,31 +265,31 @@ const sections: Section[] = [
         </p>
         <ul className="list-disc list-inside space-y-1.5 mt-2 text-blue-700/80">
           <li>
-            <strong>Stripe</strong> — payment processing and billing;
+            <strong>Stripe</strong>: payment processing and billing;
           </li>
           <li>
-            <strong>Resend</strong> — transactional email delivery (such as
+            <strong>Resend</strong>: transactional email delivery (such as
             consultation requests);
           </li>
           <li>
-            <strong>Formspree</strong> — newsletter signup form submission;
+            <strong>Formspree</strong>: newsletter signup form submission;
           </li>
           <li>
-            <strong>Calendly</strong> — consultation scheduling;
+            <strong>Calendly</strong>: consultation scheduling;
           </li>
           <li>
-            <strong>Typeform</strong> — research surveys, where applicable;
+            <strong>Typeform</strong>: research surveys, where applicable;
           </li>
           <li>
             <strong>Hosting &amp; infrastructure providers</strong> (for
-            example, Vercel) — to host the Site and store operational data;
+            example, Vercel): to host the Site and store operational data;
           </li>
           <li>
-            <strong>Breach and dark-web data providers</strong> — to perform
+            <strong>Breach and dark-web data providers</strong>: to perform
             monitoring on the identifiers you authorize us to monitor;
           </li>
           <li>
-            <strong>Communications tools</strong> — such as Slack or shared
+            <strong>Communications tools</strong>, such as Slack or shared
             inboxes used to deliver priority support on Protected Princess.
           </li>
         </ul>
@@ -318,8 +318,8 @@ const sections: Section[] = [
         </p>
         <p>
           We will share information for any other purpose with your direction
-          or consent — for example, if you ask us to coordinate with your
-          manager, agency, or lawyer.
+          or consent (for example, if you ask us to coordinate with your
+          manager, agency, or lawyer).
         </p>
       </>
     ),
@@ -380,11 +380,11 @@ const sections: Section[] = [
           the Site.
         </p>
         <p>
-          When you use third-party features embedded on the Site — for
+          When you use third-party features embedded on the Site (for
           example, <strong>Stripe Checkout</strong> for payments,{" "}
           <strong>Calendly</strong> for booking consultations,{" "}
           <strong>Typeform</strong> for surveys, or{" "}
-          <strong>Formspree</strong> for the newsletter signup — those
+          <strong>Formspree</strong> for the newsletter signup), those
           providers may set their own cookies under their own privacy policies
           while you interact with their tools. We do not control those cookies.
         </p>
@@ -410,7 +410,7 @@ const sections: Section[] = [
         <p>
           We take reasonable administrative, technical, and physical safeguards
           designed to protect your information against loss, theft, misuse, and
-          unauthorized access — including TLS encryption in transit, vetted
+          unauthorized access, including TLS encryption in transit, vetted
           third-party processors, access controls based on least privilege,
           two-factor authentication on internal accounts, and prompt deletion
           of credentials we no longer need.
@@ -502,13 +502,13 @@ const sections: Section[] = [
           <li>
             The right to <strong>opt out</strong> of the &ldquo;sale&rdquo; or
             &ldquo;sharing&rdquo; of personal information for cross-context
-            behavioral advertising — we do <strong>not</strong> sell or share
-            personal information in this sense;
+            behavioral advertising (we do <strong>not</strong> sell or share
+            personal information in this sense);
           </li>
           <li>
             The right to <strong>limit</strong> the use of sensitive personal
-            information — we do not use sensitive information for purposes
-            outside what is described here;
+            information (we do not use sensitive information for purposes
+            outside what is described here);
           </li>
           <li>
             The right to <strong>non-discrimination</strong> for exercising
@@ -543,7 +543,7 @@ const sections: Section[] = [
         </p>
         <p>
           When we transfer personal information out of the EEA or UK, we rely
-          on appropriate safeguards — such as Standard Contractual Clauses —
+          on appropriate safeguards, such as Standard Contractual Clauses,
           to protect that information.
         </p>
       </>
@@ -621,8 +621,8 @@ const sections: Section[] = [
         <p>
           We may update this Privacy Policy from time to time. If we make a
           material change, we will update the &ldquo;Last updated&rdquo; date
-          at the top, post a notice on the Site, and — where required by law
-          — notify you by email at least 14 days before the change takes
+          at the top, post a notice on the Site, and, where required by law,
+          notify you by email at least 14 days before the change takes
           effect. Your continued use of the Site or Services after the change
           takes effect constitutes acceptance of the updated Policy.
         </p>
@@ -728,7 +728,7 @@ export default function PrivacyPage() {
             <li className="flex items-start gap-3">
               <span className="text-[#C8553D] mt-0.5">★</span>
               <span>
-                We collect what we need to deliver your Service — and nothing
+                We collect what we need to deliver your Service, and nothing
                 more.
               </span>
             </li>

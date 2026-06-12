@@ -1,6 +1,6 @@
 import type { GuideSection } from "../guidesData";
 
-// Question-led table of contents — mirrors how creators phrase the query,
+// Question-led table of contents: mirrors how creators phrase the query,
 // and gives AI engines a clean map of the answers on the page.
 export function GuideToc({ sections }: { sections: GuideSection[] }) {
   if (sections.length < 2) return null;

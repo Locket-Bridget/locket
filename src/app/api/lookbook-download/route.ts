@@ -8,7 +8,7 @@ export const runtime = "nodejs";
 // PDF lives outside /public so it's not statically served. Path is resolved
 // relative to the project root at request time. Replace with Vercel Blob /
 // S3 + presigned URL when the file is too large to bundle, or when we need
-// per-purchase download counts (requires KV — see plan).
+// per-purchase download counts (requires KV, see plan).
 const PDF_RELATIVE_PATH = "private/lookbook.pdf";
 const FILE_NAME = "bridgets-picks-lookbook.pdf";
 
@@ -32,7 +32,7 @@ export async function GET(req: Request) {
   } catch (err) {
     console.error("Lookbook PDF missing at", filePath, err);
     return NextResponse.json(
-      { error: "Lookbook is being prepared — try again in a few minutes." },
+      { error: "Lookbook is being prepared. Try again in a few minutes." },
       { status: 503 }
     );
   }

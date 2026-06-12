@@ -57,7 +57,7 @@ export const twoFactorGuides: Guide[] = [
       },
       {
         q: "Will 2FA stop my Instagram from being hacked?",
-        a: "It blocks the most common attack — someone logging in with a stolen or guessed password. It doesn't stop session-token theft from malware, so pair 2FA with cautious link-clicking and a password manager.",
+        a: "It blocks the most common attack: someone logging in with a stolen or guessed password. It doesn't stop session-token theft from malware, so pair 2FA with cautious link-clicking and a password manager.",
       },
     ],
     relatedSlugs: [
@@ -65,7 +65,7 @@ export const twoFactorGuides: Guide[] = [
       "authenticator-app-vs-sms-2fa",
       "secure-instagram-account-checklist",
     ],
-    sources: [{ label: "Instagram Help — Two-factor authentication", url: "https://help.instagram.com/" }],
+    sources: [{ label: "Instagram Help: Two-factor authentication", url: "https://help.instagram.com/" }],
     author: BRIDGET,
     reviewer: LOCKET_TEAM,
     datePublished: PUBLISHED,
@@ -81,7 +81,7 @@ export const twoFactorGuides: Guide[] = [
     title: "How do I turn on 2FA for TikTok?",
     metaTitle: "How to Turn On Two-Step Verification for TikTok",
     metaDescription:
-      "Enable two-step verification on TikTok the secure way — use an authenticator app, add it to a business account, and keep your videos and DMs protected.",
+      "Enable two-step verification on TikTok the secure way: use an authenticator app, add it to a business account, and keep your videos and DMs protected.",
     excerpt:
       "TikTok calls it two-step verification. Here's where to find it, which method to pick, and how to protect a Creator or business account.",
     tldr:
@@ -91,25 +91,25 @@ export const twoFactorGuides: Guide[] = [
         id: "where-is-tiktok-2fa",
         question: "Where is two-step verification on TikTok?",
         answer:
-          "Tap Profile → the menu (☰) → Settings and privacy → Security & permissions (or Security) → 2-step verification. TikTok asks you to select verification methods such as authenticator app, email, and SMS — choosing more than one gives you a reliable fallback if you lose a device.",
+          "Tap Profile → the menu (☰) → Settings and privacy → Security & permissions (or Security) → 2-step verification. TikTok asks you to select verification methods such as authenticator app, email, and SMS. Choosing more than one gives you a reliable fallback if you lose a device.",
       },
       {
         id: "tiktok-2fa-method",
         question: "Which TikTok verification method is safest?",
         answer:
-          "Where TikTok offers an authenticator-app option, choose it — app-generated codes resist the SIM-swap attacks that defeat SMS. Email verification is a reasonable second method. Enabling two methods means a lost phone or changed number won't fully lock you out of the account.",
+          "Where TikTok offers an authenticator-app option, choose it, because app-generated codes resist the SIM-swap attacks that defeat SMS. Email verification is a reasonable second method. Enabling two methods means a lost phone or changed number won't fully lock you out of the account.",
       },
       {
         id: "tiktok-business-2fa",
         question: "Does a TikTok business or Creator account need extra protection?",
         answer:
-          "Yes. Monetized accounts are bigger targets, so enable 2-step verification, use a unique password, and limit who has the login. If your team posts on your behalf, avoid sharing the raw password — use TikTok's account-access tools or a password manager's secure sharing instead.",
+          "Yes. Monetized accounts are bigger targets, so enable 2-step verification, use a unique password, and limit who has the login. If your team posts on your behalf, avoid sharing the raw password. Use TikTok's account-access tools or a password manager's secure sharing instead.",
       },
     ],
     faqs: [
       {
-        q: "TikTok keeps asking for a code every login — can I stop that?",
-        a: "You can usually mark a device as trusted so it won't prompt every time on that phone. Keep the prompt active for new or shared devices — that's exactly where it stops an intruder.",
+        q: "TikTok keeps asking for a code every login. Can I stop that?",
+        a: "You can usually mark a device as trusted so it won't prompt every time on that phone. Keep the prompt active for new or shared devices. That's exactly where it stops an intruder.",
       },
     ],
     relatedSlugs: [
@@ -117,7 +117,7 @@ export const twoFactorGuides: Guide[] = [
       "authenticator-app-vs-sms-2fa",
       "secure-tiktok-account-checklist",
     ],
-    sources: [{ label: "TikTok Support — Account security", url: "https://support.tiktok.com/" }],
+    sources: [{ label: "TikTok Support: Account security", url: "https://support.tiktok.com/" }],
     author: BRIDGET,
     reviewer: LOCKET_TEAM,
     datePublished: PUBLISHED,
@@ -137,7 +137,7 @@ export const twoFactorGuides: Guide[] = [
     excerpt:
       "Because YouTube lives inside Google, you secure your channel by securing your Google account. Passkeys and security keys are the gold standard here.",
     tldr:
-      "To protect your YouTube channel, enable 2-Step Verification on its Google account at myaccount.google.com/security. For the strongest protection against the session-token theft used to hijack channels, add a passkey or a hardware security key — these resist the malware attacks that bypass passwords and ordinary 2FA.",
+      "To protect your YouTube channel, enable 2-Step Verification on its Google account at myaccount.google.com/security. For the strongest protection against the session-token theft used to hijack channels, add a passkey or a hardware security key. These resist the malware attacks that bypass passwords and ordinary 2FA.",
     sections: [
       {
         id: "google-2sv-setup",
@@ -169,7 +169,7 @@ export const twoFactorGuides: Guide[] = [
       "passkeys-explained",
       "session-token-theft-explained",
     ],
-    sources: [{ label: "Google — 2-Step Verification", url: "https://myaccount.google.com/security" }],
+    sources: [{ label: "Google: 2-Step Verification", url: "https://myaccount.google.com/security" }],
     author: BRIDGET,
     reviewer: LOCKET_TEAM,
     datePublished: PUBLISHED,
@@ -189,13 +189,13 @@ export const twoFactorGuides: Guide[] = [
     excerpt:
       "SMS 2FA is better than nothing, but it has a real weakness: SIM swaps. Here's why an authenticator app or passkey is the safer choice.",
     tldr:
-      "Yes — an authenticator app is safer than SMS 2FA. Authenticator apps generate codes locally on your device, so they can't be intercepted by a SIM-swap attack, where a scammer ports your phone number to steal incoming texts. Use an authenticator app or passkey as your main method and keep SMS only as a backup.",
+      "Yes. An authenticator app is safer than SMS 2FA. Authenticator apps generate codes locally on your device, so they can't be intercepted by a SIM-swap attack, where a scammer ports your phone number to steal incoming texts. Use an authenticator app or passkey as your main method and keep SMS only as a backup.",
     sections: [
       {
         id: "why-sms-2fa-weak",
         question: "Why is SMS-based 2FA less secure?",
         answer:
-          "SMS codes travel over the phone network, so they can be stolen through a SIM-swap attack — a scammer convinces your carrier to move your number to their SIM, then receives your codes. SMS can also be intercepted or phished in real time. It still beats no 2FA, but it's the weakest option.",
+          "SMS codes travel over the phone network, so they can be stolen through a SIM-swap attack: a scammer convinces your carrier to move your number to their SIM, then receives your codes. SMS can also be intercepted or phished in real time. It still beats no 2FA, but it's the weakest option.",
       },
       {
         id: "how-authenticator-apps-work",
@@ -236,7 +236,7 @@ export const twoFactorGuides: Guide[] = [
     excerpt:
       "Backup codes are the safety net that keeps a lost phone from becoming a permanent lockout. Here's how to find and store them properly.",
     tldr:
-      "2FA backup codes are one-time-use codes that log you in when you can't get your normal second factor — for example, if you lose your phone. Most platforms give you a set when you enable 2FA. Save them in your password manager or print them; never store them only on the same phone that runs your authenticator.",
+      "2FA backup codes are one-time-use codes that log you in when you can't get your normal second factor (for example, if you lose your phone). Most platforms give you a set when you enable 2FA. Save them in your password manager or print them; never store them only on the same phone that runs your authenticator.",
     sections: [
       {
         id: "what-are-backup-codes",
@@ -248,18 +248,18 @@ export const twoFactorGuides: Guide[] = [
         id: "where-to-find-backup-codes",
         question: "Where do I find my backup codes?",
         answer:
-          "They're shown during 2FA setup and can be regenerated later in the same security settings — for example, Google's 2-Step Verification page or Instagram's two-factor authentication screen. If you didn't save them, regenerate a fresh set, which invalidates the old ones, and store them immediately.",
+          "They're shown during 2FA setup and can be regenerated later in the same security settings (for example, Google's 2-Step Verification page or Instagram's two-factor authentication screen). If you didn't save them, regenerate a fresh set, which invalidates the old ones, and store them immediately.",
       },
       {
         id: "store-backup-codes-safely",
         question: "What's the safest way to store backup codes?",
         answer:
-          "Save them in your password manager's secure notes, print them and keep them somewhere private, or store them in an encrypted file. The key rule: don't keep them only on the same device that holds your authenticator app — if that phone is lost, you lose both at once.",
+          "Save them in your password manager's secure notes, print them and keep them somewhere private, or store them in an encrypted file. The key rule: don't keep them only on the same device that holds your authenticator app. If that phone is lost, you lose both at once.",
       },
     ],
     faqs: [
       {
-        q: "I used some backup codes — do I need new ones?",
+        q: "I used some backup codes. Do I need new ones?",
         a: "Each code works once, so used ones are spent. When you're running low, regenerate a fresh set in the account's security settings and save them; regenerating invalidates the old list.",
       },
     ],

@@ -24,7 +24,7 @@ export default function SurveyPage() {
           className="text-blue-700/80 max-w-xl mx-auto text-lg sm:text-xl leading-relaxed"
           style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
         >
-          Take 2 minutes to tell us about your digital safety concerns — and help us build the protection you actually need ✦
+          Take 2 minutes to tell us about your digital safety concerns and help us build the protection you actually need ✦
         </p>
       </div>
 
@@ -34,13 +34,13 @@ export default function SurveyPage() {
           className="text-gray-600 text-base leading-relaxed mb-2"
           style={{ fontFamily: "var(--font-fredoka)" }}
         >
-          Hey! We&apos;re Locket — a cybersecurity company built specifically for influencers and creators. Your accounts, your income, and your identity deserve protection that actually fits your life.
+          Hey! We&apos;re Locket, a cybersecurity company built specifically for influencers and creators. Your accounts, your income, and your identity deserve protection that actually fits your life.
         </p>
         <p
           className="text-gray-500 text-sm leading-relaxed"
           style={{ fontFamily: "var(--font-fredoka)" }}
         >
-          We&apos;re gathering early feedback to make sure we build the right thing. No spam, no pressure — just honest questions from two girls who want to make cyber care feel like self care.
+          We&apos;re gathering early feedback to make sure we build the right thing. No spam, no pressure. Just honest questions from two girls who want to make cyber care feel like self care.
         </p>
       </div>
 

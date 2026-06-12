@@ -135,7 +135,7 @@ export default async function GuidePage({
           </p>
         </header>
 
-        {/* TL;DR — the prime liftable answer */}
+        {/* TL;DR: the prime liftable answer */}
         <div className="mb-10 rounded-3xl bg-[#fff8ea] p-6 sm:p-7 relative overflow-hidden shadow-[0_4px_20px_rgba(30,58,138,0.07)]">
           <span className="absolute top-4 right-5 text-blue-200 text-lg select-none">★</span>
           <p
@@ -197,7 +197,7 @@ export default async function GuidePage({
           </p>
           <p className="text-blue-300 text-sm mb-6 max-w-md mx-auto">
             Locket Security helps creators recover, lock down, and protect every account they
-            monetize — without the enterprise jargon.
+            monetize, without the enterprise jargon.
           </p>
           <Link
             href="/services"

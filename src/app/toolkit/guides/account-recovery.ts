@@ -8,14 +8,14 @@ export const accountRecoveryGuides: Guide[] = [
   {
     slug: "recover-hacked-instagram-account",
     cluster: "account-recovery",
-    category: "Account Recovery",
+    category: "Get Your Accounts Back",
     flagship: true,
     title: "How do I recover a hacked Instagram account?",
     metaTitle: "How to Recover a Hacked Instagram Account (2026)",
     metaDescription:
       "Step-by-step recovery for a hacked Instagram account: secure your email, file Instagram's report form, verify with a video selfie, and lock everything back down.",
     excerpt:
-      "A creator's step-by-step plan to get a hacked Instagram account back — what to do in the first hour, the exact forms to file, and how to lock down everything attached to it.",
+      "A creator's step-by-step plan to get a hacked Instagram account back: what to do in the first hour, the exact forms to file, and how to lock down everything attached to it.",
     tldr:
       "To recover a hacked Instagram account, first secure the email tied to it and change that password. Then use Instagram's “My account was hacked” flow from the login screen to request a recovery link or verify your identity with a video selfie. Lock connected apps and turn on 2FA the moment you regain access.",
     sections: [
@@ -23,7 +23,7 @@ export const accountRecoveryGuides: Guide[] = [
         id: "how-do-i-know-my-instagram-is-hacked",
         question: "How do I know my Instagram account was hacked?",
         answer:
-          "You've likely been hacked if you get a login or email-change alert you didn't request, your password suddenly stops working, or friends report DMs and posts you never sent. Instagram emails every security change to your original address — check that inbox before assuming you're fully locked out.",
+          "You've likely been hacked if you get a login or email-change alert you didn't request, your password suddenly stops working, or friends report DMs and posts you never sent. Instagram emails every security change to your original address, so check that inbox before assuming you're fully locked out.",
         body: [
           "Act on the “your email was changed” notice fast: it contains a “revert this change” link that's only valid for a short window. Clicking it can undo the takeover before the attacker finishes locking you out.",
         ],
@@ -32,15 +32,15 @@ export const accountRecoveryGuides: Guide[] = [
         id: "what-do-i-do-first",
         question: "What should I do in the first hour after being hacked?",
         answer:
-          "In the first hour, secure the email address connected to Instagram — change its password and turn on 2FA there first. Then attempt Instagram's recovery flow. Securing the email matters most: if the attacker still controls it, they can reset your Instagram password again the moment you regain access.",
+          "In the first hour, secure the email address connected to Instagram: change its password and turn on 2FA there first. Then attempt Instagram's recovery flow. Securing the email matters most: if the attacker still controls it, they can reset your Instagram password again the moment you regain access.",
       },
       {
         id: "instagram-recovery-form",
         question: "How do I use Instagram's hacked-account recovery form?",
         answer:
-          "From the login screen, tap “Forgot password?” then “Need more help?” to reach “My account was hacked.” Instagram emails a recovery link or asks for a video selfie to confirm your identity. Submit from a device and Wi-Fi network you've used with the account before — it speeds approval.",
+          "From the login screen, tap “Forgot password?” then “Need more help?” to reach “My account was hacked.” Instagram emails a recovery link or asks for a video selfie to confirm your identity. Submit from a device and Wi-Fi network you've used with the account before. It speeds approval.",
         body: [
-          "If you have a verified or business account, you may also have access to Meta's dedicated support channels. For business accounts, check whether the account is linked to a Meta Business Suite or Facebook Page — recovery sometimes runs through there.",
+          "If you have a verified or business account, you may also have access to Meta's dedicated support channels. For business accounts, check whether the account is linked to a Meta Business Suite or Facebook Page, because recovery sometimes runs through there.",
         ],
       },
       {
@@ -88,7 +88,7 @@ export const accountRecoveryGuides: Guide[] = [
         a: "Self-service recovery usually takes 1–3 days. Complex takeovers where the email and 2FA were both changed can take longer; specialist help can shorten it to roughly 48–72 hours by working through verified support paths.",
       },
       {
-        q: "Instagram support isn't responding — what now?",
+        q: "Instagram support isn't responding. What now?",
         a: "Resubmit the form from a known device, keep every confirmation email, and avoid creating duplicate reports (they reset your place in the queue). If your account is monetized, a service like Locket Security can escalate through trust-and-safety contacts.",
       },
     ],
@@ -99,7 +99,7 @@ export const accountRecoveryGuides: Guide[] = [
       "secure-instagram-account-checklist",
     ],
     sources: [
-      { label: "Instagram Help — Hacked Accounts", url: "https://help.instagram.com/" },
+      { label: "Instagram Help: Hacked Accounts", url: "https://help.instagram.com/" },
     ],
     author: BRIDGET,
     reviewer: LOCKET_TEAM,
@@ -112,14 +112,14 @@ export const accountRecoveryGuides: Guide[] = [
   {
     slug: "recover-hacked-tiktok-account",
     cluster: "account-recovery",
-    category: "Account Recovery",
+    category: "Get Your Accounts Back",
     flagship: true,
     title: "How do I recover a hacked TikTok account?",
     metaTitle: "How to Recover a Hacked TikTok Account (2026)",
     metaDescription:
       "Recover a hacked TikTok account step by step: use the login-issue report, verify your identity, secure the linked email and phone, and re-enable two-step verification.",
     excerpt:
-      "What to do when you lose access to your TikTok — the exact in-app report path, how to verify ownership, and how to keep the attacker from coming back.",
+      "What to do when you lose access to your TikTok: the exact in-app report path, how to verify ownership, and how to keep the attacker from coming back.",
     tldr:
       "To recover a hacked TikTok account, use “Report a login issue” in the app or TikTok's web feedback form to prove ownership with your linked email, phone number, or previous username. Secure the connected email first, then reset your password and turn on two-step verification once you're back in.",
     sections: [
@@ -127,7 +127,7 @@ export const accountRecoveryGuides: Guide[] = [
         id: "signs-tiktok-hacked",
         question: "How do I know my TikTok account was hacked?",
         answer:
-          "Signs include being logged out unexpectedly, your password no longer working, the email or phone on the account changing, or videos and DMs you didn't post. TikTok sends a security alert to your registered email whenever login details change — check there first for a reversal link.",
+          "Signs include being logged out unexpectedly, your password no longer working, the email or phone on the account changing, or videos and DMs you didn't post. TikTok sends a security alert to your registered email whenever login details change, so check there first for a reversal link.",
       },
       {
         id: "report-tiktok-login-issue",
@@ -135,14 +135,14 @@ export const accountRecoveryGuides: Guide[] = [
         answer:
           "Open TikTok and tap Profile → Menu → Settings and privacy → Report a problem, or use TikTok's online “Report a login issue” / feedback form if you're locked out entirely. Choose the account-access option and supply your username, linked email, and phone so TikTok can verify you own the account.",
         body: [
-          "If your account is verified or part of TikTok's Creator program, you may have a faster support path — check for a dedicated creator support email or your TikTok Shop / business contact.",
+          "If your account is verified or part of TikTok's Creator program, you may have a faster support path. Check for a dedicated creator support email or your TikTok Shop / business contact.",
         ],
       },
       {
         id: "verify-tiktok-ownership",
         question: "How do I prove I own the TikTok account?",
         answer:
-          "TikTok may ask for the email or phone originally used to sign up, a previous password, the account creation date, or a screenshot of a confirmation email. Provide as much accurate detail as possible and respond from the same device and network you normally use — mismatched information slows or blocks recovery.",
+          "TikTok may ask for the email or phone originally used to sign up, a previous password, the account creation date, or a screenshot of a confirmation email. Provide as much accurate detail as possible and respond from the same device and network you normally use, because mismatched information slows or blocks recovery.",
       },
       {
         id: "secure-tiktok-after",
@@ -166,7 +166,7 @@ export const accountRecoveryGuides: Guide[] = [
     faqs: [
       {
         q: "Can I recover a TikTok account if the hacker changed the email and phone?",
-        a: "Yes, but it's harder. Use the login-issue form and provide every original detail you remember — creation date, old username, previous email. TikTok can still verify ownership through account history even when current contact details were changed.",
+        a: "Yes, but it's harder. Use the login-issue form and provide every original detail you remember: creation date, old username, previous email. TikTok can still verify ownership through account history even when current contact details were changed.",
       },
       {
         q: "How long does TikTok take to recover an account?",
@@ -190,14 +190,14 @@ export const accountRecoveryGuides: Guide[] = [
   {
     slug: "recover-hacked-youtube-account",
     cluster: "account-recovery",
-    category: "Account Recovery",
+    category: "Get Your Accounts Back",
     flagship: true,
     title: "How do I recover a hacked YouTube channel?",
     metaTitle: "How to Recover a Hacked YouTube Channel (2026)",
     metaDescription:
       "Recover a hijacked YouTube channel: secure the Google account behind it, use Google's account-recovery flow, and report a stolen channel to YouTube's Creator support.",
     excerpt:
-      "YouTube channels live inside your Google account — here's how to recover both, report a hijack, and undo crypto-livestream takeovers creators are targeted with.",
+      "YouTube channels live inside your Google account. Here's how to recover both, report a hijack, and undo crypto-livestream takeovers creators are targeted with.",
     tldr:
       "A YouTube channel is controlled by its Google account, so recovery starts at google.com/accounts/recovery. Reset that password, kick out unknown sessions, and re-enable 2-Step Verification. If the channel was rebranded for a crypto-scam livestream, report it through YouTube's Creator support so they can restore and lock it.",
     sections: [
@@ -223,7 +223,7 @@ export const accountRecoveryGuides: Guide[] = [
         id: "youtube-relock",
         question: "How do I secure my channel after recovery?",
         answer:
-          "Turn on 2-Step Verification — ideally with a passkey or security key, which blocks the session-token theft used to hijack channels. Remove unknown channel managers under Settings → Permissions, revoke suspicious third-party app access in your Google account, and check that no forwarding rules were added to your Gmail.",
+          "Turn on 2-Step Verification, ideally with a passkey or security key, which blocks the session-token theft used to hijack channels. Remove unknown channel managers under Settings → Permissions, revoke suspicious third-party app access in your Google account, and check that no forwarding rules were added to your Gmail.",
       },
     ],
     howTo: {
@@ -240,12 +240,12 @@ export const accountRecoveryGuides: Guide[] = [
     },
     faqs: [
       {
-        q: "Hackers used my channel for a crypto livestream — will YouTube restore it?",
+        q: "Hackers used my channel for a crypto livestream. Will YouTube restore it?",
         a: "Yes. YouTube routinely restores channels hijacked for crypto-scam streams. Report it as a compromised channel with proof of ownership; they can revert the name, banner, and content and re-secure the account.",
       },
       {
         q: "How do channels get hijacked without my password?",
-        a: "Most creator hijacks use session-token (cookie) theft from malware in a fake sponsorship file — it bypasses your password and even 2FA. A passkey or hardware security key is the strongest defense because stolen cookies stop working when the session is revoked.",
+        a: "Most creator hijacks use session-token (cookie) theft from malware in a fake sponsorship file, which bypasses your password and even 2FA. A passkey or hardware security key is the strongest defense because stolen cookies stop working when the session is revoked.",
       },
     ],
     relatedSlugs: [
@@ -255,7 +255,7 @@ export const accountRecoveryGuides: Guide[] = [
     ],
     sources: [
       { label: "Google Account Recovery", url: "https://accounts.google.com/signin/recovery" },
-      { label: "YouTube Help — Compromised channels", url: "https://support.google.com/youtube/" },
+      { label: "YouTube Help: Compromised channels", url: "https://support.google.com/youtube/" },
     ],
     author: BRIDGET,
     reviewer: LOCKET_TEAM,
@@ -268,15 +268,15 @@ export const accountRecoveryGuides: Guide[] = [
   {
     slug: "recover-hacked-facebook-account",
     cluster: "account-recovery",
-    category: "Account Recovery",
+    category: "Get Your Accounts Back",
     title: "How do I get my hacked Facebook account back?",
     metaTitle: "How to Recover a Hacked Facebook Account (2026)",
     metaDescription:
       "Recover a hacked Facebook account using facebook.com/hacked, secure your email, and protect any linked Instagram or Business Page from the same takeover.",
     excerpt:
-      "Facebook is often the key to your Instagram and ad accounts — here's how to recover it and stop a takeover from spreading across Meta.",
+      "Facebook is often the key to your Instagram and ad accounts. Here's how to recover it and stop a takeover from spreading across Meta.",
     tldr:
-      "To recover a hacked Facebook account, go to facebook.com/hacked and follow the guided recovery to reset your password and review recent activity. Secure the linked email first. If your Facebook is connected to Instagram or a Business Page, lock those too — attackers pivot across Meta accounts quickly.",
+      "To recover a hacked Facebook account, go to facebook.com/hacked and follow the guided recovery to reset your password and review recent activity. Secure the linked email first. If your Facebook is connected to Instagram or a Business Page, lock those too, because attackers pivot across Meta accounts quickly.",
     sections: [
       {
         id: "facebook-hacked-flow",
@@ -299,7 +299,7 @@ export const accountRecoveryGuides: Guide[] = [
     ],
     faqs: [
       {
-        q: "Hackers are running ads on my Business account — what do I do?",
+        q: "Hackers are running ads on my Business account. What do I do?",
         a: "Pause the ad account if you still have access, remove unknown admins in Meta Business Suite, report the unauthorized spend to Meta, and contact your bank about the charges. Then secure the personal Facebook account that controls the business assets.",
       },
       {
@@ -312,7 +312,7 @@ export const accountRecoveryGuides: Guide[] = [
       "meta-business-suite-takeover",
       "secure-creator-email-account",
     ],
-    sources: [{ label: "Facebook — Hacked Accounts", url: "https://www.facebook.com/hacked" }],
+    sources: [{ label: "Facebook: Hacked Accounts", url: "https://www.facebook.com/hacked" }],
     author: BRIDGET,
     reviewer: LOCKET_TEAM,
     datePublished: PUBLISHED,
@@ -324,15 +324,15 @@ export const accountRecoveryGuides: Guide[] = [
   {
     slug: "recover-account-no-2fa-access",
     cluster: "account-recovery",
-    category: "Account Recovery",
+    category: "Get Your Accounts Back",
     title: "What if I lost access to my 2FA codes?",
     metaTitle: "Locked Out: How to Recover an Account Without 2FA (2026)",
     metaDescription:
       "Lost your phone or authenticator app and can't get 2FA codes? Use backup codes, account-recovery flows, and identity verification to regain access safely.",
     excerpt:
-      "Losing your authenticator device feels like being locked out for good — but backup codes and recovery flows usually get you back in. Here's the order to try them.",
+      "Losing your authenticator device feels like being locked out for good, but backup codes and recovery flows usually get you back in. Here's the order to try them.",
     tldr:
-      "If you lost access to your 2FA codes, first use your saved backup codes — most services issue them when you enable 2FA. No backup codes? Use the service's “try another way” or account-recovery option, which can verify you by email, a trusted device, or ID. Re-enroll 2FA and save fresh backup codes once you're in.",
+      "If you lost access to your 2FA codes, first use your saved backup codes. Most services issue them when you enable 2FA. No backup codes? Use the service's “try another way” or account-recovery option, which can verify you by email, a trusted device, or ID. Re-enroll 2FA and save fresh backup codes once you're in.",
     sections: [
       {
         id: "use-backup-codes",
@@ -379,27 +379,27 @@ export const accountRecoveryGuides: Guide[] = [
   {
     slug: "recover-locked-out-email",
     cluster: "account-recovery",
-    category: "Account Recovery",
+    category: "Get Your Accounts Back",
     title: "How do I recover a hacked email account?",
     metaTitle: "How to Recover a Hacked Email Account (2026)",
     metaDescription:
       "Your email is the master key to every account. Recover a hacked Gmail or Outlook, remove malicious forwarding rules, and stop the attacker from resetting everything else.",
     excerpt:
-      "Email is the master key to every other account you own. If it's compromised, recover it first — here's how, plus the hidden settings attackers leave behind.",
+      "Email is the master key to every other account you own. If it's compromised, recover it first. Here's how, plus the hidden settings attackers leave behind.",
     tldr:
-      "Recover a hacked email account first, before anything else — it controls password resets for every other account. Use your provider's recovery page (Gmail, Outlook), reset the password, then check for malicious forwarding rules, filters, and recovery-address changes the attacker may have added to keep reading your mail.",
+      "Recover a hacked email account first, before anything else. It controls password resets for every other account. Use your provider's recovery page (Gmail, Outlook), reset the password, then check for malicious forwarding rules, filters, and recovery-address changes the attacker may have added to keep reading your mail.",
     sections: [
       {
         id: "why-email-first",
         question: "Why should I recover my email before my social accounts?",
         answer:
-          "Your email is the reset point for nearly every other account. As long as an attacker controls it, they can trigger “forgot password” on your Instagram, bank, and more — and intercept the codes. Locking down email first cuts off their ability to walk back into everything else.",
+          "Your email is the reset point for nearly every other account. As long as an attacker controls it, they can trigger “forgot password” on your Instagram, bank, and more, then intercept the codes. Locking down email first cuts off their ability to walk back into everything else.",
       },
       {
         id: "recover-email-account",
         question: "How do I recover a hacked Gmail or Outlook account?",
         answer:
-          "Use the provider's recovery page — google.com/accounts/recovery for Gmail or account.live.com/acsr for Outlook. Verify with a recovery phone, secondary email, or a trusted device, then reset the password. Do this from a device you normally use so the system recognizes you and approves recovery faster.",
+          "Use the provider's recovery page: google.com/accounts/recovery for Gmail or account.live.com/acsr for Outlook. Verify with a recovery phone, secondary email, or a trusted device, then reset the password. Do this from a device you normally use so the system recognizes you and approves recovery faster.",
       },
       {
         id: "remove-forwarding-rules",

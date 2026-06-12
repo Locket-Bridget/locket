@@ -14,7 +14,7 @@ export function useSubscribe() {
 
     const endpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
     if (!endpoint) {
-      // Dev fallback — just show success so UI can be tested
+      // Dev fallback: just show success so UI can be tested
       setStatus("success");
       setEmail("");
       return;

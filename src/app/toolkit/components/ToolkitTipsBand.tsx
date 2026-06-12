@@ -7,7 +7,7 @@ const tips = [
     headline: "Cleanse Your Passwords",
     metaphor: "Wash away your dull passwords",
     description:
-      "We are all complicated and unique — and our passwords should reflect that. Long, messy, full of symbols. Think of it like your skincare routine: the more steps, the better protected you are.",
+      "We are all complicated and unique, and our passwords should reflect that. Long, messy, full of symbols. Think of it like your skincare routine: the more steps, the better protected you are.",
     tag: "Password Hygiene",
     tilt: "-rotate-1",
     bg: "bg-[#fff8ea]",
@@ -29,7 +29,7 @@ const tips = [
     headline: "Some Things Are For Your Eyes Only",
     metaphor: "Keep it between you and your mirror",
     description:
-      "Not everything needs to be posted, clicked, or shared. The more you put out there, the more you become a target. Before you post — ask yourself if you'd be okay with a stranger seeing it.",
+      "Not everything needs to be posted, clicked, or shared. The more you put out there, the more you become a target. Before you post, ask yourself if you'd be okay with a stranger seeing it.",
     tag: "Safe Posting",
     tilt: "-rotate-2",
     bg: "bg-[#fff8ea]",
@@ -40,7 +40,7 @@ const tips = [
     headline: "Encryption Is the New Sunscreen",
     metaphor: "Always use protection… on your data",
     description:
-      "Just like SPF protects your skin, encryption protects your data. Back up regularly, encrypt sensitive files, and let us help you figure out what needs covering — because prevention beats recovery every time.",
+      "Just like SPF protects your skin, encryption protects your data. Back up regularly, encrypt sensitive files, and let us help you figure out what needs covering, because prevention beats recovery every time.",
     tag: "Data Protection",
     tilt: "rotate-1",
     bg: "bg-blue-50",
@@ -51,18 +51,18 @@ const tips = [
     headline: "Immunity Boost for Your Laptop",
     metaphor: "Ward away the bad online germs",
     description:
-      "We all try to stay healthy — let's keep our online selves healthy too. Antivirus software wards off nasty online germs, and we're here to help you set it up, maintain it, and make sure it's actually working.",
+      "We all try to stay healthy. Let's keep our online selves healthy too. Antivirus software wards off nasty online germs, and we're here to help you set it up, maintain it, and make sure it's actually working.",
     tag: "Antivirus & Protection",
     tilt: "-rotate-1",
     bg: "bg-[#fff8ea]",
   },
 ];
 
-// The original playful "cyber self-care" tips — kept below the guide library
-// as light brand content.
+// The original playful "cyber self-care" tips. Leads the toolkit page ahead
+// of the guide library.
 export function ToolkitTipsBand() {
   return (
-    <div className="max-w-2xl mx-auto mt-24">
+    <div className="max-w-2xl mx-auto mb-16">
       <div className="text-center mb-10">
         <p
           className="text-[10px] sm:text-xs tracking-[0.25em] uppercase text-blue-500 mb-3"
@@ -74,10 +74,10 @@ export function ToolkitTipsBand() {
           className="text-3xl sm:text-4xl font-bold text-blue-900"
           style={{ fontFamily: "var(--font-titan)" }}
         >
-          Your digital skincare routine
+          Your selfcare routine
         </h2>
         <p className="mt-3 text-blue-700/60 text-base leading-relaxed">
-          5 tips for making sure your online self is squeaky clean — easy, effective, and actually cute.
+          5 tips for making sure your online self is squeaky clean: easy, effective, and actually cute.
         </p>
       </div>
 

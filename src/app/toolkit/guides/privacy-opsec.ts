@@ -8,13 +8,13 @@ export const privacyOpsecGuides: Guide[] = [
   {
     slug: "hide-home-address-online",
     cluster: "privacy-opsec",
-    category: "Privacy & OpSec",
+    category: "Your Digital Footprint",
     title: "How do I remove my home address from the internet?",
     metaTitle: "How to Remove Your Home Address From the Internet (2026)",
     metaDescription:
       "Creators' home addresses leak through data brokers, domain records, and tagged posts. Learn how to find and remove your address and reduce future exposure.",
     excerpt:
-      "Your home address is more exposed than you think — through data brokers, old domain records, and tagged posts. Here's how to find and scrub it.",
+      "Your home address is more exposed than you think: through data brokers, old domain records, and tagged posts. Here's how to find and scrub it.",
     tldr:
       "To remove your home address from the internet, opt out of the major people-search and data-broker sites that list it, fix exposures like public domain (WHOIS) records and business filings, and stop tagging your location in real time. Brokers re-list data over time, so removal is an ongoing process, not a one-time fix.",
     sections: [
@@ -28,7 +28,7 @@ export const privacyOpsecGuides: Guide[] = [
         id: "opt-out-data-brokers",
         question: "How do I get my address off people-search sites?",
         answer:
-          "Each major broker (such as Whitepages, Spokeo, and BeenVerified) has an opt-out process — you locate your listing and submit a removal request, sometimes with email confirmation. It's repetitive but effective. Because brokers re-acquire data, plan to recheck periodically; some people use a paid removal service to automate the ongoing work.",
+          "Each major broker (such as Whitepages, Spokeo, and BeenVerified) has an opt-out process: you locate your listing and submit a removal request, sometimes with email confirmation. It's repetitive but effective. Because brokers re-acquire data, plan to recheck periodically; some people use a paid removal service to automate the ongoing work.",
       },
       {
         id: "reduce-future-exposure",
@@ -40,7 +40,7 @@ export const privacyOpsecGuides: Guide[] = [
     faqs: [
       {
         q: "Will removing my address from one site fix the problem?",
-        a: "No — your address is usually listed on dozens of broker sites, and they re-share each other's data. Effective removal means opting out broadly and rechecking over time, which is why many creators automate it.",
+        a: "No. Your address is usually listed on dozens of broker sites, and they re-share each other's data. Effective removal means opting out broadly and rechecking over time, which is why many creators automate it.",
       },
     ],
     relatedSlugs: ["remove-info-from-data-brokers", "prevent-doxxing-creators", "what-is-dark-web-monitoring"],
@@ -55,7 +55,7 @@ export const privacyOpsecGuides: Guide[] = [
   {
     slug: "remove-info-from-data-brokers",
     cluster: "privacy-opsec",
-    category: "Privacy & OpSec",
+    category: "Your Digital Footprint",
     title: "How do I get my info off data-broker sites?",
     metaTitle: "How to Remove Your Info From Data-Broker Sites (2026)",
     metaDescription:
@@ -63,13 +63,13 @@ export const privacyOpsecGuides: Guide[] = [
     excerpt:
       "Data brokers quietly package and sell your personal details. Here's how their opt-outs work, why your info keeps coming back, and how to stay ahead of it.",
     tldr:
-      "To remove your info from data brokers, submit opt-out requests to each major people-search site, which involves finding your profile and confirming removal — often by email. Because brokers continuously re-collect data from public records, removals fade and need rechecking. Doing it broadly and repeatedly, or via an automated service, is what keeps your exposure low.",
+      "To remove your info from data brokers, submit opt-out requests to each major people-search site, which involves finding your profile and confirming removal, often by email. Because brokers continuously re-collect data from public records, removals fade and need rechecking. Doing it broadly and repeatedly, or via an automated service, is what keeps your exposure low.",
     sections: [
       {
         id: "what-data-brokers-have",
         question: "What information do data brokers have on me?",
         answer:
-          "Brokers compile your full name, current and past addresses, phone numbers, email addresses, age, relatives, and sometimes income or property records — assembled from public records, purchases, and other sources. They sell this in searchable profiles, which is what makes a creator easy to locate, spam, or doxx.",
+          "Brokers compile your full name, current and past addresses, phone numbers, email addresses, age, relatives, and sometimes income or property records, assembled from public records, purchases, and other sources. They sell this in searchable profiles, which is what makes a creator easy to locate, spam, or doxx.",
       },
       {
         id: "how-broker-opt-outs-work",
@@ -81,7 +81,7 @@ export const privacyOpsecGuides: Guide[] = [
         id: "why-info-comes-back",
         question: "Why does my information reappear after I remove it?",
         answer:
-          "Brokers continuously re-acquire data from public records and each other, so a profile you removed can be rebuilt within months. That's why removal is ongoing maintenance, not a one-time task. Periodic rechecks — or an automated removal service that re-submits opt-outs for you — keep your exposure suppressed over time.",
+          "Brokers continuously re-acquire data from public records and each other, so a profile you removed can be rebuilt within months. That's why removal is ongoing maintenance, not a one-time task. Periodic rechecks, or an automated removal service that re-submits opt-outs for you, keep your exposure suppressed over time.",
       },
     ],
     faqs: [
@@ -102,13 +102,13 @@ export const privacyOpsecGuides: Guide[] = [
   {
     slug: "prevent-doxxing-creators",
     cluster: "privacy-opsec",
-    category: "Privacy & OpSec",
+    category: "Your Digital Footprint",
     title: "How do I protect myself from doxxing?",
     metaTitle: "How to Protect Yourself From Doxxing (Creator Guide)",
     metaDescription:
       "Doxxing exposes a creator's private details to harassers. Learn how to reduce your exposure, lock down accounts, and respond if you've been doxxed.",
     excerpt:
-      "Doxxing — publishing your private details to harass you — is a real risk for visible creators. Here's how to shrink your exposure and respond if it happens.",
+      "Doxxing, publishing your private details to harass you, is a real risk for visible creators. Here's how to shrink your exposure and respond if it happens.",
     tldr:
       "To protect yourself from doxxing, minimize the personal details available about you: remove your address from data brokers, lock down account privacy, scrub location and identifying clues from posts, and separate your personal and public identities. If you're doxxed, document everything, report it to the platforms, and consider law enforcement for credible threats.",
     sections: [
@@ -116,7 +116,7 @@ export const privacyOpsecGuides: Guide[] = [
         id: "what-is-doxxing",
         question: "What is doxxing and why are creators targeted?",
         answer:
-          "Doxxing is publishing someone's private information — home address, phone, real name, workplace — to enable harassment. Creators are targeted because they're visible and their content leaks clues. The goal is intimidation, so reducing what's findable about you both lowers the risk and limits the damage if it happens.",
+          "Doxxing is publishing someone's private information (home address, phone, real name, workplace) to enable harassment. Creators are targeted because they're visible and their content leaks clues. The goal is intimidation, so reducing what's findable about you both lowers the risk and limits the damage if it happens.",
       },
       {
         id: "reduce-doxxing-risk",
@@ -134,7 +134,7 @@ export const privacyOpsecGuides: Guide[] = [
     faqs: [
       {
         q: "Should I go private after being doxxed?",
-        a: "Temporarily limiting who can contact or tag you, and pausing location posts, can reduce immediate harassment. You don't have to disappear — combine tighter privacy settings with documentation and platform reports.",
+        a: "Temporarily limiting who can contact or tag you, and pausing location posts, can reduce immediate harassment. You don't have to disappear. Combine tighter privacy settings with documentation and platform reports.",
       },
     ],
     relatedSlugs: ["hide-home-address-online", "remove-info-from-data-brokers", "what-to-do-instagram-impersonator"],
@@ -149,7 +149,7 @@ export const privacyOpsecGuides: Guide[] = [
   {
     slug: "safe-public-wifi-travel",
     cluster: "privacy-opsec",
-    category: "Privacy & OpSec",
+    category: "Your Digital Footprint",
     title: "How do I stay secure on public Wi-Fi while traveling?",
     metaTitle: "How to Stay Secure on Public Wi-Fi (Creator Travel Guide)",
     metaDescription:
@@ -163,7 +163,7 @@ export const privacyOpsecGuides: Guide[] = [
         id: "public-wifi-risks",
         question: "What's actually risky about public Wi-Fi?",
         answer:
-          "On open networks, others may snoop traffic or set up a fake hotspot named like the real one to intercept what you send. The danger is logging into accounts or sending sensitive data over a connection you don't control. Most modern sites use HTTPS encryption, which helps — but untrusted networks still warrant caution.",
+          "On open networks, others may snoop traffic or set up a fake hotspot named like the real one to intercept what you send. The danger is logging into accounts or sending sensitive data over a connection you don't control. Most modern sites use HTTPS encryption, which helps, but untrusted networks still warrant caution.",
       },
       {
         id: "safer-connection",
@@ -175,7 +175,7 @@ export const privacyOpsecGuides: Guide[] = [
         id: "travel-account-safety",
         question: "How do I protect my accounts on the road?",
         answer:
-          "Keep 2FA — ideally a passkey or authenticator app — on all key accounts so an intercepted password alone is useless. Avoid logging into banking or platform admin tools on public networks, keep devices updated, and lock your screen. Carry your backup codes in your password manager in case you need to re-verify while traveling.",
+          "Keep 2FA, ideally a passkey or authenticator app, on all key accounts so an intercepted password alone is useless. Avoid logging into banking or platform admin tools on public networks, keep devices updated, and lock your screen. Carry your backup codes in your password manager in case you need to re-verify while traveling.",
       },
     ],
     faqs: [
@@ -196,7 +196,7 @@ export const privacyOpsecGuides: Guide[] = [
   {
     slug: "what-is-dark-web-monitoring",
     cluster: "privacy-opsec",
-    category: "Privacy & OpSec",
+    category: "Your Digital Footprint",
     title: "What is dark web monitoring and do I need it?",
     metaTitle: "What Is Dark Web Monitoring? Do Creators Need It? (2026)",
     metaDescription:
@@ -204,31 +204,31 @@ export const privacyOpsecGuides: Guide[] = [
     excerpt:
       "Dark web monitoring watches breach data and leak markets for your details, so you can react before a takeover. Here's how it works and who needs it.",
     tldr:
-      "Dark web monitoring is a service that scans breach dumps and underground marketplaces for your email, passwords, phone, or other personal data, and alerts you when they appear. It doesn't remove the data, but it gives you time to change exposed passwords before attackers use them — valuable for creators whose details are widely circulated.",
+      "Dark web monitoring is a service that scans breach dumps and underground marketplaces for your email, passwords, phone, or other personal data, and alerts you when they appear. It doesn't remove the data, but it gives you time to change exposed passwords before attackers use them, which is valuable for creators whose details are widely circulated.",
     sections: [
       {
         id: "how-dark-web-monitoring-works",
         question: "How does dark web monitoring work?",
         answer:
-          "The service continuously scans known breach databases, paste sites, and dark-web marketplaces for identifiers you register — your emails, phone numbers, and sometimes passwords. When a match appears in newly leaked or traded data, it alerts you so you can rotate the affected password and secure the account before the credentials are abused.",
+          "The service continuously scans known breach databases, paste sites, and dark-web marketplaces for identifiers you register: your emails, phone numbers, and sometimes passwords. When a match appears in newly leaked or traded data, it alerts you so you can rotate the affected password and secure the account before the credentials are abused.",
       },
       {
         id: "what-monitoring-cant-do",
         question: "What can't dark web monitoring do?",
         answer:
-          "It doesn't remove your data from the dark web — once leaked, it can't be recalled — and it can't prevent the original breach. Think of it as an early-warning system, not a shield. Its value is the time it buys you to act: changing passwords and enabling 2FA before stolen credentials are weaponized.",
+          "It doesn't remove your data from the dark web (once leaked, it can't be recalled) and it can't prevent the original breach. Think of it as an early-warning system, not a shield. Its value is the time it buys you to act: changing passwords and enabling 2FA before stolen credentials are weaponized.",
       },
       {
         id: "do-creators-need-monitoring",
         question: "Do creators actually need it?",
         answer:
-          "It's most worthwhile for monetized creators, whose emails and personal details are widely exposed and actively targeted. Large breaches have leaked tens of millions of influencer records. If your accounts represent real income, the early warning is worth it — paired with unique passwords and strong 2FA, which limit what a leak can unlock.",
+          "It's most worthwhile for monetized creators, whose emails and personal details are widely exposed and actively targeted. Large breaches have leaked tens of millions of influencer records. If your accounts represent real income, the early warning is worth it, paired with unique passwords and strong 2FA, which limit what a leak can unlock.",
       },
     ],
     faqs: [
       {
         q: "Is a free breach checker as good as paid monitoring?",
-        a: "A free tool like Have I Been Pwned lets you check known breaches on demand, which is great for spot checks. Paid monitoring adds continuous, automatic alerts across more sources — useful if you want to be notified the moment new data appears rather than remembering to check.",
+        a: "A free tool like Have I Been Pwned lets you check known breaches on demand, which is great for spot checks. Paid monitoring adds continuous, automatic alerts across more sources, which is useful if you want to be notified the moment new data appears rather than remembering to check.",
       },
     ],
     relatedSlugs: ["stop-reusing-passwords", "remove-info-from-data-brokers", "best-password-manager-creators"],

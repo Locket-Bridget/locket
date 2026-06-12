@@ -56,7 +56,7 @@ export default function LookbookPage() {
           className="inline-block bg-blue-900 text-[#fff8ea] text-xs font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full -rotate-1 shadow-md mb-6"
           style={{ fontFamily: "var(--font-fredoka)", fontWeight: 600 }}
         >
-          ★ &nbsp; new — the full lookbook
+          ★ &nbsp; new: the full lookbook
         </span>
 
         <h1
@@ -146,7 +146,7 @@ export default function LookbookPage() {
         >
           {status === "loading"
             ? "Sending you to checkout…"
-            : `Get the Lookbook — ${lookbook.price} ★`}
+            : `Get the Lookbook for ${lookbook.price} ★`}
         </button>
         {error && (
           <p className="mt-3 text-center text-xs text-[#C8553D]">{error}</p>

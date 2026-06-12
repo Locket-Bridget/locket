@@ -1,4 +1,4 @@
-// Hero-sized stat doodles — cyber meets beauty, same hand-drawn language as Doodles.tsx.
+// Hero-sized stat doodles: cyber meets beauty, same hand-drawn language as Doodles.tsx.
 // Each fills the polaroid frame in StatSection and illustrates its stat literally.
 // Shared viewBox keeps the three feeling like siblings: 0 0 300 260.
 
@@ -68,7 +68,7 @@ function Phone({ x, y, cracked = false }: { x: number; y: number; cracked?: bool
   );
 }
 
-// ① "1 in 4" — three happy phones, one cracked.
+// ① "1 in 4": three happy phones, one cracked.
 export function StatDoodleHacked({ className = '' }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 300 260" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,14 +81,14 @@ export function StatDoodleHacked({ className = '' }: { className?: string }) {
   );
 }
 
-// ② "61%" — the account (a sad phone) locked away behind jail bars.
+// ② "61%": the account (a sad phone) locked away behind jail bars.
 export function StatDoodleLockedOut({ className = '' }: { className?: string }) {
   const bars = [80, 115, 150, 185, 220];
   return (
     <svg className={className} viewBox="0 0 300 260" fill="none" xmlns="http://www.w3.org/2000/svg">
       <Backdrop />
 
-      {/* the trapped account — a sad phone */}
+      {/* the trapped account: a sad phone */}
       <g>
         <rect x="104" y="70" width="92" height="132" rx="15" stroke={NAVY} strokeWidth="3.5" fill="#fff8ea" />
         <rect x="138" y="78" width="24" height="3.5" rx="1.75" fill={NAVY} opacity="0.4" />
@@ -108,7 +108,7 @@ export function StatDoodleLockedOut({ className = '' }: { className?: string }) 
         <ellipse cx="178" cy="140" rx="5.5" ry="3.5" fill="#fca5a5" opacity="0.5" />
       </g>
 
-      {/* jail cell — rails + vertical bars in front */}
+      {/* jail cell: rails + vertical bars in front */}
       <rect x="72" y="52" width="156" height="9" rx="4.5" fill={NAVY} />
       <rect x="72" y="210" width="156" height="9" rx="4.5" fill={NAVY} />
       {bars.map((x) => (
@@ -122,7 +122,7 @@ export function StatDoodleLockedOut({ className = '' }: { className?: string }) 
   );
 }
 
-// ③ "49M" — open envelope character spilling personal-data cards.
+// ③ "49M": open envelope character spilling personal-data cards.
 export function StatDoodleLeaked({ className = '' }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 300 260" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +131,7 @@ export function StatDoodleLeaked({ className = '' }: { className?: string }) {
       {/* flipped & tilted so the breached envelope leans in from the left toward the top, dumping its contents into the middle */}
       <g transform="translate(0 34) rotate(162 150 130)">
 
-      {/* data erupting up & out of the torn top — drawn first so the envelope sits in front */}
+      {/* data erupting up & out of the torn top, drawn first so the envelope sits in front */}
       {/* trajectory trails from the torn opening up to each item */}
       <g stroke={NAVY} strokeWidth="2" strokeLinecap="round" strokeDasharray="1.5 6" fill="none" opacity="0.4">
         <path d="M148 150 Q116 130 96 118" />
@@ -156,7 +156,7 @@ export function StatDoodleLeaked({ className = '' }: { className?: string }) {
           fill="#fca5a5" stroke={NAVY} strokeWidth="2.4" strokeLinejoin="round" />
         <circle cx="192" cy="81" r="5" fill="#fff8ea" stroke={NAVY} strokeWidth="2" />
       </g>
-      {/* phone number card — nudged clear of the envelope so they don't overlap */}
+      {/* phone number card, nudged clear of the envelope so they don't overlap */}
       <g transform="translate(20 -25) rotate(24 224 124)">
         <rect x="210" y="106" width="28" height="36" rx="5" fill="#fff8ea" stroke={NAVY} strokeWidth="2.4" />
         <path d="M217 116 L231 116 M217 123 L231 123 M217 130 L226 130" stroke={NAVY} strokeWidth="1.7" strokeLinecap="round" opacity="0.6" />
@@ -166,7 +166,7 @@ export function StatDoodleLeaked({ className = '' }: { className?: string }) {
       <circle cx="170" cy="96" r="2" fill={NAVY} opacity="0.35" />
       <path d="M160 124 L162 118 L164 124 L170 122 L164 127 L162 133 L160 127 L154 122 Z" fill={NAVY} opacity="0.3" />
 
-      {/* the breached envelope — upright, normal flap, ripped open across the top */}
+      {/* the breached envelope: upright, normal flap, ripped open across the top */}
       <g transform="rotate(-7 150 196)">
         {/* body: sides + bottom clean, top edge torn jagged */}
         <path d="M68 150 L88 142 L106 152 L124 142 L142 152 L160 142 L178 152 L196 142 L214 152 L232 146

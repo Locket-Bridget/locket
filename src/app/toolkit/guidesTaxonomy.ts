@@ -12,8 +12,8 @@ export type Cluster = {
 export const clusters: Cluster[] = [
   {
     id: "account-recovery",
-    label: "Account Recovery & Access",
-    blurb: "Locked out or hacked? Step-by-step plans to get your accounts back.",
+    label: "Get Your Accounts Back",
+    blurb: "Locked out or hacked? Step-by-step recovery plans that actually work.",
     categoryColor: "bg-[#fce8e3] text-[#C8553D]",
   },
   {
@@ -24,14 +24,14 @@ export const clusters: Cluster[] = [
   },
   {
     id: "scams-impersonation",
-    label: "Scams & Impersonation",
-    blurb: "Spot fake brand deals, phishing, and clones before they cost you.",
+    label: "Spot the Scams",
+    blurb: "Fake brand deals, phishing, and copycat accounts: catch them before they cost you.",
     categoryColor: "bg-amber-100 text-amber-700",
   },
   {
     id: "platform-hardening",
-    label: "Platform Hardening",
-    blurb: "Lock down every account, app, and login a creator depends on.",
+    label: "Lock It All Down",
+    blurb: "Every account, app, and login a creator depends on, secured.",
     categoryColor: "bg-blue-100 text-blue-700",
   },
   {
@@ -42,8 +42,8 @@ export const clusters: Cluster[] = [
   },
   {
     id: "privacy-opsec",
-    label: "Privacy & OpSec",
-    blurb: "Shrink your digital footprint and keep your private life private.",
+    label: "Your Digital Footprint",
+    blurb: "Keep your home address, personal info, and private life off the internet.",
     categoryColor: "bg-[#fce8e3] text-[#C8553D]",
   },
 ];
@@ -87,7 +87,7 @@ export const glossary: GlossaryTerm[] = [
     term: "Data Broker",
     slug: "data-broker",
     definition:
-      "A company that compiles and sells your personal details — name, address, phone, relatives — assembled from public records and purchases.",
+      "A company that compiles and sells your personal details (name, address, phone, relatives) assembled from public records and purchases.",
     relatedSlug: "remove-info-from-data-brokers",
   },
   {
@@ -108,7 +108,7 @@ export const glossary: GlossaryTerm[] = [
     term: "Passkey",
     slug: "passkey",
     definition:
-      "A passwordless login tied to your device and unlocked with your face, fingerprint, or PIN — phishing-resistant and nothing to leak.",
+      "A passwordless login tied to your device and unlocked with your face, fingerprint, or PIN, so it's phishing-resistant and there's nothing to leak.",
     relatedSlug: "passkeys-explained",
   },
   {
@@ -136,7 +136,7 @@ export const glossary: GlossaryTerm[] = [
     term: "Two-Factor Authentication (2FA)",
     slug: "two-factor-authentication",
     definition:
-      "A login step that requires a second proof of identity — an app code, passkey, or text — on top of your password.",
+      "A login step that requires a second proof of identity (an app code, passkey, or text) on top of your password.",
     relatedSlug: "set-up-2fa-instagram",
   },
 ];
@@ -144,7 +144,7 @@ export const glossary: GlossaryTerm[] = [
 export const libraryFaqs: GuideFaq[] = [
   {
     q: "What is the Locket Security creator guide library?",
-    a: "It's a free, plain-English library of security how-to guides built for content creators — covering hacked-account recovery, two-factor authentication, scams and impersonation, platform hardening, and privacy. Each guide gives you direct, step-by-step answers without enterprise jargon.",
+    a: "It's a free, plain-English library of security how-to guides built for content creators, covering hacked-account recovery, two-factor authentication, scam-spotting, account protection, and privacy. Each guide gives you direct, step-by-step answers without enterprise jargon.",
   },
   {
     q: "How do creators get hacked most often?",
@@ -152,7 +152,7 @@ export const libraryFaqs: GuideFaq[] = [
   },
   {
     q: "Is two-factor authentication enough to protect my account?",
-    a: "2FA stops the most common attack — logging in with a stolen password — but it doesn't stop session-token theft, where malware reuses your already-logged-in session. Pair 2FA with a password manager, careful file handling, and ideally a passkey for the strongest protection.",
+    a: "2FA stops the most common attack, logging in with a stolen password, but it doesn't stop session-token theft, where malware reuses your already-logged-in session. Pair 2FA with a password manager, careful file handling, and ideally a passkey for the strongest protection.",
   },
   {
     q: "Can Locket Security help if I'm already hacked?",

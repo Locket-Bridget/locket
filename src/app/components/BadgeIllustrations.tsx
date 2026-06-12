@@ -1,7 +1,7 @@
-// Retro badge-style illustrations — layered, colorful, cyber-themed
+// Retro badge-style illustrations: layered, colorful, cyber-themed
 // Style inspo: flat color shapes with bold text inside, like vintage label art
 
-// Padlock badge — "Cyber Care IS SELF CARE"
+// Padlock badge: "Cyber Care IS SELF CARE"
 export function PadlockBadge({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -15,7 +15,7 @@ export function PadlockBadge({ className = "" }: { className?: string }) {
       {/* Shadow layer (offset) */}
       <rect x="18" y="103" width="142" height="106" rx="16" fill="#93c5fd" opacity="0.5"/>
 
-      {/* Shackle — navy thick arch */}
+      {/* Shackle: navy thick arch */}
       <path
         d="M36 100 L36 62 Q36 18 85 18 Q134 18 134 62 L134 100"
         stroke="#1E3A8A" strokeWidth="18" strokeLinecap="round" fill="none"
@@ -26,9 +26,9 @@ export function PadlockBadge({ className = "" }: { className?: string }) {
         stroke="#fff8ea" strokeWidth="8" strokeLinecap="round" fill="none"
       />
 
-      {/* Lock body — navy */}
+      {/* Lock body: navy */}
       <rect x="10" y="96" width="150" height="108" rx="16" fill="#1E3A8A"/>
-      {/* Lock body — cream inner layer */}
+      {/* Lock body: cream inner layer */}
       <rect x="20" y="106" width="130" height="90" rx="10" fill="#fff8ea"/>
 
       {/* Text: script line */}
@@ -64,7 +64,7 @@ export function PadlockBadge({ className = "" }: { className?: string }) {
   );
 }
 
-// Shield badge — "Your Data PROTECTED"
+// Shield badge: "Your Data PROTECTED"
 export function ShieldBadge({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -80,12 +80,12 @@ export function ShieldBadge({ className = "" }: { className?: string }) {
         d="M82 12 L14 36 L14 100 Q17 152 82 175 Q147 152 150 100 L150 36 Z"
         fill="#93c5fd" opacity="0.4" transform="translate(4,5)"
       />
-      {/* Shield — navy fill */}
+      {/* Shield: navy fill */}
       <path
         d="M80 10 L12 34 L12 98 Q15 150 80 173 Q145 150 148 98 L148 34 Z"
         fill="#1E3A8A"
       />
-      {/* Inner shield — cream */}
+      {/* Inner shield: cream */}
       <path
         d="M80 24 L26 44 L26 98 Q28 138 80 158 Q132 138 134 98 L134 44 Z"
         fill="#fff8ea"
@@ -119,7 +119,7 @@ export function ShieldBadge({ className = "" }: { className?: string }) {
   );
 }
 
-// Phone badge — "Stay Private ONLINE"
+// Phone badge: "Stay Private ONLINE"
 export function PhoneBadge({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -133,9 +133,9 @@ export function PhoneBadge({ className = "" }: { className?: string }) {
       {/* Shadow */}
       <rect x="14" y="14" width="106" height="180" rx="20" fill="#93c5fd" opacity="0.35"/>
 
-      {/* Phone body — navy */}
+      {/* Phone body: navy */}
       <rect x="10" y="10" width="110" height="182" rx="18" fill="#1E3A8A"/>
-      {/* Screen — cream */}
+      {/* Screen: cream */}
       <rect x="20" y="28" width="90" height="146" rx="10" fill="#fff8ea"/>
 
       {/* Camera dot */}

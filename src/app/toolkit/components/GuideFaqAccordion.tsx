@@ -12,7 +12,7 @@ export function GuideFaqAccordion({
   faqs: GuideFaq[];
   heading?: string;
 }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   if (!faqs.length) return null;
 

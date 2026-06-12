@@ -1,12 +1,12 @@
-// Hand-drawn style SVG doodles — cyber meets beauty aesthetic
+// Hand-drawn style SVG doodles: cyber meets beauty aesthetic
 
 export function DoodleLock({ className = "" }: { className?: string }) {
   return (
     <svg className={className} width="62" height="80" viewBox="0 -13 90 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Shackle — arches over and around the crown */}
+      {/* Shackle: arches over and around the crown */}
       <path d="M15 48 C14 48 12 28 14 20 C17 2 40 -8 45 -8 C50 -8 73 2 76 20 C78 28 76 48 75 48"
         stroke="#1E3A8A" strokeWidth="4.5" strokeLinecap="round" fill="none"/>
-      {/* Crown — Protected Princess */}
+      {/* Crown: Protected Princess */}
       <path d="M20 44 L20 38 L28 18 L35 36 L45 10 L55 36 L62 18 L68 38 L68 44 Z"
         stroke="#1E3A8A" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" fill="#E8B84B"/>
       {/* Crown peak jewels */}
@@ -17,7 +17,7 @@ export function DoodleLock({ className = "" }: { className?: string }) {
       <circle cx="45" cy="41" r="1.9" fill="#fca5a5" stroke="#1E3A8A" strokeWidth="0.9"/>
       <circle cx="32" cy="41" r="1.1" fill="#1E3A8A" opacity="0.45"/>
       <circle cx="58" cy="41" r="1.1" fill="#1E3A8A" opacity="0.45"/>
-      {/* Body — slightly wobbly rect */}
+      {/* Body: slightly wobbly rect */}
       <path d="M10 46 Q11 44 14 44 L76 45 Q78 45 79 47 L80 93 Q80 96 77 97 L13 97 Q10 97 9 94 L8 48 Q8 46 10 46Z"
         stroke="#1E3A8A" strokeWidth="3.5" fill="#fff8ea"/>
       {/* Left eye */}
@@ -39,7 +39,7 @@ export function DoodleLock({ className = "" }: { className?: string }) {
   );
 }
 
-// Water drop with face — password hygiene
+// Water drop with face: password hygiene
 export function DoodleDrop({ className = "" }: { className?: string }) {
   return (
     <svg className={className} width="62" height="68" viewBox="0 0 52 68" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@ export function DoodleDrop({ className = "" }: { className?: string }) {
   );
 }
 
-// Lipstick — software updates
+// Lipstick: software updates
 export function DoodleLipstick({ className = "" }: { className?: string }) {
   return (
     <svg className={className} width="50" height="72" viewBox="0 0 50 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@ export function DoodleLipstick({ className = "" }: { className?: string }) {
   );
 }
 
-// Compact mirror — safe posting / privacy
+// Compact mirror: safe posting / privacy
 export function DoodleMirror({ className = "" }: { className?: string }) {
   return (
     <svg className={className} width="58" height="64" viewBox="0 0 58 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +102,7 @@ export function DoodleMirror({ className = "" }: { className?: string }) {
   );
 }
 
-// Shield with heart — data protection
+// Shield with heart: data protection
 export function DoodleShield({ className = "" }: { className?: string }) {
   return (
     <svg className={className} width="70" height="68" viewBox="0 0 58 68" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +117,7 @@ export function DoodleShield({ className = "" }: { className?: string }) {
   );
 }
 
-// Steaming teacup — antivirus / immunity
+// Steaming teacup: antivirus / immunity
 export function DoodleTeacup({ className = "" }: { className?: string }) {
   return (
     <svg className={className} width="64" height="68" viewBox="0 0 64 68" fill="none" xmlns="http://www.w3.org/2000/svg">

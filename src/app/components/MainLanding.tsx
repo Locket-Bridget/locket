@@ -21,7 +21,7 @@ type DecoStar = {
   twinkle?: { delay: string; duration: string };
 };
 
-// Hand-tuned irregular positions — clustered along edges so they remain
+// Hand-tuned irregular positions, clustered along edges so they remain
 // visible around the centered card. Sizes/colors/glyphs/timings all vary
 // to avoid any visible grid pattern.
 const decoStars: DecoStar[] = [
@@ -36,7 +36,7 @@ const decoStars: DecoStar[] = [
   { top: "12%", left: "92%", size: "1.85rem", color: "#BFDBFE", opacity: 0.55, char: "✦", twinkle: { delay: "2.1s", duration: "3.6s" } },
   { top: "21%", left: "12%", size: "1rem",    color: "#BFDBFE", opacity: 0.45, char: "·" },
   { top: "24%", left: "88%", size: "1.1rem",  color: "#93C5FD", opacity: 0.5,  char: "★" },
-  // Mid (edges only — center is hidden by card)
+  // Mid (edges only, since center is hidden by card)
   { top: "32%", left: "4%",  size: "1.7rem",  color: "#BFDBFE", opacity: 0.55, char: "✦", twinkle: { delay: "0.4s", duration: "3.1s" } },
   { top: "38%", left: "15%", size: "1rem",    color: "#93C5FD", opacity: 0.45, char: "✧" },
   { top: "46%", left: "6%",  size: "1.25rem", color: "#BFDBFE", opacity: 0.55, char: "✶" },
@@ -66,7 +66,7 @@ const decoStars: DecoStar[] = [
   { top: "67%", left: "20%", size: "1.7rem",  color: "#D4A23C", opacity: 0.55, char: "★", twinkle: { delay: "0.8s", duration: "4.3s" } },
   { top: "78%", left: "13%", size: "1.05rem", color: "#93C5FD", opacity: 0.5,  char: "✦" },
   { top: "94%", left: "12%", size: "1.4rem",  color: "#BFDBFE", opacity: 0.55, char: "✧", twinkle: { delay: "1.3s", duration: "3.8s" } },
-  // Dark blue accents — sprinkled across all bands to add depth
+  // Dark blue accents, sprinkled across all bands to add depth
   { top: "1%",  left: "41%", size: "1.3rem",  color: "#1E3A8A", opacity: 0.55, char: "✦", twinkle: { delay: "0.5s", duration: "3.6s" } },
   { top: "3%",  left: "51%", size: "1.05rem", color: "#1E40AF", opacity: 0.5,  char: "★" },
   { top: "2%",  left: "65%", size: "1.45rem", color: "#1E3A8A", opacity: 0.55, char: "✶", twinkle: { delay: "1.2s", duration: "4.0s" } },
